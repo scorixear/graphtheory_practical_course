@@ -1,5 +1,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import pickle
+
 
 
 def prev_nodes(graph: nx.DiGraph, node: any, direction = True):
@@ -31,7 +33,7 @@ def add_reactions(queue: list[any], visited: set[any], reactions: set[any], star
         direction_label =graph.edges[startingNode, reaction]['direction']
         conditions = [c for c in prev_nodes(graph, reaction, direction) if graph.edges[c, reaction]['direction'] == direction_label]
 
-        if set(conditions).issubset(visited) and reaction not in visited:
+        if set(conditions).issubset(visited) and reaction not in visited and reaction not in queue:
             queue.append(reaction)
 
 def bf_traverse(graph: nx.DiGraph, startNode, essentialCompounds, direction=True):
@@ -49,6 +51,8 @@ def bf_traverse(graph: nx.DiGraph, startNode, essentialCompounds, direction=True
     while queue:
         # dequeue current hyper edge (reaction)
         current = queue.pop(0)
+        print(f"Queue: {len(queue)}")
+        print(f"Dequeu {len(visited)}")
         # add current hyper edge to visited
         visited.add(current)
         #enqueue
@@ -62,10 +66,12 @@ def bf_traverse(graph: nx.DiGraph, startNode, essentialCompounds, direction=True
 
 def main():
     testGraph = generate_test_graph()
-    essential_compounds = [2,3]
-    subgraph = bf_traverse(testGraph, 1, essential_compounds)
+    graph = pickle.load(open("acacae_adamCRN.pi", "rb"))
+    essential_compounds = ["AMP", "ADP", "ATP", "NAD(+)", "NADH", "NADP(+)", "NADPH", "CTP", "CoA", "H2O", "NH4(+)", "hydrogensulfide"]
+    subgraph = bf_traverse(graph, "D-glucose", essential_compounds)
     
-    nx.draw(subgraph, with_labels=True)
+    pos = nx.spring_layout(subgraph)
+    nx.draw_networkx(subgraph,pos)
     plt.show()
 
 
