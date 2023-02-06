@@ -1,0 +1,12 @@
+AMP
+ADP
+ATP
+NAD(+)
+NADH
+NADP(+)
+NADPH
+CTP
+CoA
+H2O
+NH4(+)
+hydrogensulfide
