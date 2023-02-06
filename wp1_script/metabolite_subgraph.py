@@ -66,6 +66,38 @@ def bf_search(graph: nx.DiGraph, start_node: any, essential_compounds: list[any]
     # return the subgraph made by all visited nodes
     return graph.subgraph(visited)
 
+def reverse_bf_search(graph: nx.DiGraph, start_node = any):
+    """Returns a subgraph composed of all predecessors of a given start graph by performing breath first search"""
+    # initialize visited with start node
+    visited = set([start_node])
+    # and empty queue (will only be holding reaction nodes)
+    queue = []
+
+    # retrieve reaction nodes that result in start_node as product
+    possible_reactions = prev_nodes( graph, start_node)
+    # add reaction nodes to queue
+    queue.extend(possible_reactions)
+    # possibly extend this graph with additional products of the given reaction
+
+    while queue:
+        # select oldest reaction
+        current = queue.pop(0)
+        # add to visited
+        visited.add(current)
+        # look at all required educts of reaction
+        for predecessor in prev_nodes(graph, current):
+            # add educt to visited
+            visited.add(predecessor)
+            # look at reactions forming educt
+            predecessor_reactions = prev_nodes(graph, predecessor)
+            # add reaction to queue if reaction was not visited earlier and is not in queue already
+            for reaction in predecessor_reactions:
+                if reaction not in visited and reaction not in queue:
+                    queue.append(reaction)
+            # possibly extend graph with additional product from reaction that produces given educt
+    # return formed sub graph of all visited educts.
+    return graph.subgraph(visited)
+
 def add_reactions(queue: list[any], visited: set[any], reactions: set[any], start_node: any, graph: nx.DiGraph, direction=True):
     """Adds given reactions to the queue if 
     the educt nodes are already visited
