@@ -108,7 +108,7 @@ def add_reactions(queue: list[any], visited: set[any], reactions: set[any], star
     visited = The set of visited nodes
     start_node = The node we retrieved the reactions from
     graph = the graph these reactions are in
-    direction = True if correct direciton, False if reversed"""
+    direction = True if correct direction, False if reversed"""
     # for each given possible reaction of one compound node
     for reaction in reactions:
         # if the current reaction has already been visited 
@@ -161,28 +161,34 @@ def read_file(file: str) -> list[str]:
     lines = input.readlines()
     return [line.strip() for line in lines]
 
-
+def show_graph(graph: nx.Graph):
+    """Draws the graph on a plot of MatplotLib"""
+    nx.draw(graph, pos=nx.spring_layout(graph), with_labels=True)
+    plt.show()
 
 def main():
-    # read in / generate graph
-    #graph = generate_test_graph()
-    graph = pickle.load(open("acacae_adamCRN.pi", "rb"))    
-    
-    # read in essential compounds
-    essential_compounds = read_file("essential_compounds.txt")
-    
-    # create subgraph via breath first search
-    subgraph = bf_search(graph, "D-glucose", essential_compounds)
-    #subgraph = bf_search(graph, 1, essential_compounds=[1,2,3,19,12,13])
-    
-    # generate position dictionary for graph nodes
-    pos = nx.spring_layout(subgraph)
-    
-    # draw network on plot
-    nx.draw(subgraph,pos=pos, with_labels=True)
-    
-    # show plot
-    plt.show()
+    # generate graph
+    graph = generate_test_graph()
+    amino_acids = [7]
+    subgraph = bf_search(graph, 1, essential_compounds=[1,2,3,19,12,13])
+
+    ## read in graph
+    #graph = pickle.load(open("acacae_adamCRN.pi", "rb"))    
+    ## read in essential compounds
+    #essential_compounds = read_file("essential_compounds.txt")
+    #amino_acids = read_file("amino_acids.txt")
+    ## create subgraph via breath first search
+    #subgraph = bf_search(graph, "D-glucose", essential_compounds)
+
+    show_graph(subgraph)
+    acid_graphs = []
+    for acid in amino_acids:
+        acid_graphs.append(reverse_bf_search(graph, acid))
+
+    acid_subgraph = nx.compose_all(acid_graphs)
+    show_graph(acid_subgraph)
+    intersected_graph = nx.intersection(subgraph, acid_subgraph)
+    show_graph(intersected_graph)
 
 
 if __name__ == "__main__":
