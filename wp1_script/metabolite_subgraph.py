@@ -188,9 +188,9 @@ def show_graph(graph: nx.Graph):
 
 def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
     # read in essential compounds
-    essential_compounds = read_file("essential_compounds.txt")
+    essential_compounds = read_file("wp1_script/essential_compounds.txt")
     # read in target amino acid
-    amino_acids = read_file("amino_acids.txt")
+    amino_acids = read_file("wp1_script/amino_acids.txt")
 
     # create subgraph via breadth first search
     subgraph = bf_search(graph, "D-glucose", essential_compounds)
@@ -205,7 +205,7 @@ def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
             reachable_amino_acids.append(aa)
 
     for amino_acid in reachable_amino_acids:
-        print("\t " + amino_acid)
+        #print("\t " + amino_acid)
         try:
             current_backward = reverse_bf_search(subgraph, amino_acid)
             reverse = nx.compose(reverse, current_backward)
