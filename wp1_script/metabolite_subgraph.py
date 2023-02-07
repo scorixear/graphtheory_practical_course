@@ -179,37 +179,42 @@ def read_file(file: str) -> list[str]:
     lines = input.readlines()
     return [line.strip() for line in lines]
 
+
 def show_graph(graph: nx.Graph):
     """Draws the graph on a plot of MatplotLib"""
     nx.draw(graph, pos=nx.spectral_layout(graph), with_labels=True)
     plt.show()
 
-def main():
-    # read in / generate graph
-    # graph = generate_test_graph()
-    graph = pickle.load(open("acacae_adam_CRN.pi", "rb"))
 
+def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
     # read in essential compounds
     essential_compounds = read_file("essential_compounds.txt")
     # read in target amino acid
     amino_acids = read_file("amino_acids.txt")
 
-    # create subgraph via breath first search
+    # create subgraph via breadth first search
     subgraph = bf_search(graph, "D-glucose", essential_compounds)
-    # subgraph = bf_search(graph, 1, essential_compounds=[1,2,3,19,12,13])
 
     # in the second step a reverse search is performed starting from the amino acids
     reverse = nx.DiGraph()
-    for amino_acid in amino_acids:
-        print(amino_acid)
-        # perform reverse search and
-        current_backward = reverse_bf_search(subgraph, amino_acid)
-        reverse = nx.compose(reverse, current_backward)
+
+    # some amino acids cannot be reached from glucose.
+    reachable_amino_acids = []
+    for aa in amino_acids:
+        if aa in subgraph.nodes:
+            reachable_amino_acids.append(aa)
+
+    for amino_acid in reachable_amino_acids:
+        print("\t " + amino_acid)
+        try:
+            current_backward = reverse_bf_search(subgraph, amino_acid)
+            reverse = nx.compose(reverse, current_backward)
+        except KeyError:
+            print(amino_acid + " was not found in the Digraph")
+            pass
+        except nx.NetworkXError:
+            print(amino_acid + " was not found in the Digraph")
+            pass
 
     final = nx.intersection(subgraph, reverse)
-
-    show_graph(final)
-
-
-if __name__ == "__main__":
-    main()
+    return final
