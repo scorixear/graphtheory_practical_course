@@ -20,9 +20,10 @@ import os
 import sys
 
 #define variables
-wd = "C:/Users/franz/graphen_praktikum/graph_theory/"
-dataDir = "Data/smiles_list/"
-outdir = "Data/CRN/"
+
+wd = "C:/Users/franz/graphen_praktikum/graphtheory_practical_course/"
+dataDir = "data/smiles_list/"
+outdir = "data/crn/"
 #infile = "C:/Users/franz/graphen_praktikum/graph_theory/sihumix/acacae_adam/acacae_adam.smiles_list"
 
 os.chdir(wd)
@@ -58,7 +59,16 @@ def parseLines(lines):
 
     reactionData["in_multiplicity"] = Counter(reactionData["in"])
     reactionData["out_multiplicity"] = Counter(reactionData["out"])
-    reactionData["smiles"] = lines[3]
+    
+    #parse the smiles
+    smilesList = lines[3].replace(">>",".").split(".")
+    compoundList =[compound.replace(" ","") for compound in lines[2].replace("=", " + ").split(" + ")]
+    
+    smilesDir = dict()
+    for compound, smiles in zip(compoundList, smilesList):
+        smilesDir[compound] = smiles
+    
+    reactionData["smiles"] = smilesDir
 
     return(reactionData)
 
@@ -88,12 +98,12 @@ for file in fileList:
                 # add reaction node
                 reactionID = reactionData["bigg"]
                 G.add_node(reactionID, nodeType=1, meta=reactionData["meta"],
-                           reversible=reactionData["reversible"], smiles=reactionData["smiles"])
+                           reversible=reactionData["reversible"])
 
                 # add edges to educts and the reverse reaction if possible
                 for pre in reactionData["in_multiplicity"].keys():
                     if not G.has_node(pre):
-                        G.add_node(pre, nodeType=0)
+                        G.add_node(pre, nodeType=0, smiles=reactionData["smiles"][pre])
                     G.add_edge(pre, reactionID, multiplicity=reactionData["in_multiplicity"][pre],
                                direction=1)
                     if reactionData["reversible"]:
@@ -103,7 +113,7 @@ for file in fileList:
                # add the products as succsessor nodes to the reaction
                 for succ in reactionData["out_multiplicity"].keys():
                     if not G.has_node(pre):
-                        G.add_node(succ, nodeType=0)
+                        G.add_node(succ, nodeType=0, smiles=reactionData["smiles"][succ])
                     G.add_edge(reactionID, succ,
                                multiplicity=reactionData["in_multiplicity"][succ], direction=1)
                     if reactionData["reversible"]:
@@ -117,7 +127,7 @@ for file in fileList:
     # nodes = nodes + [n for n in G.predecessors(node)
     # nx.draw(G.subgraph(nodes), with_labels=True)
     # plt.show()
-
+    
     # save output with pickle
     outfile = open(outdir + fileName + "_CRN.pi", 'wb')
     pickle.dump(G, outfile)
