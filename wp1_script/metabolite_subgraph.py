@@ -192,7 +192,7 @@ def main():
     # read in essential compounds
     essential_compounds = read_file("essential_compounds.txt")
     # read in target amino acid
-    amino_acids = read_file("aminoacids.txt")
+    amino_acids = read_file("amino_acids.txt")
 
     # create subgraph via breath first search
     subgraph = bf_search(graph, "D-glucose", essential_compounds)
