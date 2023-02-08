@@ -14,36 +14,42 @@ def read_file(file: str) -> list[str]:
     lines = input.readlines()
     return [line.strip() for line in lines]
 
-
+source = "D-glucose"
 G = pickle.load(open(
     "C:/Users/franz/graphen_praktikum/graphtheory_practical_course/data/amino_reaction_cycle/blongum_cimIV_aa_cycle.pi", "rb"))
-amino_acids = read_file("amino_acids.txt")
-
-source = "D-glucose"
-
-# test if amino acid is in graph
+amino_acids = read_file("wp1_script/amino_acids.txt")
 acids_present = [aa for aa in amino_acids if G.has_node(aa)]
-print("Anzahl vorhandener AA: " + str(len(acids_present)))
+
+reactionData = nx.get_node_attributes(G, "nodeType")
+
+
 
 # build a graph only consiting of reaction nodes
 reactionGraph = nx.DiGraph()
 
 for reactionNode in G:
-    if reactionNode.startswith("R_"):
-        for succ1 in G.successors(reactionNode):
-            for succ2 in G.successors(succ1):
-                reactionGraph.add_edge(reactionNode, succ2)
+    #only using reaction nodes
+    if reactionData[reactionNode] == 1:
+        for product in G.successors(reactionNode):
+            for followReaction in G.successors(product):
+                reactionGraph.add_edge(reactionNode, followReaction)
+
 
 # add source and target( glucose and aa)
 for reaction in G.successors(source):
     reactionGraph.add_edge(source, reaction)
 
 for a in acids_present:
-    reactionGraph.add_node(a)
     for reaction in G.successors(a):
         reactionGraph.add_edge(reaction, a)
 
-pathsIter = nx.all_simple_paths(reactionGraph, source, "L-proline", cutoff=50)
+#TODO filter subgraphs for each aa
+#TODO enumerate simple paths of the subgraphs
+#TODO enumerate with branch and bound on the subgraphs
+#TODO resore reaction paths from the reaction nodes
+
+
+# pathsIter = nx.all_simple_paths(reactionGraph, source, "L-proline", cutoff=50)
 pathThreshold = 20
 paths = []
 
@@ -53,11 +59,4 @@ for path in pathsIter:
     else:
         break
 
-pathsArg = []
-pathsIter = nx.all_simple_paths(reactionGraph, source, "L-arginine", cutoff=50)
 
-for path in pathsIter:
-    if len(pathsArg) <= pathThreshold:
-        pathsArg.append(path)
-    else:
-        break
