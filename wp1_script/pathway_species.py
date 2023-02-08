@@ -39,15 +39,15 @@ def compare(graph, other, medium):
     graph_diff = difference(graph['graph'], other['graph']).nodes(data=True)
     # and the other side
     other_diff = difference(other['graph'], graph['graph']).nodes(data=True)
-    final_graph_nodes = []
-    final_other_nodes = []
+    final_graph_nodes = set()
+    final_other_nodes = set()
     # go through all nodes, if nodes are Reaction nodes, save meta attribute
     for node in graph_diff:
         if 'nodeType' in node[1] and node[1]['nodeType'] == 1:
-            final_graph_nodes.append(node[1]['meta'])
+            final_graph_nodes.add(node[1]['meta'])
     for node in other_diff:
         if 'nodeType' in node[1] and node[1]['nodeType'] == 1:
-            final_other_nodes.append(node[1]['meta'])
+            final_other_nodes.add(node[1]['meta'])
     # define output file path
     outfile = "data/pathway_species/"+medium+"/"+graph['name']+"_vs_"+other['name']
     # write metanames to file
