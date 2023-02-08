@@ -15,7 +15,10 @@ def main():
             #metabolite_subgraph.show_graph(amino_acid_graph)
             amino_acids = metabolite_subgraph.read_file("wp1_script/amino_acids.txt")
             acids_present = [aa for aa in amino_acids if amino_acid_graph.has_node(aa)]
+            acids_not_present = [aa for aa in amino_acids if amino_acid_graph.has_node(aa) == False]
             print(f"Acids present: {len(acids_present)}")
+            delimiter = " "
+            print(f"Acids not present: {delimiter.join(acids_not_present)}")
 
 if __name__ == "__main__":
     main()
