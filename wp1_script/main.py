@@ -2,6 +2,7 @@
 import os
 import metabolite_subgraph
 import pickle
+import networkx as nx
 
 
 def main():
@@ -9,7 +10,7 @@ def main():
     for entry in os.scandir(datadir):
         if entry.is_file() and entry.name.endswith(".pi"):
             print(entry.path)
-            graph = pickle.load(open(entry.path, "rb"))
+            graph: nx.DiGraph = pickle.load(open(entry.path, "rb"))
             amino_acid_graph = metabolite_subgraph.build_aminoacid_graph(graph)
             #metabolite_subgraph.show_graph(amino_acid_graph)
             amino_acids = metabolite_subgraph.read_file("wp1_script/amino_acids.txt")

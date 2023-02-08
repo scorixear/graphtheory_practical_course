@@ -193,7 +193,7 @@ def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
     amino_acids = read_file("wp1_script/amino_acids.txt")
 
     # create subgraph via breadth first search
-    subgraph = bf_search(graph, "D-glucose", essential_compounds)
+    subgraph: nx.DiGraph = bf_search(graph, "D-glucose", essential_compounds)
 
     # in the second step a reverse search is performed starting from the amino acids
     reverse = nx.DiGraph()
@@ -216,5 +216,8 @@ def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
             print(amino_acid + " was not found in the Digraph")
             pass
 
-    final = nx.intersection(subgraph, reverse)
+    # intersection
+    final = subgraph.copy()
+    final.remove_nodes_from(n for n in subgraph if n not in reverse)
+    final.remove_edges_from(e for e in subgraph.edges if e not in reverse.edges)
     return final

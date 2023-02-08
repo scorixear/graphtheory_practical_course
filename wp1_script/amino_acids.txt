@@ -17,4 +17,4 @@ L-serine
 L-isoleucine
 glycine
 L-alanine
-L-Leucine
+L-leucine
