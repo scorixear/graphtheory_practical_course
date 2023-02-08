@@ -46,19 +46,20 @@ def reverse_bf_search(graph: nx.DiGraph, start_node=any):
     # return formed sub graph of all visited educts.
     return graph.subgraph(visited)
 
-def build_reaction_graph(G: nx.DiGraph, acids_present: list[any]) -> nx.DiGraph:
-    """create a reaction graph consiting only of reactions, glucose and amino acids"""
+def build_reaction_graph(G: nx.DiGraph, acids_present: list[str], common_compounds: list[str]) -> nx.DiGraph:
+    """create a reaction graph consiting only of reactions, glucose and amino acids.
+        We are taking all products (except the common ones) and create edges from them.    
+    """
     reactionGraph = nx.DiGraph()
     reactionData = nx.get_node_attributes(G, "nodeType")
     for reactionNode in G:
-        #for some reason there are some nodes with no entry
-        if reactionNode not in reactionData:
-            print(reactionNode)
-            continue
-
         #only using reaction nodes
         if reactionData[reactionNode] == 1:
             for product in G.successors(reactionNode):
+
+                #we only want to follow our carbon therefore exclude links via H, ATP ect.
+                if product not in common_compounds:
+                    continue
                 for followReaction in G.successors(product):
                     reactionGraph.add_edge(reactionNode, followReaction)
 
@@ -72,14 +73,14 @@ def build_reaction_graph(G: nx.DiGraph, acids_present: list[any]) -> nx.DiGraph:
     
     return reactionGraph
 
-
 source = "D-glucose"
 G = pickle.load(open(
     "C:/Users/franz/graphen_praktikum/graphtheory_practical_course/data/amino_reaction_cycle/ecoli_cimIV_aa_cycle.pi", "rb"))
 amino_acids = read_file("amino_acids.txt")
+common_compounds = read_file("essential_compounds.txt")
 acids_present = [aa for aa in amino_acids if G.has_node(aa)]
 
-reactionGraph = build_reaction_graph(G, acids_present)
+reactionGraph = build_reaction_graph(G, acids_present, common_compounds)
 print(reactionGraph.size())
 #TODO filter subgraphs for each aa
 
