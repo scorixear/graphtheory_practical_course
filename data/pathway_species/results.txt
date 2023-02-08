@@ -1,0 +1,70 @@
+
+acacae_adam_aa_cycle.pi vs blongum_adam_aa_cycle.pi: 318/692 - 156/530 || 474/1222
+acacae_adam_aa_cycle.pi vs bproducta_adam_aa_cycle.pi: 147/692 - 152/697 || 299/1389
+acacae_adam_aa_cycle.pi vs btheta_adam_aa_cycle.pi: 223/692 - 317/786 || 540/1478
+acacae_adam_aa_cycle.pi vs cbuty_adam_aa_cycle.pi: 187/692 - 181/686 || 368/1378
+acacae_adam_aa_cycle.pi vs ecoli_adam_aa_cycle.pi: 224/692 - 439/907 || 663/1599
+acacae_adam_aa_cycle.pi vs eramosum_adam_aa_cycle.pi: 251/692 - 176/617 || 427/1309
+acacae_adam_aa_cycle.pi vs lplantarum_adam_aa_cycle.pi: 692/692 - 0/0 || 692/692
+
+blongum_adam_aa_cycle.pi vs bproducta_adam_aa_cycle.pi: 148/530 - 315/697 || 463/1227
+blongum_adam_aa_cycle.pi vs btheta_adam_aa_cycle.pi: 144/530 - 400/786 || 544/1316
+blongum_adam_aa_cycle.pi vs cbuty_adam_aa_cycle.pi: 162/530 - 318/686 || 480/1216
+blongum_adam_aa_cycle.pi vs ecoli_adam_aa_cycle.pi: 146/530 - 523/907 || 669/1437
+blongum_adam_aa_cycle.pi vs eramosum_adam_aa_cycle.pi: 184/530 - 271/617 || 455/1147
+blongum_adam_aa_cycle.pi vs lplantarum_adam_aa_cycle.pi: 530/530 - 0/0 || 530/530
+
+bproducta_adam_aa_cycle.pi vs btheta_adam_aa_cycle.pi: 195/697 - 284/786 || 479/1483
+bproducta_adam_aa_cycle.pi vs cbuty_adam_aa_cycle.pi: 173/697 - 162/686 || 335/1383
+bproducta_adam_aa_cycle.pi vs ecoli_adam_aa_cycle.pi: 228/697 - 438/907 || 666/1604
+bproducta_adam_aa_cycle.pi vs eramosum_adam_aa_cycle.pi: 228/697 - 148/617 || 376/1314
+bproducta_adam_aa_cycle.pi vs lplantarum_adam_aa_cycle.pi: 697/697 - 0/0 || 697/697
+
+btheta_adam_aa_cycle.pi vs cbuty_adam_aa_cycle.pi: 298/786 - 198/686 || 496/1472
+btheta_adam_aa_cycle.pi vs ecoli_adam_aa_cycle.pi: 281/786 - 402/907 || 683/1693
+btheta_adam_aa_cycle.pi vs eramosum_adam_aa_cycle.pi: 359/786 - 190/617 || 549/1403
+btheta_adam_aa_cycle.pi vs lplantarum_adam_aa_cycle.pi: 786/786 - 0/0 || 786/786
+
+cbuty_adam_aa_cycle.pi vs ecoli_adam_aa_cycle.pi: 186/686 - 407/907 || 593/1593
+cbuty_adam_aa_cycle.pi vs eramosum_adam_aa_cycle.pi: 226/686 - 157/617 || 383/1303
+cbuty_adam_aa_cycle.pi vs lplantarum_adam_aa_cycle.pi: 686/686 - 0/0 || 686/686
+
+ecoli_adam_aa_cycle.pi vs eramosum_adam_aa_cycle.pi: 500/907 - 210/617 || 710/1524
+ecoli_adam_aa_cycle.pi vs lplantarum_adam_aa_cycle.pi: 907/907 - 0/0 || 907/907
+
+eramosum_adam_aa_cycle.pi vs lplantarum_adam_aa_cycle.pi: 617/617 - 0/0 || 617/617
+
+acacae_cimIV_aa_cycle.pi vs blongum_cimIV_aa_cycle.pi: 324/698 - 156/530 || 480/1228
+acacae_cimIV_aa_cycle.pi vs bproducta_cimIV_aa_cycle.pi: 152/698 - 154/700 || 306/1398
+acacae_cimIV_aa_cycle.pi vs btheta_cimIV_aa_cycle.pi: 226/698 - 316/788 || 542/1486
+acacae_cimIV_aa_cycle.pi vs cbuty_cimIV_aa_cycle.pi: 194/698 - 179/683 || 373/1381
+acacae_cimIV_aa_cycle.pi vs ecoli_cimIV_aa_cycle.pi: 228/698 - 438/908 || 666/1606
+acacae_cimIV_aa_cycle.pi vs eramosum_cimIV_aa_cycle.pi: 255/698 - 174/617 || 429/1315
+acacae_cimIV_aa_cycle.pi vs lplantarum_cimIV_aa_cycle.pi: 698/698 - 0/0 || 698/698
+
+blongum_cimIV_aa_cycle.pi vs bproducta_cimIV_aa_cycle.pi: 151/530 - 321/700 || 472/1230
+blongum_cimIV_aa_cycle.pi vs btheta_cimIV_aa_cycle.pi: 144/530 - 402/788 || 546/1318
+blongum_cimIV_aa_cycle.pi vs cbuty_cimIV_aa_cycle.pi: 167/530 - 320/683 || 487/1213
+blongum_cimIV_aa_cycle.pi vs ecoli_cimIV_aa_cycle.pi: 151/530 - 529/908 || 680/1438
+blongum_cimIV_aa_cycle.pi vs eramosum_cimIV_aa_cycle.pi: 184/530 - 271/617 || 455/1147
+blongum_cimIV_aa_cycle.pi vs lplantarum_cimIV_aa_cycle.pi: 530/530 - 0/0 || 530/530
+
+bproducta_cimIV_aa_cycle.pi vs btheta_cimIV_aa_cycle.pi: 197/700 - 285/788 || 482/1488
+bproducta_cimIV_aa_cycle.pi vs cbuty_cimIV_aa_cycle.pi: 178/700 - 161/683 || 339/1383
+bproducta_cimIV_aa_cycle.pi vs ecoli_cimIV_aa_cycle.pi: 233/700 - 441/908 || 674/1608
+bproducta_cimIV_aa_cycle.pi vs eramosum_cimIV_aa_cycle.pi: 233/700 - 150/617 || 383/1317
+bproducta_cimIV_aa_cycle.pi vs lplantarum_cimIV_aa_cycle.pi: 700/700 - 0/0 || 700/700
+
+btheta_cimIV_aa_cycle.pi vs cbuty_cimIV_aa_cycle.pi: 303/788 - 198/683 || 501/1471
+btheta_cimIV_aa_cycle.pi vs ecoli_cimIV_aa_cycle.pi: 288/788 - 408/908 || 696/1696
+btheta_cimIV_aa_cycle.pi vs eramosum_cimIV_aa_cycle.pi: 360/788 - 189/617 || 549/1405
+btheta_cimIV_aa_cycle.pi vs lplantarum_cimIV_aa_cycle.pi: 788/788 - 0/0 || 788/788
+
+cbuty_cimIV_aa_cycle.pi vs ecoli_cimIV_aa_cycle.pi: 182/683 - 407/908 || 589/1591
+cbuty_cimIV_aa_cycle.pi vs eramosum_cimIV_aa_cycle.pi: 225/683 - 159/617 || 384/1300
+cbuty_cimIV_aa_cycle.pi vs lplantarum_cimIV_aa_cycle.pi: 683/683 - 0/0 || 683/683
+
+ecoli_cimIV_aa_cycle.pi vs eramosum_cimIV_aa_cycle.pi: 503/908 - 212/617 || 715/1525
+ecoli_cimIV_aa_cycle.pi vs lplantarum_cimIV_aa_cycle.pi: 908/908 - 0/0 || 908/908
+
+eramosum_cimIV_aa_cycle.pi vs lplantarum_cimIV_aa_cycle.pi: 617/617 - 0/0 || 617/617
