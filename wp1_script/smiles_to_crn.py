@@ -129,7 +129,7 @@ for file in fileList:
 
                 # add the products as succsessor nodes to the reaction
                 for succ in reactionData["out_multiplicity"].keys():
-                    if not G.has_node(pre):
+                    if not G.has_node(succ):
                         G.add_node(
                             succ, nodeType=0, smiles=reactionData["smiles"][succ]
                         )
