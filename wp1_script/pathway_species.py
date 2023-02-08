@@ -39,15 +39,23 @@ def compare(graph, other, medium):
     graph_diff = difference(graph['graph'], other['graph']).nodes(data=True)
     # and the other side
     other_diff = difference(other['graph'], graph['graph']).nodes(data=True)
-    final_graph_nodes = set()
-    final_other_nodes = set()
+    graph_reaction_nodes = 0
+    other_reaction_nodes = 0
+    for node in graph['graph'].nodes(data=True):
+        if 'nodeType' in node[1] and node[1]['nodeType'] == 1:
+            graph_reaction_nodes += 1
+    for node in other['graph'].nodes(data=True):
+        if 'nodeType' in node[1] and node[1]['nodeType'] == 1:
+            other_reaction_nodes += 1
+    final_graph_nodes = []
+    final_other_nodes = []
     # go through all nodes, if nodes are Reaction nodes, save meta attribute
     for node in graph_diff:
         if 'nodeType' in node[1] and node[1]['nodeType'] == 1:
-            final_graph_nodes.add(node[1]['meta'])
+            final_graph_nodes.append(node[0] + ": " +node[1]['meta'])
     for node in other_diff:
         if 'nodeType' in node[1] and node[1]['nodeType'] == 1:
-            final_other_nodes.add(node[1]['meta'])
+            final_other_nodes.append(node[0] + ": " +node[1]['meta'])
     # define output file path
     outfile = "data/pathway_species/"+medium+"/"+graph['name']+"_vs_"+other['name']
     # write metanames to file
@@ -55,7 +63,7 @@ def compare(graph, other, medium):
     with open(outfile, "w", encoding="UTF-8") as writer:
         writer.write(outstring)
     # count unique reaction nodes
-    return_str = f"{graph['name']} vs {other['name']}: {len(final_graph_nodes)} - {len(final_other_nodes)}"
+    return_str = f"{graph['name']} vs {other['name']}: {len(final_graph_nodes)}/{graph_reaction_nodes} - {len(final_other_nodes)}/{other_reaction_nodes} || {len(final_graph_nodes)+len(final_other_nodes)}/{graph_reaction_nodes+other_reaction_nodes}"
     print(return_str)
     return return_str
 
