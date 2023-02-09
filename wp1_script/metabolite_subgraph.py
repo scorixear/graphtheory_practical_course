@@ -73,7 +73,7 @@ def bf_search(
     return graph.subgraph(visited)
 
 
-def reverse_bf_search(graph: nx.DiGraph, start_node=any):
+def reverse_bf_search(graph: nx.DiGraph, start_node: any):
     """Returns a subgraph composed of all predecessors of a given start graph by performing breath first search"""
     # initialize visited with start node
     visited = set([start_node])
@@ -101,7 +101,7 @@ def reverse_bf_search(graph: nx.DiGraph, start_node=any):
             for reaction in predecessor_reactions:
                 if reaction not in visited and reaction not in queue:
                     queue.append(reaction)
-            # possibly extend graph with additional product from reaction that produces given educt
+                # possibly extend graph with additional product from reaction that produces given educt
     # return formed sub graph of all visited educts.
     return graph.subgraph(visited)
 
@@ -193,7 +193,11 @@ def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
     amino_acids = read_file("wp1_script/amino_acids.txt")
 
     # create subgraph via breadth first search
-    subgraph: nx.DiGraph = bf_search(graph, "D-glucose", essential_compounds)
+    glucose_graph: nx.DiGraph = bf_search(graph, "D-glucose", essential_compounds)
+    #minus_subgraph: nx.DiGraph = bf_search(graph, essential_compounds[0], essential_compounds)
+
+    #glucose_graph = subgraph.copy()
+    #glucose_graph.remove_nodes_from(n[0] for n in subgraph.nodes(data=True) if n[0] in minus_subgraph and n[1]['nodeType']==1)
 
     # in the second step a reverse search is performed starting from the amino acids
     reverse = nx.DiGraph()
@@ -201,14 +205,17 @@ def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
     # some amino acids cannot be reached from glucose.
     reachable_amino_acids = []
     for aa in amino_acids:
-        if aa in subgraph.nodes:
+        if aa in glucose_graph.nodes:
             reachable_amino_acids.append(aa)
 
     for amino_acid in reachable_amino_acids:
         #print("\t " + amino_acid)
         try:
-            current_backward = reverse_bf_search(subgraph, amino_acid)
+            current_backward = reverse_bf_search(graph, amino_acid, essential_compounds)
+            #print(f"{amino_acid}: {len(current_backward.nodes())}")
+            #print(nx.shortest_path(current_backward, "L-proline", "L-histidine"))
             reverse = nx.compose(reverse, current_backward)
+            #print(f"{amino_acid}: {len(reverse.nodes())}")
         except KeyError:
             print(amino_acid + " was not found in the Digraph")
             pass
@@ -217,7 +224,7 @@ def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
             pass
 
     # intersection
-    final = subgraph.copy()
-    final.remove_nodes_from(n for n in subgraph if n not in reverse)
-    final.remove_edges_from(e for e in subgraph.edges if e not in reverse.edges)
+    final = glucose_graph.copy()
+    final.remove_nodes_from(n for n in glucose_graph if n not in reverse)
+    final.remove_edges_from(e for e in glucose_graph.edges if e not in reverse.edges)
     return final
