@@ -9,18 +9,19 @@ def generate_test_graph():
     # type = False means compound node
     # type = True means reaction node
     # this type annotation is not used later on
-    G.add_nodes_from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 19], type=False)
-    G.add_nodes_from(["R1", "R2", "R3", "R4", "R5"], type=True)
+    G.add_nodes_from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 19], nodeType=0)
+    G.add_nodes_from(["R1", "R3", "R4", "R5"], nodeType=1, reversible=False)
+    G.add_node("R2", nodeType=1, reversible=True)
     # direction = 1 is default direction
     # direction = 2 is reversed direction
     G.add_edges_from(
-        [(1, "R1"), (2, "R1"), (3, "R1"), ("R1", 4), ("R1", 5), ("R1", 6)], direction=1
+        [(1, "R1"), (2, "R1"), (3, "R1"), ("R1", 4), ("R1", 5), ("R1", 6)], direction=1, multiplicity=1
     )
-    G.add_edges_from([(4, "R2"), (5, "R2"), ("R2", 7)], direction=1)
-    G.add_edges_from([(7, "R2"), ("R2", 4), ("R2", 5)], direction=2)
-    G.add_edges_from([(6, "R3"), (8, "R3"), ("R3", 10), ("R3", 9)], direction=1)
-    G.add_edges_from([(12, "R4"), (13, "R4"), ("R4", 8), ("R4", 11)], direction=1)
-    G.add_edges_from([(11, "R5"), (19, "R5"), ("R5", 6)], direction=1)
+    G.add_edges_from([(4, "R2"), (5, "R2"), ("R2", 7)], direction=1, multiplicity=1)
+    G.add_edges_from([(7, "R2"), ("R2", 4), ("R2", 5)], direction=2, multiplicity=1)
+    G.add_edges_from([(6, "R3"), (8, "R3"), ("R3", 10), ("R3", 9)], direction=1, multiplicity=1)
+    G.add_edges_from([(12, "R4"), (13, "R4"), ("R4", 8), ("R4", 11)], direction=1, multiplicity=1)
+    G.add_edges_from([(11, "R5"), (19, "R5"), ("R5", 6)], direction=1, multiplicity=1)
     return G
 
 
@@ -185,6 +186,36 @@ def show_graph(graph: nx.Graph):
     nx.draw(graph, pos=nx.spectral_layout(graph), with_labels=True)
     plt.show()
 
+def build_example_aminoacid(graph: nx.DiGraph) -> nx.DiGraph:
+    essential_compounds = [2,3,19,12,13]
+    amino_acids = [7,9,10]
+    glucose_graph: nx.DiGraph = bf_search(graph, 1, essential_compounds)
+    reverse = nx.DiGraph()
+    reachable_amino_acids = []
+    for aa in amino_acids:
+        if aa in glucose_graph.nodes:
+            reachable_amino_acids.append(aa)
+    for amino_acid in reachable_amino_acids:
+        #print("\t " + amino_acid)
+        try:
+            current_backward = reverse_bf_search(graph, amino_acid)
+            #print(f"{amino_acid}: {len(current_backward.nodes())}")
+            #print(nx.shortest_path(current_backward, "L-proline", "L-histidine"))
+            reverse = nx.compose(reverse, current_backward)
+            #print(f"{amino_acid}: {len(reverse.nodes())}")
+        except KeyError:
+            print(amino_acid + " was not found in the Digraph")
+            pass
+        except nx.NetworkXError:
+            print(amino_acid + " was not found in the Digraph")
+            pass
+
+    # intersection
+    final = glucose_graph.copy()
+    final.remove_nodes_from(n for n in glucose_graph if n not in reverse)
+    final.remove_edges_from(e for e in glucose_graph.edges if e not in reverse.edges)
+    return final
+
 
 def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
     # read in essential compounds
@@ -211,7 +242,7 @@ def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
     for amino_acid in reachable_amino_acids:
         #print("\t " + amino_acid)
         try:
-            current_backward = reverse_bf_search(graph, amino_acid, essential_compounds)
+            current_backward = reverse_bf_search(graph, amino_acid)
             #print(f"{amino_acid}: {len(current_backward.nodes())}")
             #print(nx.shortest_path(current_backward, "L-proline", "L-histidine"))
             reverse = nx.compose(reverse, current_backward)

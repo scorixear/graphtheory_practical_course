@@ -8,6 +8,13 @@ import networkx as nx
 def main():
     datadir = "data/crn/"
     resultdir = "data/amino_reaction_cycle/"
+    #graph = metabolite_subgraph.generate_test_graph()
+    #amino_acid_graph = metabolite_subgraph.build_example_aminoacid(graph)
+    #outfile = resultdir+ "example_CRN.pi"
+    #pickle.dump(amino_acid_graph, open(outfile, "wb"))
+    #metabolite_subgraph.show_graph(graph)
+    #metabolite_subgraph.show_graph(amino_acid_graph)
+    #return
     for entry in os.scandir(datadir):
         if entry.is_file() and entry.name.endswith(".pi"):
             print(entry.path)
@@ -24,6 +31,9 @@ def main():
             print(f"Acids present: {len(acids_present)}")
             delimiter = " "
             print(f"Acids not present: {delimiter.join(acids_not_present)}")
+    
+   
+    
             
 if __name__ == "__main__":
     main()
