@@ -1,5 +1,4 @@
-dataDir = "data/proteins/"
-filepath = dataDir + "proteom_ecoli_uniprot.fasta"
+
 
 def read_fasta(filepath: str) -> str:
     with open(filepath, "r") as fastaFile:
@@ -28,6 +27,13 @@ def calculate_ratios(proteomString: str, exceptions : list[str] = []) -> dict():
             ratioDir[aa] = ratio
     return ratioDir
 
-proteomString = read_fasta(filepath)
-ratioDir = calculate_ratios(proteomString, ["L-cysteine"])
-print(ratioDir)
+def main():
+    dataDir = "data/proteins/"
+    filepath = dataDir + "proteom_ecoli_uniprot.fasta"
+    proteomString = read_fasta(filepath)
+    ratioDir = calculate_ratios(proteomString, ["L-cysteine"])
+    print(ratioDir)
+
+if __name__ == "__main__":
+    main()
+
