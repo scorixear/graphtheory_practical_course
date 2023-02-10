@@ -50,6 +50,7 @@ def add_exchange_reactions(graph: nx.DiGraph, to_be_added: list[str]):
 
 def main():
     datadir = "data/amino_reaction_cycle/"
+    resultsdir = "data/flux_results/"
     proteom = amino_acid_ratios.read_fasta("data/proteins/proteom_ecoli_uniprot.fasta")
     amino_acids=read_file("wp1_script/amino_acids.txt")
     essential_compounds = read_file("wp1_script/essential_compounds.txt")
@@ -63,7 +64,7 @@ def main():
             print("Missing Acids:")
             print(missing_acids)
             acid_ratios = amino_acid_ratios.calculate_ratios(proteom, missing_acids)
-            print(acid_ratios)
+            #print(acid_ratios)
             # extend graph
             add_acid_export_reactions(graph, acid_ratios)
             add_exchange_reactions(graph, essential_compounds+ ['D-glucose'])
@@ -115,17 +116,20 @@ def main():
             
             model.solve()
             pulp.LpStatus[model.status]
-            input("ENTER for Variables...")
+            #input("ENTER for Variables...")
             relevant_counter = 0
+            results = dict()
             for v in variables:
-                print(variables[v].name, ":", variables[v].varValue)
+                #print(v, ":", variables[v].varValue)
+                results[v] = variables[v].varValue
                 if variables[v].varValue != 0:
                     relevant_counter+=1
             print(f"Relevant Reaction: {relevant_counter}")
             print(f"Biomass Output: {pulp.value(model.objective)}")
-            input("ENTER for model...")
-            print(model)
-            break
+            #input("ENTER for model...")
+            #print(model)
+            with open(resultsdir+entry.name.replace("_aa_cycle", "_flux"), "wb") as writer:
+                pickle.dump(results, writer)
 
 if __name__ == "__main__":
     main()
