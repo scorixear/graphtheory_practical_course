@@ -29,8 +29,8 @@ def add_exchange_reactions(graph: nx.DiGraph, to_be_added: list[str]):
         if node[1]['nodeType'] == 0:
             predecessors = list(graph.predecessors(node[0]))
             new_predecessors = [p for p in predecessors if graph.get_edge_data(p, node[0])['direction']==1]
-            if len(new_predecessors) == 0:
-                nodes_to_be_added.append(f"R_input_{node[0]}")
+            # if len(new_predecessors) == 0:
+                # nodes_to_be_added.append(f"R_input_{node[0]}")
             successors = list(graph.successors(node[0]))
             new_successors = [s for s in successors if graph.get_edge_data(node[0], s)['direction']==1]
             if len(new_successors) == 0:
@@ -116,8 +116,12 @@ def main():
             model.solve()
             pulp.LpStatus[model.status]
             input("ENTER for Variables...")
+            relevant_counter = 0
             for v in variables:
                 print(variables[v].name, ":", variables[v].varValue)
+                if variables[v].varValue != 0:
+                    relevant_counter+=1
+            print(f"Relevant Reaction: {relevant_counter}")
             print(f"Biomass Output: {pulp.value(model.objective)}")
             input("ENTER for model...")
             print(model)
