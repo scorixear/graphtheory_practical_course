@@ -17,10 +17,12 @@ def generate_test_graph():
     G.add_edges_from(
         [(1, "R1"), (2, "R1"), (3, "R1"), ("R1", 4), ("R1", 5), ("R1", 6)], direction=1, multiplicity=1
     )
-    G.add_edges_from([(4, "R2"), (5, "R2"), ("R2", 7)], direction=1, multiplicity=1)
+    G.add_edges_from([(4, "R2"), (5, "R2")], direction=1, multiplicity=1)
+    G.add_edge("R2", 7, multiplicity=2, direction=1)
     G.add_edges_from([(7, "R2"), ("R2", 4), ("R2", 5)], direction=2, multiplicity=1)
     G.add_edges_from([(6, "R3"), (8, "R3"), ("R3", 10), ("R3", 9)], direction=1, multiplicity=1)
-    G.add_edges_from([(12, "R4"), (13, "R4"), ("R4", 8), ("R4", 11)], direction=1, multiplicity=1)
+    G.add_edges_from([(12, "R4"), (13, "R4"), ("R4", 11)], direction=1, multiplicity=1)
+    G.add_edge("R4", 8, multiplicity=2, direction=1)
     G.add_edges_from([(11, "R5"), (19, "R5"), ("R5", 6)], direction=1, multiplicity=1)
     return G
 

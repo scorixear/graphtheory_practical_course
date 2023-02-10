@@ -10,8 +10,8 @@ def add_acid_export_reactions(graph: nx.DiGraph, acids: dict):
     for acid in acids:
         if acid in graph.nodes():
             graph.add_node(f"R_reaction_{acid}", nodeType=1, reversible=False)
-            graph.add_edge(acid, f"R_reaction_{acid}", multiplicity=1)
-            graph.add_edge(f"R_reaction_{acid}", "BIOMASS", multiplicity=acids[acid])
+            graph.add_edge(acid, f"R_reaction_{acid}", multiplicity=1, direction=1)
+            graph.add_edge(f"R_reaction_{acid}", "BIOMASS", multiplicity=acids[acid], direction=1)
         else:
             print(f"Acid missing {acid}. Stopping LP")
             raise ValueError()
@@ -34,15 +34,11 @@ def add_exchange_reactions(graph: nx.DiGraph):
     for node in nodes_to_be_added:
         graph.add_node(node, nodeType = 1, reversible=False)
         if "input" in node:
-            compound = int(node.split("_input_")[1])
-            graph.add_edge(node, compound, multiplicity=1)
+            compound = node.split("_input_")[1]
+            graph.add_edge(node, compound, multiplicity=1, direction=1)
         else:
-            if node == "R_output_BIOMASS":
-                compound = "BIOMASS"
-                graph.add_edge(compound, node, multiplicity=1)
-            else:
-                compound = int(node.split("_output_")[1])
-                graph.add_edge(compound, node, multiplicity=1)
+            compound = node.split("_output_")[1]
+            graph.add_edge(compound, node, multiplicity=1, direction=1)
 
 def main():
     datadir = "data/amino_reaction_cycle/"
@@ -85,9 +81,15 @@ def main():
                 if node[1]['nodeType'] == 0:
                     constraints = []
                     for predeccessor in graph.predecessors(node[0]):
+                        node_direction = graph.get_edge_data(predeccessor, node[0])['direction']
+                        if node_direction == 2:
+                            continue
                         coefficient = graph.get_edge_data(predeccessor, node[0])['multiplicity']
                         constraints.append(coefficient*variables[predeccessor])
                     for successor in graph.successors(node[0]):
+                        node_direction = graph.get_edge_data(node[0], successor)['direction']
+                        if node_direction == 2:
+                            continue
                         coefficient = -1 * graph.get_edge_data(node[0], successor)['multiplicity']
                         constraints.append(coefficient*variables[successor])
                     model += pulp.lpSum(constraints) == 0
