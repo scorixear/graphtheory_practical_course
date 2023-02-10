@@ -1,4 +1,9 @@
 
+Bigg ID: R_LEUTA MetaNetXId: MNXR192685 Reversible: True
+ECs: 2.6.1.42;2.6.1.6;2.6.1.67
+L-leucine + 2-oxoglutarate = 4-methyl-2-oxopentanoate + L-glutamate
+CC(C)C[CH](C(=O)O)N.O=C([O-])CCC(=O)C(=O)[O-]>>CC(C)CC(=O)C(=O)[O-].[NH3+][CH](CCC(=O)[O-])C(=O)[O-]
+
 Bigg ID: R_2AGPE120tipp MetaNetXId: MNXR94750 Reversible: False
 ECs: 
 2-dodecanoyl-sn-glycero-3-phosphoethanolamine = 2-dodecanoyl-sn-glycero-3-phosphoethanolamine
