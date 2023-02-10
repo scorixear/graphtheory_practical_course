@@ -58,6 +58,19 @@ def enumerate_simple_paths(reactionGraph: nx.DiGraph(), source: str, target: str
             break
     return paths
 
+def enumerate_simple_paths_deletion(reactionGraph: nx.DiGraph(), source: str, target: str, maxPaths: int) -> list[str]:
+    reverseG = nx.reverse(reactionGraph)
+    #pathsIter = nx.all_simple_paths(reactionGraph, source, target, cutoff=50)
+    pathsIter = nx.all_simple_paths(reverseG, target, source, cutoff=100)
+    paths = []
+
+    for path in pathsIter:
+        if len(paths) <= maxPaths:
+            paths.append(list(reversed(path)))
+        else:
+            break
+    return paths
+
 
 
 infile = "C:/Users/franz/graphen_praktikum/graphtheory_practical_course/data/enumeration/acacae_adam_CRN_glycine.pi"
