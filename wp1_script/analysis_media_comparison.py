@@ -56,8 +56,10 @@ def main():
         print(f"-------------- {organism} --------------")
         a_fpath = data_parent_directory + organism + "_adam_aa_cycle.pi"
         c_fpath = data_parent_directory + organism + "_cimIV_aa_cycle.pi"
-        agraph = pickle.load(open(a_fpath, "rb"))
-        cgraph = pickle.load(open(c_fpath, "rb"))
+        with open(a_fpath, "rb") as a_reader:
+            agraph = pickle.load(a_reader)
+        with open(c_fpath, "rb") as c_reader:
+            cgraph = pickle.load(c_reader)
         compare_graphs(agraph, cgraph)
 
 
