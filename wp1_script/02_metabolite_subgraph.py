@@ -40,11 +40,13 @@ def bf_search(
     # once seen, a node can always be reproduced by that reaction
     visited = set(essential_compounds)
     visited.add(start_node)
+
     # initialize queue as list (since sets do not keep location)
     queue = []
 
     # for each compound node in our starting position
     for node in visited:
+
         # find all possible reactions this compound is part of
         possible_reactions = next_nodes(graph, node, direction)
         # add reaction nodes to the queue
@@ -217,6 +219,10 @@ def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
     essential_compounds = read_file("wp1_script/essential_compounds.txt")
     # read in target amino acid
     amino_acids = read_file("wp1_script/amino_acids.txt")
+
+    #filter essential compounds that are not in the graph
+    ec_clean = [ec for ec in essential_compounds if graph.has_node(ec)]
+    essential_compounds = ec_clean
 
     # create subgraph via breadth first search
     glucose_graph: nx.DiGraph = bf_search(graph, "D-glucose", essential_compounds)
