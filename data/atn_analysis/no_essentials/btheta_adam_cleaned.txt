@@ -1,0 +1,1054 @@
+btheta_adam_cleaned.gml
+Component Number: 167
+Density 2.139784946236559
+
+Compound: alpha-D-galactose
+Element: O
+Compound Size: 454
+Cycle-Basis: 170
+
+Compound: alpha-D-galactose
+Element: C
+Compound Size: 408
+Cycle-Basis: 93
+
+Compound: dGMP
+Element: O
+Compound Size: 67
+Cycle-Basis: 14
+Possible Cycles: 8192
+Cycles found: 152
+Max Cycle Length: 20
+Average Cycle Length: 11.927631578947368
+Min Cycle Length: 3
+
+Compound: dGMP
+Element: P
+Compound Size: 67
+Cycle-Basis: 14
+Possible Cycles: 8192
+Cycles found: 152
+Max Cycle Length: 20
+Average Cycle Length: 11.927631578947368
+Min Cycle Length: 3
+
+Compound: (R)-glycerate
+Element: O
+Compound Size: 21
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 2
+Max Cycle Length: 5
+Average Cycle Length: 4.5
+Min Cycle Length: 4
+
+Compound: 4-CDP-2-C-methyl-D-erythritol
+Element: C
+Compound Size: 12
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: UDP
+Element: C
+Compound Size: 12
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: UDP
+Element: C
+Compound Size: 12
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: CDP
+Element: N
+Compound Size: 12
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: cytidine
+Element: C
+Compound Size: 12
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: cytidine
+Element: O
+Compound Size: 12
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: cytidine
+Element: N
+Compound Size: 12
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: dADP
+Element: C
+Compound Size: 10
+Cycle-Basis: 3
+Possible Cycles: 4
+Cycles found: 4
+Max Cycle Length: 4
+Average Cycle Length: 3.25
+Min Cycle Length: 3
+
+Compound: dADP
+Element: C
+Compound Size: 10
+Cycle-Basis: 3
+Possible Cycles: 4
+Cycles found: 4
+Max Cycle Length: 4
+Average Cycle Length: 3.25
+Min Cycle Length: 3
+
+Compound: dATP
+Element: C
+Compound Size: 10
+Cycle-Basis: 3
+Possible Cycles: 4
+Cycles found: 4
+Max Cycle Length: 4
+Average Cycle Length: 3.25
+Min Cycle Length: 3
+
+Compound: dADP
+Element: O
+Compound Size: 10
+Cycle-Basis: 3
+Possible Cycles: 4
+Cycles found: 4
+Max Cycle Length: 4
+Average Cycle Length: 3.25
+Min Cycle Length: 3
+
+Compound: dATP
+Element: C
+Compound Size: 10
+Cycle-Basis: 3
+Possible Cycles: 4
+Cycles found: 4
+Max Cycle Length: 4
+Average Cycle Length: 3.25
+Min Cycle Length: 3
+
+Compound: dATP
+Element: C
+Compound Size: 10
+Cycle-Basis: 3
+Possible Cycles: 4
+Cycles found: 4
+Max Cycle Length: 4
+Average Cycle Length: 3.25
+Min Cycle Length: 3
+
+Compound: dATP
+Element: O
+Compound Size: 10
+Cycle-Basis: 3
+Possible Cycles: 4
+Cycles found: 4
+Max Cycle Length: 4
+Average Cycle Length: 3.25
+Min Cycle Length: 3
+
+Compound: dGTP
+Element: O
+Compound Size: 10
+Cycle-Basis: 3
+Possible Cycles: 4
+Cycles found: 4
+Max Cycle Length: 4
+Average Cycle Length: 3.25
+Min Cycle Length: 3
+
+Compound: dGDP
+Element: N
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: dGDP
+Element: C
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: dGDP
+Element: N
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: guanosine
+Element: C
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: guanine
+Element: C
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: guanosine
+Element: N
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: guanosine
+Element: C
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: guanosine
+Element: N
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: guanine
+Element: C
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: guanine
+Element: O
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: guanine
+Element: N
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: anthranilate
+Element: N
+Compound Size: 6
+Cycle-Basis: 0
+
+Compound: hypoxanthine
+Element: C
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: hypoxanthine
+Element: N
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: hypoxanthine
+Element: C
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: hypoxanthine
+Element: N
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: dATP
+Element: C
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: dADP
+Element: C
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: dADP
+Element: N
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: dADP
+Element: C
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: dADP
+Element: N
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: dATP
+Element: O
+Compound Size: 6
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: 4-CDP-2-C-methyl-D-erythritol
+Element: N
+Compound Size: 6
+Cycle-Basis: 0
+
+Compound: uridine
+Element: O
+Compound Size: 6
+Cycle-Basis: 0
+
+Compound: dUTP
+Element: O
+Compound Size: 6
+Cycle-Basis: 0
+
+Compound: IDP
+Element: O
+Compound Size: 4
+Cycle-Basis: 0
+
+Compound: 2'-deoxyadenosine
+Element: N
+Compound Size: 4
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: 3-phosphoshikimate
+Element: O
+Compound Size: 4
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: dATP
+Element: P
+Compound Size: 3
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: dADP
+Element: O
+Compound Size: 3
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: 4-CDP-2-C-methyl-D-erythritol 2-phosphate
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUDP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUDP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUDP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dCTP
+Element: N
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dCTP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dCTP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dCTP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUTP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUDP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUDP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUDP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dCTP
+Element: P
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dCTP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dCTP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dCTP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUTP
+Element: P
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUDP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUTP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUTP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUTP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: dUTP
+Element: N
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: UDP-alpha-D-glucose
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: UDP-alpha-D-galactose
+Element: P
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: UDP-alpha-D-galactose
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: alpha-D-ribose 1-phosphate
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: GMP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: GMP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: guanosine
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: guanosine
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: GMP
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: GMP
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: alpha-D-ribose 1-phosphate
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: alpha-D-ribose 1-phosphate
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: IDP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: ITP
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: ITP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: ITP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: IDP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: ITP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: ITP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: ITP
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: ITP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: CDP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 2-C-methyl-D-erythritol 2,4-cyclic diphosphate
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 4-CDP-2-C-methyl-D-erythritol 2-phosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 3-phosphoshikimate
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 3-phosphoshikimate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 2'-deoxyinosine
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: dUTP
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: (2R)-3-phospho-glyceroyl phosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: alpha-D-ribose 1-phosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 2-deoxy-alpha-D-ribose 1-phosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: L-alanine
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: FMNH2
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: CDP
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: CDP
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: CDP
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: dCTP
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: (2R)-3-phospho-glyceroyl phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: (2R)-3-phospho-glyceroyl phosphate
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: (2R)-3-phospho-glyceroyl phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: GMP
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: GMP
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: 6-phospho-D-gluconate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: alpha-D-ribose 1-phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: alpha-D-ribose 1-phosphate
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: alpha-D-ribose 1-phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: 2-deoxy-alpha-D-ribose 1-phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: 2-deoxy-alpha-D-ribose 1-phosphate
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: 2-deoxy-alpha-D-ribose 1-phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: L-tryptophan
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+

@@ -1,0 +1,1129 @@
+ecoli_adam_cleaned.gml
+Component Number: 195
+Density 2.1481591448931114
+
+Compound: L-leucine
+Element: C
+Compound Size: 1252
+Cycle-Basis: 322
+
+Compound: L-leucine
+Element: O
+Compound Size: 993
+Cycle-Basis: 303
+
+Compound: N-acetyl-L-glutamate
+Element: N
+Compound Size: 103
+Cycle-Basis: 18
+
+Compound: (2R)-3-phosphoglycerate
+Element: P
+Compound Size: 75
+Cycle-Basis: 9
+Possible Cycles: 256
+Cycles found: 59
+Max Cycle Length: 18
+Average Cycle Length: 9.966101694915254
+Min Cycle Length: 3
+
+Compound: 4-(phosphooxy)-L-threonine
+Element: O
+Compound Size: 74
+Cycle-Basis: 9
+Possible Cycles: 256
+Cycles found: 59
+Max Cycle Length: 18
+Average Cycle Length: 9.966101694915254
+Min Cycle Length: 3
+
+Compound: L-histidinol
+Element: N
+Compound Size: 34
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 5
+Max Cycle Length: 5
+Average Cycle Length: 3.6
+Min Cycle Length: 3
+
+Compound: 5'-deoxyadenosine
+Element: N
+Compound Size: 25
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 5
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: xanthosine
+Element: C
+Compound Size: 25
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 5
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: xanthosine
+Element: N
+Compound Size: 25
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 5
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: xanthosine
+Element: C
+Compound Size: 25
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 5
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: xanthosine
+Element: C
+Compound Size: 25
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 5
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: xanthosine
+Element: N
+Compound Size: 25
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 5
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: 1-(5-phospho-beta-D-ribosyl)-5-[(5-phospho-beta-D-ribosylamino)methylideneamino]imidazole-4-carboxamide
+Element: N
+Compound Size: 25
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 5
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: 1-(5-phospho-beta-D-ribosyl)-5-[(5-phospho-beta-D-ribosylamino)methylideneamino]imidazole-4-carboxamide
+Element: C
+Compound Size: 25
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 5
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: GMP
+Element: O
+Compound Size: 16
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 2
+Max Cycle Length: 3
+Average Cycle Length: 3.0
+Min Cycle Length: 3
+
+Compound: sulfur
+Element: S
+Compound Size: 14
+Cycle-Basis: 0
+
+Compound: 7,8-dihydroneopterin 3'-triphosphate
+Element: N
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: 7,8-dihydroneopterin 3'-triphosphate
+Element: C
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5,6,7,8-tetrahydrofolate
+Element: N
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5,6,7,8-tetrahydrofolate
+Element: C
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5,6,7,8-tetrahydrofolate
+Element: C
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5,6,7,8-tetrahydrofolate
+Element: C
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5,6,7,8-tetrahydrofolate
+Element: O
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5,6,7,8-tetrahydrofolate
+Element: N
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6R)-5,10-methylene-5,6,7,8-tetrahydrofolate
+Element: N
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5-methyl-5,6,7,8-tetrahydrofolate
+Element: C
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5-methyl-5,6,7,8-tetrahydrofolate
+Element: C
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5-methyl-5,6,7,8-tetrahydrofolate
+Element: C
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: (6S)-5-methyl-5,6,7,8-tetrahydrofolate
+Element: N
+Compound Size: 12
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.0
+Min Cycle Length: 3
+
+Compound: 4-CDP-2-C-methyl-D-erythritol
+Element: N
+Compound Size: 11
+Cycle-Basis: 0
+
+Compound: 4-CDP-2-C-methyl-D-erythritol
+Element: C
+Compound Size: 11
+Cycle-Basis: 0
+
+Compound: UDP-N-acetyl-alpha-D-glucosamine
+Element: C
+Compound Size: 11
+Cycle-Basis: 0
+
+Compound: UDP-N-acetyl-alpha-D-glucosamine
+Element: C
+Compound Size: 11
+Cycle-Basis: 0
+
+Compound: uridine
+Element: N
+Compound Size: 11
+Cycle-Basis: 0
+
+Compound: uridine
+Element: C
+Compound Size: 11
+Cycle-Basis: 0
+
+Compound: uridine
+Element: O
+Compound Size: 11
+Cycle-Basis: 0
+
+Compound: 1-(5-phospho-beta-D-ribosyl)-5-[(5-phospho-beta-D-ribosylamino)methylideneamino]imidazole-4-carboxamide
+Element: C
+Compound Size: 9
+Cycle-Basis: 0
+
+Compound: 1-(5-Phosphoribosyl)-ATP
+Element: N
+Compound Size: 9
+Cycle-Basis: 0
+
+Compound: S-adenosyl 3-(methylsulfanyl)propylamine
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: S-adenosyl 3-(methylsulfanyl)propylamine
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: S-adenosyl 3-(methylsulfanyl)propylamine
+Element: O
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: S-Ribosyl-L-homocysteine
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: S-methyl-5'-thioadenosine
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 5'-deoxyribose
+Element: O
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 5'-deoxyribose
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 5'-deoxyribose
+Element: O
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: UDP
+Element: O
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: S-methyl-5'-thioadenosine
+Element: N
+Compound Size: 7
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 5
+Average Cycle Length: 4.666666666666667
+Min Cycle Length: 4
+
+Compound: diphosphate
+Element: O
+Compound Size: 7
+Cycle-Basis: 0
+
+Compound: diphosphate
+Element: P
+Compound Size: 7
+Cycle-Basis: 0
+
+Compound: diphosphate
+Element: O
+Compound Size: 7
+Cycle-Basis: 0
+
+Compound: 4-CDP-2-C-methyl-D-erythritol 2-phosphate
+Element: O
+Compound Size: 7
+Cycle-Basis: 0
+
+Compound: UDP-N-acetyl-alpha-D-glucosamine
+Element: O
+Compound Size: 6
+Cycle-Basis: 0
+
+Compound: urea
+Element: C
+Compound Size: 5
+Cycle-Basis: 0
+
+Compound: cytidine
+Element: N
+Compound Size: 5
+Cycle-Basis: 0
+
+Compound: 2-dehydropantoate
+Element: O
+Compound Size: 5
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: C
+Compound Size: 4
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: propanoyl-CoA
+Element: O
+Compound Size: 4
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: 5-O-(1-carboxyvinyl)-3-phosphoshikimate
+Element: O
+Compound Size: 4
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: UDP
+Element: P
+Compound Size: 4
+Cycle-Basis: 0
+
+Compound: UDP-alpha-D-glucose
+Element: O
+Compound Size: 4
+Cycle-Basis: 0
+
+Compound: triphosphate
+Element: O
+Compound Size: 4
+Cycle-Basis: 0
+
+Compound: N-[(R)-4-phosphopantothenoyl]-L-cysteine
+Element: O
+Compound Size: 4
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: 4-CDP-2-C-methyl-D-erythritol
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: 4-CDP-2-C-methyl-D-erythritol 2-phosphate
+Element: P
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: 4-CDP-2-C-methyl-D-erythritol 2-phosphate
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: S
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: propanoyl-CoA
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 4-phospho-L-aspartate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 2-C-methyl-D-erythritol 2,4-cyclic diphosphate
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 2-C-methyl-D-erythritol 2,4-cyclic diphosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 5-O-(1-carboxyvinyl)-3-phosphoshikimate
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 5-O-(1-carboxyvinyl)-3-phosphoshikimate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 7,8-dihydroneopterin 3'-triphosphate
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 7,8-dihydroneopterin 3'-triphosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 7,8-dihydroneopterin 3'-triphosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: Dihydroneopterin monophosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: L-glutamyl 5-phosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: (2R)-3-phospho-glyceroyl phosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: O-phospho-L-homoserine
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: triphosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: triphosphate
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: triphosphate
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: N-[(R)-4-phosphopantothenoyl]-L-cysteine
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: N-[(R)-4-phosphopantothenoyl]-L-cysteine
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: 5-amino-2-oxopentanoate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: 5'-deoxyribose
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: N-acetyl-L-glutamyl 5-phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: N-acetyl-L-glutamyl 5-phosphate
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: N-acetyl-L-glutamyl 5-phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: S
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: N
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: urea
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: S-Ribosyl-L-homocysteine
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: 4-phospho-L-aspartate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: 4-phospho-L-aspartate
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: 4-phospho-L-aspartate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: L-glutamyl 5-phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: L-glutamyl 5-phosphate
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: L-glutamyl 5-phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: (2R)-3-phospho-glyceroyl phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: (2R)-3-phospho-glyceroyl phosphate
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: (2R)-3-phospho-glyceroyl phosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: L-histidine
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: O-phospho-L-homoserine
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: O-phospho-L-homoserine
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: 5-(methylsulfanyl)-D-ribose
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: triphosphate
+Element: P
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: triphosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+
+Compound: triphosphate
+Element: O
+Compound Size: 1
+Cycle-Basis: 0
+

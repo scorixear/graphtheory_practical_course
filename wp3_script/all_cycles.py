@@ -1,6 +1,7 @@
+# source: https://gist.github.com/joe-jordan/6548029
 import networkx as nx
 
-def find_all_cycles(G, source=None, cycle_length_limit=None):
+def find_all_cycles(G, source=None):
     """forked from networkx dfs_edges function. Assumes nodes are integers, or at least
     types which work with min() and > ."""
     if source is None:
