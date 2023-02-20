@@ -1,8 +1,8 @@
 # main script
 import os
-import metabolite_subgraph
 import pickle
 import networkx as nx
+metabolite_subgraph = __import__('02_metabolite_subgraph')
 
 def export_example_graph():
     resultdir = "data/example/"
