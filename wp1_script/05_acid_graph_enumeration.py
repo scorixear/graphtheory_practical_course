@@ -1,7 +1,7 @@
 import networkx as nx
-import metabolite_subgraph
 import os
 import pickle
+metabolite_subgraph = __import__('02_metabolite_subgraph')
 
 def main():
     datadir = "data/crn/"
