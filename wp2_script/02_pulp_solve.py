@@ -2,7 +2,8 @@ import pulp
 import os
 import networkx as nx
 import pickle
-import amino_acid_ratios
+
+amino_acid_ratios = __import__('01_amino_acid_ratios')
 
 INFINITY=1000
 
