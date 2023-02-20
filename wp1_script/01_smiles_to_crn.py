@@ -21,12 +21,12 @@ import sys
 
 # define variables
 
-wd = "C:/Users/franz/graphen_praktikum/graphtheory_practical_course/"
-dataDir = "data/smiles_list/"
-outdir = "data/crn/"
+#wd = "C:/Users/franz/graphen_praktikum/graphtheory_practical_course/"
+dataDir = "data/smiles_list_cleaned/"
+outdir = "data/crn_cleaned/"
 # infile = "C:/Users/franz/graphen_praktikum/graph_theory/sihumix/acacae_adam/acacae_adam.smiles_list"
 
-os.chdir(wd)
+#os.chdir(wd)
 fileList = os.listdir(dataDir)
 
 
@@ -82,7 +82,7 @@ for file in fileList:
     # initialize grpah
     G = nx.DiGraph()
 
-    infile = wd + dataDir + file
+    infile = dataDir + file #dataDir + file
     fileName = infile.split("/")[-1].split(".")[0]
     with open(infile, "r") as inData:
         for line in inData:
