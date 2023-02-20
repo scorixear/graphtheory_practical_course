@@ -22,8 +22,8 @@ import sys
 # define variables
 
 wd = "C:/Users/franz/graphen_praktikum/graphtheory_practical_course/"
-dataDir = "data/smiles_list/"
-outdir = "data/crn/"
+dataDir = "data/smiles_list_clean/"
+outdir = "data/crn_clean/"
 # infile = "C:/Users/franz/graphen_praktikum/graph_theory/sihumix/acacae_adam/acacae_adam.smiles_list"
 
 os.chdir(wd)
@@ -43,9 +43,9 @@ def parseLines(lines):
     reactionData["bigg"] = lines[0].split("Bigg ID:")[1].split(" ")[1]
     reactionData["meta"] = lines[0].split("MetaNetXId:")[1].split(" ")[1]
 
-    if lines[0].split("Reversible: ")[1].replace("\n", "") == "True":
+    if lines[0].split("Reversible: ")[1].split(" ")[0].replace("\n", "") == "True":
         reactionData["reversible"] = True
-    elif lines[0].split("Reversible: ")[1].replace("\n", "") == "False":
+    elif lines[0].split("Reversible: ")[1].split(" ")[0].replace("\n", "") == "False":
         reactionData["reversible"] = False
     else:
         reactionData["reversible"] = None
@@ -62,6 +62,12 @@ def parseLines(lines):
     reactionData["in_multiplicity"] = Counter(reactionData["in"])
     reactionData["out_multiplicity"] = Counter(reactionData["out"])
 
+    for v in reactionData["in_multiplicity"].values():
+        if v == 0:
+            print("error")
+    for v in reactionData["out_multiplicity"].values():
+        if v == 0:
+            print("error")
     # parse the smiles
     smilesList = lines[3].replace(">>", ".").split(".")
     compoundList = [
@@ -136,14 +142,14 @@ for file in fileList:
                     G.add_edge(
                         reactionID,
                         succ,
-                        multiplicity=reactionData["in_multiplicity"][succ],
+                        multiplicity=reactionData["out_multiplicity"][succ],
                         direction=1,
                     )
                     if reactionData["reversible"]:
                         G.add_edge(
                             succ,
                             reactionID,
-                            multiplicity=reactionData["in_multiplicity"][succ],
+                            multiplicity=reactionData["out_multiplicity"][succ],
                             direction=2,
                         )
 
