@@ -12,15 +12,10 @@ pulp_solve = __import__('02_pulp_solve')
 amino_acid_ratios = __import__('01_amino_acid_ratios')
 
 results_dir = "graphics/"
-
 INFINITY = 1000
-
 # define a list of constrains that should be analysed
 constrains_list = [-1, -2, -5, -10, -20, -
                    50, -100, -200, -400, -600, -800, -1000]
-# constrains_list = [-1, -2, -5]
-# create multiple constraint dictionaries for different constraints
-
 
 def create_compound_constrains(essential_compounds: list[str], constraint: int) -> dict[str, int]:
     """Creates a dictionary with a constraint for all compounds except some that can be assumed as unlimited
@@ -127,26 +122,26 @@ def main():
                                             constrain][organism_name] = activation_level
 
     # plot the biomass
-    # legend = []
-    # for oragnism in results["biomass"]:
-    #     plt.plot(results["constrain"], results["biomass"][oragnism])
-    #     legend.append(oragnism)
-    # plt.xlabel("compound threshold")
-    # plt.ylabel("biomass")
-    # plt.legend(legend)
-    # # plt.loglog()
-    # plt.savefig("graphics/biomass.png")
-    # plt.close()
+    legend = []
+    for oragnism in results["biomass"]:
+        plt.plot(results["constrain"], results["biomass"][oragnism])
+        legend.append(oragnism)
+    plt.xlabel("compound threshold")
+    plt.ylabel("biomass")
+    plt.legend(legend)
+    # plt.loglog()
+    plt.savefig("graphics/biomass.png")
+    plt.close()
 
-    # # plot the number of active reactions
-    # for organism in results["activated_reactions"]:
-    #     plt.plot(results["constrain"], results["activated_reactions"][organism])
-    #     plt.xlabel("compound threshold")
-    # plt.ylabel("number of activated reactions")
-    # plt.legend(legend, loc= "lower right")
-    # # plt.loglog()
-    # plt.savefig("graphics/activated_reactions.png")
-    # plt.close()
+    # plot the number of active reactions
+    for organism in results["activated_reactions"]:
+        plt.plot(results["constrain"], results["activated_reactions"][organism])
+        plt.xlabel("compound threshold")
+    plt.ylabel("number of activated reactions")
+    plt.legend(legend, loc= "lower right")
+    # plt.loglog()
+    plt.savefig("graphics/activated_reactions.png")
+    plt.close()
 
     # visualize activation level in a histogram
     for threshold in results["constrain"]:
@@ -162,8 +157,6 @@ def main():
         plt.title(f"Aktivierungslevel bei Essential Compound Threshold {threshold}")
         plt.savefig(f"{results_dir}activation_level_by_theshold_{threshold}.png")
         plt.close()
-
-
 
 if __name__ == "__main__":
     main()
