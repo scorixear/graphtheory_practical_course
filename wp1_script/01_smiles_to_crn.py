@@ -19,16 +19,6 @@ import pickle
 import os
 import sys
 
-# define variables
-
-wd = "C:/Users/franz/graphen_praktikum/graphtheory_practical_course/"
-dataDir = "data/smiles_list_clean/"
-outdir = "data/crn_clean/"
-# infile = "C:/Users/franz/graphen_praktikum/graph_theory/sihumix/acacae_adam/acacae_adam.smiles_list"
-
-#os.chdir(wd)
-fileList = os.listdir(dataDir)
-
 
 def parseLines(lines):
     reactionData = dict()
@@ -84,11 +74,10 @@ def parseLines(lines):
     return reactionData
 
 
-for file in fileList:
-    # initialize grpah
+def build_graph_from_file(fname: str) -> nx.DiGraph:
     G = nx.DiGraph()
 
-    infile = dataDir + file #dataDir + file
+    infile = dataDir + file  # dataDir + file
     fileName = infile.split("/")[-1].split(".")[0]
     with open(infile, "r") as inData:
         for line in inData:
@@ -152,18 +141,4 @@ for file in fileList:
                             multiplicity=reactionData["out_multiplicity"][succ],
                             direction=2,
                         )
-
-    # testing for isolated reactions
-    # node = "R_2AGPGAT180"
-    # nodes = [node]
-    # nodes = nodes + [n for n in G.successors(node)]
-    # nodes = nodes + [n for n in G.predecessors(node)
-    # nx.draw(G.subgraph(nodes), with_labels=True)
-    # plt.show()
-
-    # save output with pickle
-    outfile = open(outdir + fileName + "_CRN.pi", "wb")
-    pickle.dump(G, outfile)
-    outfile.close()
-
-print("Finished creating CRN")
+    return G
