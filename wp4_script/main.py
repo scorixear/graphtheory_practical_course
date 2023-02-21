@@ -67,3 +67,45 @@ for organism in organisms:
     with open(c_fpath, "rb") as c_reader:
         cgraph = pickle.load(c_reader)
     analysis_media_comparison.compare_graphs(agraph, cgraph)
+
+
+pathway_species = __import__("04_pathway_species")
+
+
+# data folder holding the subgraph pickle files
+datadir = "data/amino_reaction_cycle/"
+adam_species = []
+cimIV_species = []
+# for each subgraph
+for entry in os.scandir(datadir):
+    if entry.is_file() and entry.name.endswith(".pi"):
+        # read in graph and sort them in both mediums
+        with open(entry.path, "rb") as reader:
+            graph_object = {"graph": pickle.load(reader), "name": entry.name}
+            if "adam" in entry.name:
+                adam_species.append(graph_object)
+            else:
+                cimIV_species.append(graph_object)
+result_str = ""
+# for each medium
+# compare species to every other species
+for index in range(len(adam_species)):
+    for other_index in range(index + 1, len(adam_species)):
+        result_str = (
+            result_str
+            + "\n"
+            + pathway_species.compare(
+                adam_species[index], adam_species[other_index], "adam"
+            )
+        )
+for index in range(len(cimIV_species)):
+    for other_index in range(index + 1, len(cimIV_species)):
+        result_str = (
+            result_str
+            + "\n"
+            + pathway_species.compare(
+                cimIV_species[index], cimIV_species[other_index], "cimIV"
+            )
+        )
+with open("data/pathway_species/results.txt", "w", encoding="UTF-8") as writer:
+    writer.write(result_str)
