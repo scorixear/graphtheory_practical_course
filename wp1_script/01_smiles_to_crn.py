@@ -71,10 +71,7 @@ def parseLines(lines):
 
 def build_graph_from_file(fname: str) -> nx.DiGraph:
     G = nx.DiGraph()
-
-    infile = dataDir + file  # dataDir + file
-    fileName = infile.split("/")[-1].split(".")[0]
-    with open(infile, "r") as inData:
+    with open(fname, "r") as inData:
         for line in inData:
             if line.startswith("Bigg ID"):
                 lines = []
