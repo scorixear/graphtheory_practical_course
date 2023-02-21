@@ -152,11 +152,11 @@ def add_constraints(lp_problem: pulp.LpProblem, graph: nx.DiGraph, variables: di
 
 def main():
     # used for reading in graphs
-    datadir = "data/amino_reaction_cycle/"
+    datadir = "data/amino_reaction_cycle_clean/"
     # used for outputing Dictionaries with Variable solutions
-    resultsdir = "data/flux_results/"
+    resultsdir = "data/flux_results_clean/"
     # proteom to be generated from acids
-    proteom = amino_acid_ratios.read_fasta("data/proteins/proteom_ecoli_uniprot.fasta")
+    # proteom = amino_acid_ratios.read_fasta("data/proteins/proteom_ecoli_uniprot.fasta")
     # all available acids
     amino_acids=read_file("wp1_script/amino_acids.txt")
     # every essential compound that can be used as an input
@@ -164,6 +164,11 @@ def main():
     for entry in os.scandir(datadir):
         if entry.is_file() and entry.name.endswith(".pi"):
             print(entry.path)
+
+            #load proteom of species
+            organism_name = entry.name.split("_")[0]
+            proteom = amino_acid_ratios.read_fasta(f"data/proteins/{organism_name}.faa")
+            
             with open(entry.path, "rb") as reader:
                 graph: nx.DiGraph = pickle.load(reader)
             model = pulp.LpProblem("Maximising_Problem", pulp.LpMaximize)
