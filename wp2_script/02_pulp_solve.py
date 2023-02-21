@@ -7,6 +7,8 @@ amino_acid_ratios = __import__('01_amino_acid_ratios')
 
 INFINITY = 1000
 
+default_constraint = -1
+
 
 def add_acid_export_reactions(graph: nx.DiGraph, acid_ratios: dict):
     """Adds Reaction Node for Biomass called "R_output_BIOMASS" with the given multiplicities
@@ -92,7 +94,7 @@ def generate_variables(graph: nx.DiGraph, constrains: dict[str, int]) -> dict[st
 
     Args:
         graph (nx.DiGraph): the graph containing the reaction nodes
-        constrains (dict[str, int]): additional constrains for the essential compounds
+        constrains (dict[str, int]): additional constrains for the essential compounds (and glucose)
 
     Returns:
         dict[str, pulp.LpVariable]: the dictionary containing reaction node names and their corresponding pulp variables
@@ -107,10 +109,11 @@ def generate_variables(graph: nx.DiGraph, constrains: dict[str, int]) -> dict[st
             # except glucose, set to -10 -> infinity
             if node[0].startswith("R_input_"):
                 compound = node[0].split("_input_")[1]
-                if graph.has_predecessor(node[0], "D-glucose"):
-                    lower_bound = -10
-                elif compound in constrains:
+                
+                if compound in constrains:
                     lower_bound = constrains[compound]
+                elif graph.has_predecessor(node[0], "D-glucose"):
+                    lower_bound = -10
                 else:
                     lower_bound = -INFINITY
                 
@@ -181,7 +184,7 @@ def main():
     essential_compounds = read_file("wp1_script/essential_compounds.txt")
 
     # dictionary for the limitations of essential compounds (if compound listed in directory their lower of the import reaction is set to the value in the dic)
-    essential_compounds_constrains = {es : -2 for es in essential_compounds}
+    essential_compounds_constrains = {es : default_constraint for es in essential_compounds}
     #set no limit for compounds that are definitly in the cell (and do not contain carbon)
     relevant_compounds = ["H2O", "phosphate", "H(+)"]
     for relevant_compound in relevant_compounds:
