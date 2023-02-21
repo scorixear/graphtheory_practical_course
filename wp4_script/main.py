@@ -43,3 +43,27 @@ for entry in os.scandir(datadir):
         print(f"Acids present: {len(acids_present)}")
         delimiter = " "
         print(f"Acids not present: {delimiter.join(acids_not_present)}")
+
+analysis_media_comparison = __import__("03_analysis_media_comparison")
+
+data_parent_directory = "data/amino_reaction_cycle/"
+organisms = [
+    "acacae",
+    "blongum",
+    "bproducta",
+    "btheta",
+    "cbuty",
+    "ecoli",
+    "eramosum",
+    "lplantarum",
+]
+
+for organism in organisms:
+    print(f"-------------- {organism} --------------")
+    a_fpath = data_parent_directory + organism + "_adam_aa_cycle.pi"
+    c_fpath = data_parent_directory + organism + "_cimIV_aa_cycle.pi"
+    with open(a_fpath, "rb") as a_reader:
+        agraph = pickle.load(a_reader)
+    with open(c_fpath, "rb") as c_reader:
+        cgraph = pickle.load(c_reader)
+    analysis_media_comparison.compare_graphs(agraph, cgraph)
