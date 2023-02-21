@@ -12,12 +12,7 @@ output is a pickle file
 
 import networkx as nx
 from collections import Counter
-import matplotlib.pyplot as plt
-import numpy
-import scipy
 import pickle
-import os
-import sys
 
 
 def parseLines(lines):
