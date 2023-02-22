@@ -38,7 +38,7 @@ def read_file(
     return flux, graph
 
 
-def run(fluxDir: str = "data/flux_results/"):
+def run(fluxDir: str = "data/flux_results/", outdir: str = "./"):
     for file in os.listdir(fluxDir):
         flux, graph = read_file(file)
 
@@ -91,7 +91,7 @@ def run(fluxDir: str = "data/flux_results/"):
         del reactionSubgraph
         del graph
         del aaSynthesisSubgraph
-        outfile = "graphics/" + file.replace("_flux.pi", "_aa_synthesis.png")
+        outfile = outdir + "graphics/" + file.replace("_flux.pi", "_aa_synthesis.png")
         plt.savefig(outfile, dpi=200)
         plt.close()
 
