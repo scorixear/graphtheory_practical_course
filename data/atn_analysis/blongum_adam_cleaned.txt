@@ -1,0 +1,1129 @@
+blongum_adam_cleaned.gml
+Component Number: 219
+Density 2.1320845341018253
+
+Compound: L-leucine
+Element: C
+Compound Size: 683
+Cycle-Basis: 174
+
+Compound: L-leucine
+Element: O
+Compound Size: 636
+Cycle-Basis: 310
+
+Compound: (1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate
+Element: N
+Compound Size: 76
+Cycle-Basis: 13
+Possible Cycles: 4096
+Cycles found: 35
+Max Cycle Length: 16
+Average Cycle Length: 8.6
+Min Cycle Length: 3
+
+Compound: 3-phosphoshikimate
+Element: P
+Compound Size: 45
+Cycle-Basis: 22
+
+Compound: ATP
+Element: O
+Compound Size: 16
+Cycle-Basis: 5
+Possible Cycles: 16
+Cycles found: 18
+Max Cycle Length: 14
+Average Cycle Length: 9.0
+Min Cycle Length: 3
+
+Compound: L-histidinol phosphate
+Element: N
+Compound Size: 12
+Cycle-Basis: 0
+
+Compound: L-histidinol phosphate
+Element: C
+Compound Size: 12
+Cycle-Basis: 0
+
+Compound: ADP
+Element: N
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: ADP
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: ADP
+Element: N
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: ADP
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 1-(5-Phosphoribosyl)-AMP
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 1-(5-Phosphoribosyl)-AMP
+Element: N
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
+Element: N
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 1-(5-Phosphoribosyl)-ATP
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: AMP
+Element: O
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: AMP
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: ATP
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: ATP
+Element: O
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: ATP
+Element: P
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: ATP
+Element: O
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
+Element: O
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
+Element: C
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
+Element: O
+Compound Size: 8
+Cycle-Basis: 0
+
+Compound: N-carbamoyl-L-aspartate
+Element: N
+Compound Size: 7
+Cycle-Basis: 0
+
+Compound: N-carbamoyl-L-aspartate
+Element: C
+Compound Size: 7
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 6
+Cycle-Basis: 4
+Possible Cycles: 8
+Cycles found: 12
+Max Cycle Length: 6
+Average Cycle Length: 4.166666666666667
+Min Cycle Length: 3
+
+Compound: ATP
+Element: P
+Compound Size: 5
+Cycle-Basis: 2
+Possible Cycles: 2
+Cycles found: 3
+Max Cycle Length: 4
+Average Cycle Length: 3.3333333333333335
+Min Cycle Length: 3
+
+Compound: NADPH
+Element: O
+Compound Size: 4
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: L-homocysteine
+Element: S
+Compound Size: 4
+Cycle-Basis: 1
+Possible Cycles: 1
+Cycles found: 1
+Max Cycle Length: 4
+Average Cycle Length: 4.0
+Min Cycle Length: 4
+
+Compound: CoA
+Element: S
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: N
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: N
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: P
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: P
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: N
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: N
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: N
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: N
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: N
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: acetyl-CoA
+Element: C
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: succinyl-CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: P
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: CoA
+Element: O
+Compound Size: 3
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: P
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: N
+Compound Size: 2
+Cycle-Basis: 0
+
+Compound: H(+)
+Element: H
+Compound Size: 1
+Cycle-Basis: 0
+
