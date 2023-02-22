@@ -46,15 +46,13 @@ path_enumeration.run(infile)
 
 # ------------------------------------------------------------------------------
 pulp_solve = __import__("02_pulp_solve")
-datadir: str = "data/amino_reaction_cycle_clean/"
 resultsdir_psolve: str = "data/flux_results_clean/"
-pulp_solve.run(datadir, resultsdir_psolve)
+pulp_solve.run(rdir_transformation, resultsdir_psolve)
 
 # ------------------------------------------------------------------------------
 flux_visualization = __import__("03_flux_visualization")
 graphics_save_directory: str = "graphics/"
-aaCycleDir: str = "data/amino_reaction_cycle_clean/"
-flux_visualization.run(resultsdir_psolve, aaCycleDir, graphics_save_directory)
+flux_visualization.run(resultsdir_psolve, rdir_transformation, graphics_save_directory)
 # ------------------------------------------------------------------------------
 
 atm_analysis = __import__("atm_analysis")
