@@ -64,16 +64,19 @@ def filter_graph(filepath, filtered_items):
     return graph
 
 
-def main():
+def run(
+    graph_directory: str = "data/atn_graphs",
+    analysis_directory: str = "data/atn_analysis",
+):
     write_output(
-        "data/atn_graphs",
-        "data/atn_analysis",
+        graph_directory,
+        analysis_directory,
         lambda filepath: nx.read_gml(filepath, label=None),
     )
     essential_compounds = read_file("wp1_script/essential_compounds.txt")
     write_output(
-        "data/atn_graphs",
-        "data/atn_analysis/no_essentials",
+        graph_directory,
+        analysis_directory,
         lambda filepath: filter_graph(filepath, essential_compounds),
     )
 
