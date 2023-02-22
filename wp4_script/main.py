@@ -58,5 +58,6 @@ flux_visualization.run(resultsdir_psolve, aaCycleDir, graphics_save_directory)
 # ------------------------------------------------------------------------------
 
 atm_analysis = __import__("atm_analysis")
-species_parent_dir: str = "data/atn_graphs/"
-atm_analysis.run(species_parent_dir)
+graph_dir: str = "data/atn_graphs/"
+analysis_dir: str = "data/atn_analysis/"
+atm_analysis.run(graph_dir, analysis_dir)
