@@ -8,7 +8,7 @@ import networkx as nx
 import pickle
 import matplotlib.pyplot as plt
 
-#%%
+
 def read_file(file: str) -> list[str]:
     """reads in file, splits by new line, trims output."""
     input = open(file, "r")
@@ -79,8 +79,7 @@ def enumerate_simple_paths_deletion(
     return paths
 
 
-def main():
-    infile = "data/enumeration/acacae_adam_CRN_glycine.pi"
+def run(infile: str = "data/enumeration/acacae_adam_CRN_glycine.pi"):
     source = "D-glucose"
     G = pickle.load(open(infile, "rb"))
     amino_acids = read_file("wp1_script/amino_acids.txt")
@@ -102,7 +101,6 @@ def main():
         #     print("no shortest path found for: ", aa)
         #     pass
 
-    #%%
     for aa in aaSimplePaths:
         print(f"path number for {aa}: {len(aaSimplePaths[aa])}")
 
@@ -129,4 +127,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run()
