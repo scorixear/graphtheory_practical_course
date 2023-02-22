@@ -158,5 +158,24 @@ def main():
         plt.savefig(f"{results_dir}activation_level_by_theshold_{threshold}.png")
         plt.close()
 
+    # plot the proportion from unactivated to activated reactions
+    for threshold in results["activation_level"]:
+        activated = []
+        not_activated = []
+        legend = []
+        for organism in results["activation_level"][threshold]:
+            legend.append(organism)
+            activation_levels = results["activation_level"][threshold][organism]
+            active_percent = len([level for level in activation_levels if level != 0])/len(activation_levels) * 100
+            activated.append(active_percent)
+            not_activated.append(100-active_percent)
+        
+        plt.bar(legend, activated, width=0.5)
+        plt.bar(legend, not_activated, width=0.5, bottom=activated)
+        plt.legend(["active reactions", "inactive reactions"])
+        plt.ylabel("percantage of total reactions")
+        plt.savefig(f"{results_dir}acitive_reaction_proportions_compound_threshold_{threshold}.png")
+        plt.close()
+
 if __name__ == "__main__":
     main()
