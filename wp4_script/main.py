@@ -214,3 +214,7 @@ filepath = dataDir + "proteom_ecoli_uniprot.fasta"
 proteomString = amino_acid_ratios.read_fasta(filepath)
 ratioDir = amino_acid_ratios.calculate_ratios(proteomString, ["L-cysteine"])
 print(ratioDir)
+
+# ------------------------------------------------------------------------------
+pulp_solve = __import__("02_pulp_solve")
+pulp_solve.main()
