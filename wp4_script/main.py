@@ -11,8 +11,8 @@ sys.path.append("./wp3_script")
 smiles_to_crn = __import__("01_smiles_to_crn")
 
 # step 1: parse all files, write graphs as pickle files
-smiles_list_directory: str = "./data/smiles_list_clean/"
-crn_save_directory: str = "./data/crn_clean/"
+smiles_list_directory: str = "data/smiles_list_clean/"
+crn_save_directory: str = "data/crn_clean/"
 
 smiles_to_crn.run(smiles_list_directory, crn_save_directory)
 
