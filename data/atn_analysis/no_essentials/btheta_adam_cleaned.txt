@@ -1,6 +1,10 @@
-btheta_adam_cleaned.gml
+btheta_adam_cleaned
 Component Number: 167
 Density 2.139784946236559
+Molecule Paths:
+D-glucose_0_O -> L-leucine = 454
+
+Endpoint analysis: 88
 
 Compound: alpha-D-galactose
 Element: O

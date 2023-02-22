@@ -1,6 +1,10 @@
-eramosum_adam_cleaned.gml
+eramosum_adam_cleaned
 Component Number: 151
 Density 2.3137948458817585
+Molecule Paths:
+D-glucose_0_O -> L-leucine = 1410
+
+Endpoint analysis: 232
 
 Compound: L-leucine
 Element: O

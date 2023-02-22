@@ -1,6 +1,10 @@
-ecoli_adam_cleaned.gml
+ecoli_adam_cleaned
 Component Number: 208
 Density 2.280071355759429
+Molecule Paths:
+D-glucose_0_O -> L-leucine = 1322
+
+Endpoint analysis: 243
 
 Compound: L-leucine
 Element: C

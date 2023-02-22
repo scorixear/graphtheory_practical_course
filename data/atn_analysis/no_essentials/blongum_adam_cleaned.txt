@@ -1,6 +1,10 @@
-blongum_adam_cleaned.gml
+blongum_adam_cleaned
 Component Number: 158
 Density 2.0760340632603405
+Molecule Paths:
+D-glucose_0_O -> L-leucine = 529
+
+Endpoint analysis: 125
 
 Compound: L-leucine
 Element: C

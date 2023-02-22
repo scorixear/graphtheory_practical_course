@@ -1,22 +1,98 @@
 import os
+import math
 import networkx as nx
 from typing import Callable
 import all_cycles
+import endpoint_bfs
 import matplotlib.pyplot as plt
-import math
+import numpy as np
 
-def write_output(input_dir: str, output_dir: str, graph_generation: Callable[[str], nx.Graph]) -> None:
+def main():
+    data_full = write_output(
+        "data/atn_graphs",
+        "data/atn_analysis",
+        "D-glucose",
+        0,
+        "L-leucine",
+        "D-glucose",
+        "C",
+        lambda filepath: nx.read_gml(filepath, label=None))
+    essential_compounds = read_file("wp1_script/essential_compounds.txt")
+    data_cleaned = write_output(
+        "data/atn_graphs",
+        "data/atn_analysis/no_essentials",
+        "D-glucose",
+        0,
+        "L-leucine",
+        "D-glucose",
+        "C",
+        lambda filepath: filter_graph(filepath, essential_compounds))
+    default_width = 0.5
+    for i, full in enumerate(data_full):
+        cleaned = data_cleaned[i]
+        _, ax = plt.subplots(figsize=(10,6))
+        _ = ax.bar(
+            np.arange(len(full[0]))*2,
+            full[1],
+            default_width,
+            label="Full")
+        _ = ax.bar(
+            np.arange(len(cleaned[0]))*2+default_width,
+            cleaned[1],
+            default_width,
+            label="No essential compounds"
+        )
+        
+        ax.set_xlabel("Species")
+        ax.set_title(full[2])
+        ax.set_xticks(np.arange(len(full[0]))*2 + default_width/2)
+        ax.set_xticklabels(full[0])
+        ax.legend()
+        
+        plt.savefig("data/atn_analysis/"+full[3])
+        plt.close()
+        
+def write_output(
+        input_dir: str,
+        output_dir: str,
+        molecule_start_compound: str,
+        molecule_start_atom: int,
+        molecule_end_compound: str,
+        endpoint_start_compound: str,
+        endpoint_start_element: str,
+        graph_generation: Callable[[str], nx.Graph]) -> list[tuple[list[str], list, str, str]]:
+    endpoint_analysis: list[tuple[str, int]] = []
+    molecule_paths: list[tuple[str, tuple[int, str]]] = []
+    density_analysis: list[tuple[str, float]] = []
+    component_numbers: list[tuple[str, int]] = []
+    print("Starting Graph Reading")
     for entry in os.scandir(input_dir):
         if entry.is_file() and entry.name.endswith(".gml"):
             graph = graph_generation(input_dir+"/"+entry.name)
             output_file = output_dir+"/"+entry.name.split("/")[-1].split(".")[0]
+            species_name = entry.name.split(".")[0]
+            
+            print(f"Generating analysis values for species {species_name}")
+            component_number = get_number_of_compounds(graph)
+            component_numbers.append((species_name, component_number))
+            dens = density(graph)
+            density_analysis.append((species_name, dens))
+            print(f"Calculating Molecule Paths for species {species_name}")
+            molecule_path = find_paths(graph, molecule_start_compound, molecule_start_atom, molecule_end_compound)
+            molecule_paths.append((species_name, (len(molecule_path[0].nodes), graph.nodes[molecule_path[1]]['element'])))
+            print(f"Calculating Endpoints for species {species_name}")
+            endpoints = endpoint_bfs.bfs_endpoint(graph, endpoint_start_compound, endpoint_start_element)
+            #endpoint_str = "\n".join([f"{key}: {len(data)}" for [key, data] in endpoints.items()])
+            endpoint_analysis.append((species_name, len(endpoints)))
+            print(f"Calculating Cycles for species {species_name}")
+            cycle_data = get_cycle_lengths(graph)
+            
             with open(output_file+".txt", "w", encoding="UTF-8") as writer:
-                writer.write(entry.name+"\n")
-                writer.write(f"Component Number: {get_number_of_compounds(graph)}\n")
-                writer.write(f"Density {density(graph)}\n\n")
-                #component_sizes = '\n'.join(get_component_size(graph))
-                #writer.write(f"Component Sizes: \n{component_sizes}\n\n")
-                cycle_data = get_cycle_lengths(graph)
+                writer.write(species_name+"\n")    
+                writer.write(f"Component Number: {component_number}\n")
+                writer.write(f"Density {dens}\n")
+                writer.write(f"Molecule Paths:\n{molecule_start_compound}_{molecule_start_atom}_{graph.nodes[molecule_path[1]]['element']} -> {molecule_end_compound} = {len(molecule_path[0].nodes)}\n\n")
+                writer.write(f"Endpoint analysis: {len(endpoints)}\n\n")#\n{endpoint_str}\n\n")
                 for key_value in cycle_data.items():
                     writer.write(f"Compound: {key_value[1]['compound']}\n")
                     writer.write(f"Element: {key_value[1]['element']}\n")
@@ -31,36 +107,64 @@ def write_output(input_dir: str, output_dir: str, graph_generation: Callable[[st
                     writer.write("\n")
             compound_sizes = [cycle[1]['len'] for cycle in cycle_data.items()]
             plt.yscale('log')
-            plt.hist(compound_sizes, bins=(max(compound_sizes)-min(compound_sizes))//int(math.sqrt(len(compound_sizes))))
+            plt.hist(
+                compound_sizes, 
+                bins=(max(compound_sizes)-min(compound_sizes))//int(math.sqrt(len(compound_sizes))),
+                label="Cycle Analysis: "+species_name)
             plt.savefig(output_file+".png")
             plt.close()
+    
+    #plt.xticks(rotation=90)
+    return [
+        (
+            [data[0] for data in endpoint_analysis], 
+            [data[1] for data in endpoint_analysis], 
+            f"Endpoint Analysis: {endpoint_start_compound}_{endpoint_start_element}",
+            "01_endpoint_analysis.png"
+        ),
+        (
+            [data[0] for data in molecule_paths],
+            [data[1][0] for data in molecule_paths],
+            f"Molecule Paths: {molecule_start_compound}_{molecule_start_atom}_{molecule_paths[0][1][1]} -> {molecule_end_compound}",
+            "02_molecule_paths.png"
+        ),
+        (
+            [data[0] for data in density_analysis],
+            [data[1] for data in density_analysis],
+            "Density Analysis",
+            "03_density_analysis.png"
+        ),
+        (
+            [data[0] for data in component_numbers],
+            [data[1] for data in component_numbers],
+            "Component Numbers",
+            "04_component_numbers.png"
+        )]
 def read_file(file: str) -> list[str]:
     """reads in file, splits by new line, trims output."""
     with open(file, "r", encoding="UTF-8") as reader:
         lines = reader.readlines()
     return [line.strip() for line in lines]
 
-def find_paths(graph: nx.Graph, molecule_a, identifier_a, molecule_b):
+def find_paths(graph: nx.Graph, molecule_a: str, identifier_a: int, molecule_b: str) -> tuple[nx.Graph, any]:
     new_graph = graph.copy()
     
     for u, v, edge_type in graph.edges(data="transition"):
         if edge_type == "TransitionType.NO_TRANSITION":
             new_graph.remove_edge(u,v)
     
-    subgraph = bfs_to_molecule(new_graph, molecule_a, identifier_a, molecule_b)
-    print(f"{molecule_a}_{identifier_a} -> {molecule_b} = {len(subgraph.nodes)}")
-    return subgraph
+    return bfs_to_molecule(new_graph, molecule_a, identifier_a, molecule_b)
 
-def bfs_to_molecule(graph: nx.Graph, molecule_a, identifier_a, molecule_b) -> nx.Graph:
+def bfs_to_molecule(graph: nx.Graph, molecule_a: str, identifier_a: int, molecule_b: str) -> tuple[nx.Graph, any]:
     atom_a = None
     molecule_b_nodes = []
     final_molecule_b_nodes = []
 
-    for node in graph.nodes(data=True):
-        if node[1]['compound_name'] == molecule_a and int(node[1]['label'].split("_")[1]) == identifier_a:
-            atom_a = node[0]
-        elif node[1]['compound_name'] == molecule_b:
-            molecule_b_nodes.append(node[0])
+    for [key, data] in graph.nodes(data=True):
+        if data['compound_name'] == molecule_a and int(data['label'].split("_")[1]) == identifier_a:
+            atom_a = key
+        elif data['compound_name'] == molecule_b:
+            molecule_b_nodes.append(key)
     for atom_b in molecule_b_nodes:
         if graph.nodes[atom_b]['element'] == graph.nodes[atom_a]['element']:
             final_molecule_b_nodes.append(atom_b)
@@ -69,17 +173,14 @@ def bfs_to_molecule(graph: nx.Graph, molecule_a, identifier_a, molecule_b) -> nx
     queue = [atom_a]
 
     while queue:
-        next = queue.pop(0)
-        visited.append(next)
-        if next in final_molecule_b_nodes:
+        next_node = queue.pop(0)
+        if next_node in final_molecule_b_nodes or next_node in visited:
             continue
-        for neighbor in graph.neighbors(next):
+        visited.add(next_node)
+        for neighbor in graph.neighbors(next_node):
             if neighbor not in visited and neighbor not in queue:
                 queue.append(neighbor)
-    return graph.subgraph(visited)
-
-
-    
+    return (graph.subgraph(visited), atom_a)
 
 def filter_graph(filepath, filtered_items): 
     graph: nx.Graph = nx.read_gml(filepath, label=None)
@@ -90,12 +191,6 @@ def filter_graph(filepath, filtered_items):
     for node in to_be_removed:
         graph.remove_node(node)
     return graph
-    
-
-def main():
-    write_output("data/atn_graphs", "data/atn_analysis", lambda filepath: nx.read_gml(filepath, label=None))
-    essential_compounds = read_file("wp1_script/essential_compounds.txt")
-    write_output("data/atn_graphs", "data/atn_analysis/no_essentials", lambda filepath: filter_graph(filepath, essential_compounds))
 
 # number of compounds
 def get_number_of_compounds(t_graph: nx.Graph) -> int:
