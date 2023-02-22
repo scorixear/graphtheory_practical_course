@@ -38,9 +38,13 @@ def read_file(
     return flux, graph
 
 
-def run(fluxDir: str = "data/flux_results/", outdir: str = "./"):
+def run(
+    fluxDir: str = "data/flux_results/",
+    aaCycleDir: str = "data/amino_reaction_cycle/",
+    outdir: str = "./",
+):
     for file in os.listdir(fluxDir):
-        flux, graph = read_file(file)
+        flux, graph = read_file(file, fluxDir, aaCycleDir)
 
         # select a subgraph from all reactions that are not 0
         subgraphNodes = set()
