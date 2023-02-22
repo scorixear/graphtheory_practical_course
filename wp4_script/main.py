@@ -153,3 +153,54 @@ for entry in os.scandir(datadir):
                     pickle.dump(output_graph, writer)
             except nx.NetworkXError:
                 print(f"Acid missing: {acid}")
+
+# ------------------------------------------------------------------------------
+path_enumeration = __import__("05_path_enumeration")
+infile = "data/enumeration/acacae_adam_CRN_glycine.pi"
+source = "D-glucose"
+G = pickle.load(open(infile, "rb"))
+amino_acids = path_enumeration.read_file("wp1_script/amino_acids.txt")
+common_compounds = path_enumeration.read_file("wp1_script/essential_compounds.txt")
+acids_present = [aa for aa in amino_acids if G.has_node(aa)]
+
+reactionGraph = path_enumeration.build_reaction_graph(
+    G, source, acids_present, common_compounds
+)
+# TODO filter subgraphs for each aa
+
+aaSimplePaths = dict()
+pathThreshold = 1000
+for aa in acids_present:
+    print("enumerating ", aa)
+    paths = path_enumeration.enumerate_simple_paths(
+        reactionGraph, source, aa, pathThreshold
+    )
+    aaSimplePaths[aa] = paths
+    # try:
+    #     print("shortest graph: ", nx.shortest_path(reactionGraph, source, aa))
+    # except nx.NetworkXNoPath:
+    #     print("no shortest path found for: ", aa)
+    #     pass
+for aa in aaSimplePaths:
+    print(f"path number for {aa}: {len(aaSimplePaths[aa])}")
+
+    pathLenghts = [len(path) for path in aaSimplePaths[aa]]
+    # plt.hist(pathLenghts)
+    # plt.show()
+
+    # extract all paths of equal size
+    pathSizes = set(pathLenghts)
+    paths_equal_length = dict()
+    for pathSize in pathSizes:
+        paths_equal_length[pathSize] = []
+    for path in aaSimplePaths[aa]:
+        paths_equal_length[len(path)].append(path)
+
+    for pathLength in paths_equal_length:
+        pathSet = [set(path) for path in paths_equal_length[pathLength]]
+        sharedPath = set.intersection(*pathSet)
+        print(
+            f"für AS {aa} haben die Pfade der Länge {pathLength} {len(sharedPath)} gemeinsame Reaktionen"
+        )
+        print(f"gemeinsam sind die folgenden Reaktionen: {sharedPath}")
+        print()
