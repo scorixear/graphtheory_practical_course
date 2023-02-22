@@ -61,7 +61,7 @@ def add_exchange_reactions(graph: nx.DiGraph, to_be_added: list[str]):
             # predecessors = list(graph.predecessors(node[0]))
             # new_predecessors = [p for p in predecessors if graph.get_edge_data(p, node[0])['direction']==1]
             # if len(new_predecessors) == 0:
-            # nodes_to_be_added.append(f"R_input_{node[0]}")
+            #   nodes_to_be_added.append(f"R_input_{node[0]}")
 
             # collect all successors
             successors = list(graph.successors(node[0]))
