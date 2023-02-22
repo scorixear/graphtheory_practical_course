@@ -95,7 +95,7 @@ def run(
         del reactionSubgraph
         del graph
         del aaSynthesisSubgraph
-        outfile = outdir + "graphics/" + file.replace("_flux.pi", "_aa_synthesis.png")
+        outfile = outdir + file.replace("_flux.pi", "_aa_synthesis.png")
         plt.savefig(outfile, dpi=200)
         plt.close()
 
