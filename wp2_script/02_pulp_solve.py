@@ -5,6 +5,8 @@ import pickle
 
 amino_acid_ratios = __import__("01_amino_acid_ratios")
 
+INFINITY = 1000
+
 
 def add_acid_export_reactions(graph: nx.DiGraph, acid_ratios: dict):
     """Adds Reaction Node for Biomass called "R_output_BIOMASS" with the given multiplicities
@@ -98,7 +100,6 @@ def generate_variables(graph: nx.DiGraph) -> dict[str, pulp.LpVariable]:
     Returns:
         dict[str, pulp.LpVariable]: the dictionary containing reaction node names and their corresponding pulp variables
     """
-    INFINITY = 1000
 
     variables: dict[str, pulp.LpVariable] = {}
     # for every node that is a reaction node
