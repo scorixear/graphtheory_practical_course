@@ -13,6 +13,7 @@ output is a pickle file
 import networkx as nx
 from collections import Counter
 import pickle
+import os
 
 
 def parseLines(lines):
@@ -134,3 +135,22 @@ def build_graph_from_file(fname: str) -> nx.DiGraph:
                             direction=2,
                         )
     return G
+
+
+def run(
+    smiles_list_directory: str = "data/smiles_list_clean/",
+    crn_save_directory: str = "data/crn_clean/",
+):
+
+    for entry in os.scandir(smiles_list_directory):
+        if entry.is_file() and entry.name.endswith(".smiles_list"):
+            parsed_graph: nx.DiGraph = build_graph_from_file(
+                smiles_list_directory + entry.name
+            )
+            filename = entry.name.split(".")[0]
+            with open(crn_save_directory + filename + "_CRN.pi", "wb") as save_file:
+                pickle.dump(parsed_graph, save_file)
+
+
+if __name__ == "__main__":
+    run()
