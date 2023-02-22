@@ -28,14 +28,18 @@ def run(
             result_str = (
                 result_str
                 + "\n"
-                + compare(adam_species[index], adam_species[other_index], "adam")
+                + compare(
+                    adam_species[index], adam_species[other_index], "adam", resultdir
+                )
             )
     for index in range(len(cimIV_species)):
         for other_index in range(index + 1, len(cimIV_species)):
             result_str = (
                 result_str
                 + "\n"
-                + compare(cimIV_species[index], cimIV_species[other_index], "cimIV")
+                + compare(
+                    cimIV_species[index], cimIV_species[other_index], "cimIV", resultdir
+                )
             )
     with open(resultdir + "results.txt", "w", encoding="UTF-8") as writer:
         writer.write(result_str)
@@ -47,7 +51,7 @@ def difference(graph: nx.DiGraph, other: nx.DiGraph):
     return final
 
 
-def compare(graph, other, medium):
+def compare(graph, other, medium, resultdir):
     # retrieve one-sided difference between the given graph an another
     graph_diff = difference(graph["graph"], other["graph"]).nodes(data=True)
     # and the other side
@@ -70,9 +74,7 @@ def compare(graph, other, medium):
         if "nodeType" in node[1] and node[1]["nodeType"] == 1:
             final_other_nodes.append(node[0] + ": " + node[1]["meta"])
     # define output file path
-    outfile = (
-        "data/pathway_species/" + medium + "/" + graph["name"] + "_vs_" + other["name"]
-    )
+    outfile = resultdir + medium + "/" + graph["name"] + "_vs_" + other["name"]
     # write metanames to file
     outstring = (
         graph["name"]
