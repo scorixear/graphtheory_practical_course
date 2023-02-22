@@ -218,3 +218,7 @@ print(ratioDir)
 # ------------------------------------------------------------------------------
 pulp_solve = __import__("02_pulp_solve")
 pulp_solve.main()
+
+# ------------------------------------------------------------------------------
+flux_visualization = __import__("03_flux_visualization")
+flux_visualization.main()
