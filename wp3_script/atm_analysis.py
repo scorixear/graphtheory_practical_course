@@ -40,8 +40,48 @@ def read_file(file: str) -> list[str]:
         lines = reader.readlines()
     return [line.strip() for line in lines]
 
-def filter_graph(filepath, filtered_items):
+def find_paths(graph: nx.Graph, molecule_a, identifier_a, molecule_b):
+    new_graph = graph.copy()
     
+    for u, v, edge_type in graph.edges(data="transition"):
+        if edge_type == "TransitionType.NO_TRANSITION":
+            new_graph.remove_edge(u,v)
+    
+    subgraph = bfs_to_molecule(new_graph, molecule_a, identifier_a, molecule_b)
+    print(f"{molecule_a}_{identifier_a} -> {molecule_b} = {len(subgraph.nodes)}")
+    return subgraph
+
+def bfs_to_molecule(graph: nx.Graph, molecule_a, identifier_a, molecule_b) -> nx.Graph:
+    atom_a = None
+    molecule_b_nodes = []
+    final_molecule_b_nodes = []
+
+    for node in graph.nodes(data=True):
+        if node[1]['compound_name'] == molecule_a and int(node[1]['label'].split("_")[1]) == identifier_a:
+            atom_a = node[0]
+        elif node[1]['compound_name'] == molecule_b:
+            molecule_b_nodes.append(node[0])
+    for atom_b in molecule_b_nodes:
+        if graph.nodes[atom_b]['element'] == graph.nodes[atom_a]['element']:
+            final_molecule_b_nodes.append(atom_b)
+    
+    visited = set()
+    queue = [atom_a]
+
+    while queue:
+        next = queue.pop(0)
+        visited.append(next)
+        if next in final_molecule_b_nodes:
+            continue
+        for neighbor in graph.neighbors(next):
+            if neighbor not in visited and neighbor not in queue:
+                queue.append(neighbor)
+    return graph.subgraph(visited)
+
+
+    
+
+def filter_graph(filepath, filtered_items): 
     graph: nx.Graph = nx.read_gml(filepath, label=None)
     to_be_removed = []
     for node in graph.nodes.items():
