@@ -21,32 +21,29 @@ smiles_to_crn.run(smiles_list_directory, crn_save_directory)
 
 graph_transformation = __import__("02_graph_transformation")
 
-datadir: str = "data/crn_clean/"
-resultdir: str = "data/amino_reaction_cycle_clean/"
-graph_transformation.run(datadir, resultdir)
+rdir_transformation: str = "data/amino_reaction_cycle_clean/"
+graph_transformation.run(crn_save_directory, rdir_transformation)
 
 # ------------------------------------------------------------------------------
 
-analysis_media_comparison = __import__("03_analysis_media_comparison")
-analysis_media_comparison.run()
-
+# analysis_media_comparison = __import__("03_analysis_media_comparison")
+# analysis_media_comparison.run(rdir_transformation)
 
 # ------------------------------------------------------------------------------
 pathway_species = __import__("04_pathway_species")
-datadir: str = "data/amino_reaction_cycle/"
-resultdir: str = "data/pathway_species/"
-pathway_species.run(datadir, resultdir)
+resultdir: str = "data/pathway_species_clean/"
+pathway_species.run(rdir_transformation, resultdir)
 
 # ------------------------------------------------------------------------------
 acid_graph_enumeration = __import__("05_acid_graph_enumeration")
-datadir: str = "data/crn/"
-resultdir: str = "data/enumeration/"
-acid_graph_enumeration.run(datadir, resultdir)
+resultdir: str = "data/enumeration_clean/"
+acid_graph_enumeration.run(crn_save_directory, resultdir)
 
 # ------------------------------------------------------------------------------
 path_enumeration = __import__("05_path_enumeration")
-infile = "data/enumeration/acacae_adam_CRN_glycine.pi"
+infile = resultdir + "blongum_adam_cleaned_CRN_glycine.pi"
 path_enumeration.run(infile)
+
 # ------------------------------------------------------------------------------
 amino_acid_ratios = __import__("01_amino_acid_ratios")
 "data/proteins/"
@@ -54,14 +51,15 @@ amino_acid_ratios.run()
 
 # ------------------------------------------------------------------------------
 pulp_solve = __import__("02_pulp_solve")
-datadir: str = "data/amino_reaction_cycle/"
-resultsdir: str = "data/flux_results/"
-pulp_solve.run(datadir, resultdir)
+datadir: str = "data/amino_reaction_cycle_clean/"
+resultsdir_psolve: str = "data/flux_results_clean/"
+pulp_solve.run(datadir, resultsdir_psolve)
 
 # ------------------------------------------------------------------------------
 flux_visualization = __import__("03_flux_visualization")
-fluxDir: str = "data/flux_results/"
-# flux_visualization.run(fluxDir)
+graphics_save_directory: str = "graphics/"
+aaCycleDir: str = "data/amino_reaction_cycle_clean/"
+flux_visualization.run(resultsdir_psolve, aaCycleDir, graphics_save_directory)
 # ------------------------------------------------------------------------------
 
 atm_analysis = __import__("atm_analysis")
