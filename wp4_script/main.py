@@ -5,6 +5,8 @@ import pickle
 
 sys.path.append("./wp1_script")
 sys.path.append("./wp2_script")
+sys.path.append("./wp3_script")
+
 
 smiles_to_crn = __import__("01_smiles_to_crn")
 metabolite_subgraph = __import__("02_metabolite_subgraph")
@@ -221,4 +223,7 @@ pulp_solve.main()
 
 # ------------------------------------------------------------------------------
 flux_visualization = __import__("03_flux_visualization")
-flux_visualization.main()
+# flux_visualization.main()
+# ------------------------------------------------------------------------------
+atm_analysis = __import__("atm_analysis")
+atm_analysis.main()
