@@ -45,11 +45,6 @@ infile = resultdir + "blongum_adam_cleaned_CRN_glycine.pi"
 path_enumeration.run(infile)
 
 # ------------------------------------------------------------------------------
-amino_acid_ratios = __import__("01_amino_acid_ratios")
-"data/proteins/"
-amino_acid_ratios.run()
-
-# ------------------------------------------------------------------------------
 pulp_solve = __import__("02_pulp_solve")
 datadir: str = "data/amino_reaction_cycle_clean/"
 resultsdir_psolve: str = "data/flux_results_clean/"
