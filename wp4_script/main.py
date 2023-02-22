@@ -4,6 +4,8 @@ import os
 import pickle
 
 sys.path.append("./wp1_script")
+sys.path.append("./wp2_script")
+
 smiles_to_crn = __import__("01_smiles_to_crn")
 metabolite_subgraph = __import__("02_metabolite_subgraph")
 
@@ -204,3 +206,11 @@ for aa in aaSimplePaths:
         )
         print(f"gemeinsam sind die folgenden Reaktionen: {sharedPath}")
         print()
+
+# ------------------------------------------------------------------------------
+amino_acid_ratios = __import__("01_amino_acid_ratios")
+dataDir = "data/proteins/"
+filepath = dataDir + "proteom_ecoli_uniprot.fasta"
+proteomString = amino_acid_ratios.read_fasta(filepath)
+ratioDir = amino_acid_ratios.calculate_ratios(proteomString, ["L-cysteine"])
+print(ratioDir)
