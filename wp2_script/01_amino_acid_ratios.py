@@ -1,5 +1,5 @@
 def read_fasta(filepath: str) -> str:
-    with open(filepath, "r") as fastaFile:
+    with open(filepath, "r", encoding="UTF-8") as fastaFile:
         proteomString = ""
         for line in fastaFile:
             if not line.startswith(">"):

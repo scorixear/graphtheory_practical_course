@@ -13,18 +13,14 @@ class PlotData:
 
 class HistPlotData(PlotData):
     def __init__(self, values: list, bins: int, label: str) -> None:
+        PlotData.__init__(self)
         self.values = values
         self.bins = bins
         self.label = label
 
 class BarPlotData(PlotData):
-    def __init__(
-        self, 
-        data: list, 
-        labels: list[str], 
-        title: str, 
-        outputfile: str) -> None:
-
+    def __init__(self, data: list, labels: list[str], title: str, outputfile: str) -> None:
+        PlotData.__init__(self)
         self.data = data
         self.labels = labels
         self.title = title
@@ -32,12 +28,12 @@ class BarPlotData(PlotData):
 
 
 def run(
-    input_dir: str = "data/atn_graphs/", 
-    output_dir: str = "data/atn_analysis/", 
-    molecule_start_compound: str = "D-glucose", 
-    molecule_start_atom: int = 0, 
-    molecule_end_compound: str = "L-leucine", 
-    endpoint_start_compound: str = "D-glucose", 
+    input_dir: str = "data/atn_graphs/",
+    output_dir: str = "data/atn_analysis/",
+    molecule_start_compound: str = "D-glucose",
+    molecule_start_atom: int = 0,
+    molecule_end_compound: str = "L-leucine",
+    endpoint_start_compound: str = "D-glucose",
     endpoint_start_element: str = "C"):
     data_full = write_output(
         input_dir,
@@ -117,19 +113,19 @@ def write_output(
             output_file = output_dir+entry.name.split("/")[-1].split(".")[0]
             species_name = entry.name.split(".")[0]
             print(f"\nSpecies: {species_name}")
-            print(f"0% Analysis values")
+            print("0% Analysis values")
             component_number = get_number_of_compounds(graph)
             component_numbers.append((species_name, component_number))
             dens = density(graph)
             density_analysis.append((species_name, dens))
-            print(f"25% Molecule Paths")
+            print("25% Molecule Paths")
             molecule_path = find_paths(graph, molecule_start_compound, molecule_start_atom, molecule_end_compound)
             molecule_paths.append((species_name, (len(molecule_path[0].nodes), graph.nodes[molecule_path[1]]['element'])))
-            print(f"50% Endpoints")
+            print("50% Endpoints")
             endpoints = endpoint_bfs.bfs_endpoint(graph, endpoint_start_compound, endpoint_start_element)
             endpoint_str = "\n".join([f"{key}: {len(data)}" for [key, data] in endpoints.items()])
             endpoint_analysis.append((species_name, len(endpoints)))
-            print(f"75% Cycles")
+            print("75% Cycles")
             cycle_data = get_cycle_lengths(graph)
             
             with open(output_file+".txt", "w", encoding="UTF-8") as writer:

@@ -4,8 +4,8 @@ import pickle
 
 def read_file(file: str) -> list[str]:
     """reads in file, splits by new line, trims output."""
-    input = open(file, "r")
-    lines = input.readlines()
+    input_str = open(file, "r", encoding="UTF-8")
+    lines = input_str.readlines()
     return [line.strip() for line in lines]
 
 
@@ -82,7 +82,7 @@ def run(infile: str = "data/enumeration/acacae_adam_CRN_glycine.pi"):
     reactionGraph = build_reaction_graph(G, source, acids_present, common_compounds)
     # TODO filter subgraphs for each aa
 
-    aaSimplePaths = dict()
+    aaSimplePaths = {}
     pathThreshold = 1000
     for aa in acids_present:
         print("enumerating ", aa)
