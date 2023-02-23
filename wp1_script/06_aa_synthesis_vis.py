@@ -69,7 +69,7 @@ def run_original_data():
 
 
 def run_clean_data():
-    dict_adam = get_aa_dict("data/amino_reaction_cycle_clean/", "adam")
+    dict_adam = get_aa_dict("data_clean/02_amino_reaction_cycle_clean", "adam")
     fig, axes = plt.subplots(figsize=(8, 9))
 
     mat = visualize_dict(dict_adam, axes)
