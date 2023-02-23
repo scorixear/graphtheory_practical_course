@@ -1,0 +1,10 @@
+#Glycosaminoglycan biosynthesis - heparan sulfate / heparin
+R05925
+R05926
+R05927
+R05928
+R05930
+R05935
+R05936
+R10138
+R10139

@@ -1,0 +1,9 @@
+#Benzoxazinoid biosynthesis
+R02340
+R07403
+R07421
+R07422
+R07423
+R07426
+R08972
+R08973

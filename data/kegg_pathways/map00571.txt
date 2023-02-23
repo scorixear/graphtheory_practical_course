@@ -1,0 +1,10 @@
+#Lipoarabinomannan (LAM) biosynthesis
+R11994
+R11995
+R11997
+R11998
+R12038
+R12039
+R12040
+R12041
+R12042
