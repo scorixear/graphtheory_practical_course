@@ -5,6 +5,7 @@ import pickle
 import networkx as nx
 import os
 from scipy.stats import hypergeom
+import matplotlib.cm as cm
 
 bigg_dir = "data/bigg/"
 kegg_dir = "data/kegg_pathways/"
@@ -133,7 +134,7 @@ def main():
     # matplotlib.rcParams['figure.subplot.bottom'] = 0
     # matplotlib.rcParams['figure.subplot.right'] = 1
     # matplotlib.rcParams['figure.subplot.top'] = 1
-    scatter = plt.scatter(x=fold_enrichment, y=y, s=reaction_number, c=p_value)
+    scatter = plt.scatter(x=fold_enrichment, y=y, s=reaction_number, c=p_value, cmap=cm.copper)
     plt.yticks(ticks= y,labels= pathway,  fontsize= 8)
     plt.ylabel("pathway")
     plt.xlabel("Fold Enrichment")
