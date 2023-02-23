@@ -39,8 +39,7 @@ def compare_graphs(a_graph: nx.DiGraph, c_graph: nx.DiGraph):
                 raise ValueError
 
 
-def main():
-    data_parent_directory = "data/amino_reaction_cycle/"
+def run(datadir: str = "data/amino_reaction_cycle/"):
     organisms = [
         "acacae",
         "blongum",
@@ -54,8 +53,8 @@ def main():
 
     for organism in organisms:
         print(f"-------------- {organism} --------------")
-        a_fpath = data_parent_directory + organism + "_adam_aa_cycle.pi"
-        c_fpath = data_parent_directory + organism + "_cimIV_aa_cycle.pi"
+        a_fpath = datadir + organism + "_adam_aa_cycle.pi"
+        c_fpath = datadir + organism + "_cimIV_aa_cycle.pi"
         with open(a_fpath, "rb") as a_reader:
             agraph = pickle.load(a_reader)
         with open(c_fpath, "rb") as c_reader:
@@ -64,4 +63,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run()

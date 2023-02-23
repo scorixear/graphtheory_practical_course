@@ -135,11 +135,13 @@ def write_output(
                     writer.write(f"Element: {key_value[1]['element']}\n")
                     writer.write(f"Connected Component Size: {key_value[1]['len']}\n")
                     writer.write(f"Cycle-Basis: {key_value[1]['basis']}\n")
-                    if key_value[1]['cycles_found'] > -1:
+                    if key_value[1]["cycles_found"] > -1:
                         writer.write(f"Possible Cycles: {key_value[1]['possible']}\n")
                         writer.write(f"Cycles found: {key_value[1]['cycles_found']}\n")
                         writer.write(f"Max Cycle Length: {key_value[1]['max_cycle']}\n")
-                        writer.write(f"Average Cycle Length: {key_value[1]['cycles']}\n")
+                        writer.write(
+                            f"Average Cycle Length: {key_value[1]['cycles']}\n"
+                        )
                         writer.write(f"Min Cycle Length: {key_value[1]['min_cycle']}\n")
                     writer.write("\n")
             conn_comp_sizes = [cycle[1]['len'] for cycle in cycle_data.items()]
@@ -221,7 +223,7 @@ def filter_graph(filepath, filtered_items):
     graph: nx.Graph = nx.read_gml(filepath, label=None)
     to_be_removed = []
     for node in graph.nodes.items():
-        if node[1]['compound_name'] in filtered_items:
+        if node[1]["compound_name"] in filtered_items:
             to_be_removed.append(node[0])
     for node in to_be_removed:
         graph.remove_node(node)
@@ -232,47 +234,59 @@ def get_number_of_compounds(t_graph: nx.Graph) -> int:
     new_graph = t_graph.copy()
     for u, v, edge_type in t_graph.edges(data="transition"):
         if edge_type == "TransitionType.NO_TRANSITION":
-            new_graph.remove_edge(u,v)
+            new_graph.remove_edge(u, v)
     return nx.number_connected_components(new_graph)
+
 
 def get_component_size(t_graph: nx.Graph) -> list[int]:
     new_graph = t_graph.copy()
     for u, v, edge_type in t_graph.edges(data="transition"):
         if edge_type == "TransitionType.NO_TRANSITION":
-            new_graph.remove_edge(u,v)
+            new_graph.remove_edge(u, v)
     conn_comp = sorted(nx.connected_components(new_graph), key=len, reverse=True)
-    #print(t_graph.nodes[list(conn_comp[0])[0]])
-    return [f"{len(comp)}: {t_graph.nodes[list(comp)[0]]['element']} - {t_graph.nodes[list(comp)[0]]['compound_name']}" for comp in conn_comp]
+    # print(t_graph.nodes[list(conn_comp[0])[0]])
+    return [
+        f"{len(comp)}: {t_graph.nodes[list(comp)[0]]['element']} - {t_graph.nodes[list(comp)[0]]['compound_name']}"
+        for comp in conn_comp
+    ]
+
 
 def density(t_graph: nx.DiGraph) -> float:
-    return nx.number_of_edges(t_graph)/nx.number_of_nodes(t_graph)
+    return nx.number_of_edges(t_graph) / nx.number_of_nodes(t_graph)
+
 
 def get_cycle_lengths(graph: nx.DiGraph) -> dict[int, dict[str, any]]:
     new_graph = graph.copy()
     cycles = dict()
     for u, v, edge_type in graph.edges(data="transition"):
         if edge_type == "TransitionType.NO_TRANSITION":
-            new_graph.remove_edge(u,v)
-    for i, conn_comp in enumerate(sorted(nx.connected_components(new_graph), key=len, reverse=True)):
+            new_graph.remove_edge(u, v)
+    for i, conn_comp in enumerate(
+        sorted(nx.connected_components(new_graph), key=len, reverse=True)
+    ):
         basis = nx.cycle_basis(new_graph.subgraph(conn_comp))
         cycles[i] = {
-                     'len': len(conn_comp),
-                     'element': new_graph.nodes[list(conn_comp)[0]]['element'],
-                     'compound': new_graph.nodes[list(conn_comp)[0]]['compound_name'],
-                     'basis': len(basis),
-                     'possible': 2**(len(basis)-1),
-                     'cycles_found': -1,
-                     'cycles': -1,
-                     'max_cycle': -1,
-                     'min_cycle': -1,
-                    }
-        if 2**(len(basis)-1) < 50000 and len(basis) > 0:
-            cycles_found = [len(c) for c in all_cycles.find_all_cycles(new_graph.subgraph(conn_comp))]# nx.find_cycle(new_graph.subgraph(conn_comp))]
-            cycles[i]['cycles_found'] = len(cycles_found)
-            cycles[i]['cycles'] = sum(cycles_found)/len(cycles_found)
-            cycles[i]['max_cycle'] = max(cycles_found)
-            cycles[i]['min_cycle'] = min(cycles_found)
+            "len": len(conn_comp),
+            "element": new_graph.nodes[list(conn_comp)[0]]["element"],
+            "compound": new_graph.nodes[list(conn_comp)[0]]["compound_name"],
+            "basis": len(basis),
+            "possible": 2 ** (len(basis) - 1),
+            "cycles_found": -1,
+            "cycles": -1,
+            "max_cycle": -1,
+            "min_cycle": -1,
+        }
+        if 2 ** (len(basis) - 1) < 50000 and len(basis) > 0:
+            cycles_found = [
+                len(c)
+                for c in all_cycles.find_all_cycles(new_graph.subgraph(conn_comp))
+            ]  # nx.find_cycle(new_graph.subgraph(conn_comp))]
+            cycles[i]["cycles_found"] = len(cycles_found)
+            cycles[i]["cycles"] = sum(cycles_found) / len(cycles_found)
+            cycles[i]["max_cycle"] = max(cycles_found)
+            cycles[i]["min_cycle"] = min(cycles_found)
     return cycles
-    
+
+
 if __name__ == "__main__":
-    main()
+    run()

@@ -12,22 +12,8 @@ output is a pickle file
 
 import networkx as nx
 from collections import Counter
-import matplotlib.pyplot as plt
-import numpy
-import scipy
 import pickle
 import os
-import sys
-
-# define variables
-
-wd = "C:/Users/franz/graphen_praktikum/graphtheory_practical_course/"
-dataDir = "data/smiles_list_clean/"
-outdir = "data/crn_clean/"
-# infile = "C:/Users/franz/graphen_praktikum/graph_theory/sihumix/acacae_adam/acacae_adam.smiles_list"
-
-#os.chdir(wd)
-fileList = os.listdir(dataDir)
 
 
 def parseLines(lines):
@@ -84,13 +70,9 @@ def parseLines(lines):
     return reactionData
 
 
-for file in fileList:
-    # initialize grpah
+def build_graph_from_file(fname: str) -> nx.DiGraph:
     G = nx.DiGraph()
-
-    infile = dataDir + file #dataDir + file
-    fileName = infile.split("/")[-1].split(".")[0]
-    with open(infile, "r") as inData:
+    with open(fname, "r") as inData:
         for line in inData:
             if line.startswith("Bigg ID"):
                 lines = []
@@ -152,18 +134,23 @@ for file in fileList:
                             multiplicity=reactionData["out_multiplicity"][succ],
                             direction=2,
                         )
+    return G
 
-    # testing for isolated reactions
-    # node = "R_2AGPGAT180"
-    # nodes = [node]
-    # nodes = nodes + [n for n in G.successors(node)]
-    # nodes = nodes + [n for n in G.predecessors(node)
-    # nx.draw(G.subgraph(nodes), with_labels=True)
-    # plt.show()
 
-    # save output with pickle
-    outfile = open(outdir + fileName + "_CRN.pi", "wb")
-    pickle.dump(G, outfile)
-    outfile.close()
+def run(
+    smiles_list_directory: str = "data/smiles_list_clean/",
+    crn_save_directory: str = "data/crn_clean/",
+):
 
-print("Finished creating CRN")
+    for entry in os.scandir(smiles_list_directory):
+        if entry.is_file() and entry.name.endswith(".smiles_list"):
+            parsed_graph: nx.DiGraph = build_graph_from_file(
+                smiles_list_directory + entry.name
+            )
+            filename = entry.name.split(".")[0]
+            with open(crn_save_directory + filename + "_CRN.pi", "wb") as save_file:
+                pickle.dump(parsed_graph, save_file)
+
+
+if __name__ == "__main__":
+    run()
