@@ -152,9 +152,9 @@ def main():
             legend.append(organism)
         plt.hist(his_data, bins = 10, log=True)
         plt.legend(legend)
-        plt.ylabel("Anzahl Reaktionen")
-        plt.xlabel("Aktivierungslevel")
-        plt.title(f"Aktivierungslevel bei Essential Compound Threshold {threshold}")
+        plt.ylabel("number of reactions")
+        plt.xlabel("reaction activation level")
+        plt.title(f"activation level at essential compound threshold {threshold}")
         plt.savefig(f"{results_dir}activation_level_by_theshold_{threshold}.png")
         plt.close()
 
