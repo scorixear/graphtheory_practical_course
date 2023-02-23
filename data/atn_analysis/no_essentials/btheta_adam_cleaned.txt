@@ -1,24 +1,112 @@
 btheta_adam_cleaned
-Component Number: 167
+Connected Component Number: 167
 Density 2.139784946236559
 Molecule Paths:
 D-glucose_0_O -> L-leucine = 454
 
 Endpoint analysis: 88
+D-glucose 6-phosphate: 1
+beta-D-glucose: 1
+alpha-D-glucose: 6
+beta-D-fructose: 5
+beta-D-fructose 6-phosphate: 1
+beta-D-glucose 6-phosphate: 1
+6-phospho-D-glucono-1,5-lactone: 1
+D-glucopyranose 1-phosphate: 8
+alpha,alpha-trehalose 6-phosphate: 12
+alpha-D-glucose 6-phosphate: 6
+beta-D-fructose 1,6-bisphosphate: 10
+sucrose 6(F)-phosphate: 14
+D-sedoheptulose 7-phosphate: 8
+D-erythrose 4-phosphate: 5
+6-phospho-D-gluconate: 6
+UDP-alpha-D-glucose: 15
+glyceraldehyde 3-phosphate: 5
+D-xylulose 5-phosphate: 7
+sedoheptulose 1,7-bisphosphate: 10
+alpha-D-ribose 5-phosphate: 7
+7-phospho-2-dehydro-3-deoxy-D-arabino-heptonate: 6
+D-ribulose 5-phosphate: 7
+alpha-D-galactose 1-phosphate: 7
+UDP-alpha-D-galactose: 18
+D-tagatofuranose 1,6-bisphosphate: 8
+1-deoxy-D-xylulose 5-phosphate: 5
+(2R)-3-phospho-glyceroyl phosphate: 5
+(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate: 5
+5-phospho-alpha-D-ribose 1-diphosphate: 9
+D-ribose: 5
+3-dehydroquinate: 3
+diphosphate: 3
+alpha-D-galactose: 6
+dihydroxyacetone phosphate: 5
+2-C-methyl-D-erythritol 4-phosphate: 6
+(2R)-3-phosphoglycerate: 5
+1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate: 7
+N-(5-phospho-beta-D-ribosyl)anthranilate: 7
+cytidine: 4
+uridine: 4
+3-dehydroshikimate: 6
+dGTP: 3
+dATP: 4
+alpha-D-galactose 6-phosphate: 7
+phosphoenolpyruvate: 4
+ITP: 2
+D-tagatose 1-phosphate: 3
+4-CDP-2-C-methyl-D-erythritol: 10
+(2R)-2-phosphoglycerate: 5
+3-phosphooxypyruvate: 5
+pyruvate: 1
+indole: 5
+CMP: 5
+UMP: 5
+shikimate: 6
+dGDP: 14
+triphosphate: 6
+dADP: 12
+UDP: 12
+4-CDP-2-C-methyl-D-erythritol 2-phosphate: 12
+(R)-glycerate: 4
+3-hydroxypyruvate: 4
+dihydroxyacetone: 2
+L-alanine: 3
+chorismate: 7
+L-tryptophan: 7
+CDP: 5
+3-phosphoshikimate: 6
+dGMP: 11
+dAMP: 11
+IDP: 13
+2-C-methyl-D-erythritol 2,4-cyclic diphosphate: 8
+anthranilate: 2
+cytosine: 4
+uracil: 4
+5-O-(1-carboxyvinyl)-3-phosphoshikimate: 8
+dUTP: 2
+GMP: 1
+dCTP: 2
+2'-deoxyguanosine: 10
+2-deoxy-alpha-D-ribose 1-phosphate: 4
+2'-deoxyadenosine: 9
+dUDP: 12
+guanosine: 10
+2'-deoxyinosine: 4
+alpha-D-ribose 1-phosphate: 5
+guanine: 6
+hypoxanthine: 5
 
 Compound: alpha-D-galactose
 Element: O
-Compound Size: 454
+Connected Component Size: 454
 Cycle-Basis: 170
 
 Compound: alpha-D-galactose
 Element: C
-Compound Size: 408
+Connected Component Size: 408
 Cycle-Basis: 93
 
 Compound: dGMP
 Element: O
-Compound Size: 67
+Connected Component Size: 67
 Cycle-Basis: 14
 Possible Cycles: 8192
 Cycles found: 152
@@ -28,7 +116,7 @@ Min Cycle Length: 3
 
 Compound: dGMP
 Element: P
-Compound Size: 67
+Connected Component Size: 67
 Cycle-Basis: 14
 Possible Cycles: 8192
 Cycles found: 152
@@ -38,7 +126,7 @@ Min Cycle Length: 3
 
 Compound: (R)-glycerate
 Element: O
-Compound Size: 21
+Connected Component Size: 21
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 2
@@ -48,7 +136,7 @@ Min Cycle Length: 4
 
 Compound: 4-CDP-2-C-methyl-D-erythritol
 Element: C
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -58,7 +146,7 @@ Min Cycle Length: 4
 
 Compound: UDP
 Element: C
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -68,7 +156,7 @@ Min Cycle Length: 4
 
 Compound: UDP
 Element: C
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -78,7 +166,7 @@ Min Cycle Length: 4
 
 Compound: CDP
 Element: N
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -88,7 +176,7 @@ Min Cycle Length: 4
 
 Compound: cytidine
 Element: C
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -98,7 +186,7 @@ Min Cycle Length: 4
 
 Compound: cytidine
 Element: O
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -108,7 +196,7 @@ Min Cycle Length: 4
 
 Compound: cytidine
 Element: N
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -118,7 +206,7 @@ Min Cycle Length: 4
 
 Compound: dADP
 Element: C
-Compound Size: 10
+Connected Component Size: 10
 Cycle-Basis: 3
 Possible Cycles: 4
 Cycles found: 4
@@ -128,7 +216,7 @@ Min Cycle Length: 3
 
 Compound: dADP
 Element: C
-Compound Size: 10
+Connected Component Size: 10
 Cycle-Basis: 3
 Possible Cycles: 4
 Cycles found: 4
@@ -138,7 +226,7 @@ Min Cycle Length: 3
 
 Compound: dATP
 Element: C
-Compound Size: 10
+Connected Component Size: 10
 Cycle-Basis: 3
 Possible Cycles: 4
 Cycles found: 4
@@ -148,7 +236,7 @@ Min Cycle Length: 3
 
 Compound: dADP
 Element: O
-Compound Size: 10
+Connected Component Size: 10
 Cycle-Basis: 3
 Possible Cycles: 4
 Cycles found: 4
@@ -158,7 +246,7 @@ Min Cycle Length: 3
 
 Compound: dATP
 Element: C
-Compound Size: 10
+Connected Component Size: 10
 Cycle-Basis: 3
 Possible Cycles: 4
 Cycles found: 4
@@ -168,7 +256,7 @@ Min Cycle Length: 3
 
 Compound: dATP
 Element: C
-Compound Size: 10
+Connected Component Size: 10
 Cycle-Basis: 3
 Possible Cycles: 4
 Cycles found: 4
@@ -178,7 +266,7 @@ Min Cycle Length: 3
 
 Compound: dATP
 Element: O
-Compound Size: 10
+Connected Component Size: 10
 Cycle-Basis: 3
 Possible Cycles: 4
 Cycles found: 4
@@ -188,7 +276,7 @@ Min Cycle Length: 3
 
 Compound: dGTP
 Element: O
-Compound Size: 10
+Connected Component Size: 10
 Cycle-Basis: 3
 Possible Cycles: 4
 Cycles found: 4
@@ -198,7 +286,7 @@ Min Cycle Length: 3
 
 Compound: dGDP
 Element: N
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -208,7 +296,7 @@ Min Cycle Length: 3
 
 Compound: dGDP
 Element: C
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -218,7 +306,7 @@ Min Cycle Length: 3
 
 Compound: dGDP
 Element: N
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -228,7 +316,7 @@ Min Cycle Length: 3
 
 Compound: guanosine
 Element: C
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -238,7 +326,7 @@ Min Cycle Length: 3
 
 Compound: guanine
 Element: C
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -248,7 +336,7 @@ Min Cycle Length: 3
 
 Compound: guanosine
 Element: N
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -258,7 +346,7 @@ Min Cycle Length: 3
 
 Compound: guanosine
 Element: C
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -268,7 +356,7 @@ Min Cycle Length: 3
 
 Compound: guanosine
 Element: N
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -278,7 +366,7 @@ Min Cycle Length: 3
 
 Compound: guanine
 Element: C
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -288,7 +376,7 @@ Min Cycle Length: 3
 
 Compound: guanine
 Element: O
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -298,7 +386,7 @@ Min Cycle Length: 3
 
 Compound: guanine
 Element: N
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -308,12 +396,12 @@ Min Cycle Length: 3
 
 Compound: anthranilate
 Element: N
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 0
 
 Compound: hypoxanthine
 Element: C
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -323,7 +411,7 @@ Min Cycle Length: 3
 
 Compound: hypoxanthine
 Element: N
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -333,7 +421,7 @@ Min Cycle Length: 3
 
 Compound: hypoxanthine
 Element: C
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -343,7 +431,7 @@ Min Cycle Length: 3
 
 Compound: hypoxanthine
 Element: N
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -353,7 +441,7 @@ Min Cycle Length: 3
 
 Compound: dATP
 Element: C
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -363,7 +451,7 @@ Min Cycle Length: 3
 
 Compound: dADP
 Element: C
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -373,7 +461,7 @@ Min Cycle Length: 3
 
 Compound: dADP
 Element: N
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -383,7 +471,7 @@ Min Cycle Length: 3
 
 Compound: dADP
 Element: C
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -393,7 +481,7 @@ Min Cycle Length: 3
 
 Compound: dADP
 Element: N
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -403,7 +491,7 @@ Min Cycle Length: 3
 
 Compound: dATP
 Element: O
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -413,27 +501,27 @@ Min Cycle Length: 3
 
 Compound: 4-CDP-2-C-methyl-D-erythritol
 Element: N
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 0
 
 Compound: uridine
 Element: O
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 0
 
 Compound: dUTP
 Element: O
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 0
 
 Compound: IDP
 Element: O
-Compound Size: 4
+Connected Component Size: 4
 Cycle-Basis: 0
 
 Compound: 2'-deoxyadenosine
 Element: N
-Compound Size: 4
+Connected Component Size: 4
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -443,7 +531,7 @@ Min Cycle Length: 3
 
 Compound: 3-phosphoshikimate
 Element: O
-Compound Size: 4
+Connected Component Size: 4
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -453,7 +541,7 @@ Min Cycle Length: 4
 
 Compound: dATP
 Element: P
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -463,7 +551,7 @@ Min Cycle Length: 3
 
 Compound: dADP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -473,586 +561,586 @@ Min Cycle Length: 3
 
 Compound: 4-CDP-2-C-methyl-D-erythritol 2-phosphate
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUDP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUDP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUDP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dCTP
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dCTP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dCTP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dCTP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUTP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUDP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUDP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUDP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dCTP
 Element: P
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dCTP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dCTP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dCTP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUTP
 Element: P
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUDP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUTP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUTP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUTP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: dUTP
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: UDP-alpha-D-glucose
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: UDP-alpha-D-galactose
 Element: P
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: UDP-alpha-D-galactose
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: alpha-D-ribose 1-phosphate
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: GMP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: GMP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: guanosine
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: guanosine
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: GMP
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: GMP
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: alpha-D-ribose 1-phosphate
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: alpha-D-ribose 1-phosphate
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: IDP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: ITP
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: ITP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: ITP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: IDP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: ITP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: ITP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: ITP
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: ITP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: CDP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 2-C-methyl-D-erythritol 2,4-cyclic diphosphate
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 4-CDP-2-C-methyl-D-erythritol 2-phosphate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 3-phosphoshikimate
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 3-phosphoshikimate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 2'-deoxyinosine
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: dUTP
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: alpha-D-ribose 1-phosphate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 2-deoxy-alpha-D-ribose 1-phosphate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: L-alanine
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: FMNH2
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: CDP
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: CDP
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: CDP
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: dCTP
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: GMP
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: GMP
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: 6-phospho-D-gluconate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: alpha-D-ribose 1-phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: alpha-D-ribose 1-phosphate
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: alpha-D-ribose 1-phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: 2-deoxy-alpha-D-ribose 1-phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: 2-deoxy-alpha-D-ribose 1-phosphate
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: 2-deoxy-alpha-D-ribose 1-phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: L-tryptophan
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 

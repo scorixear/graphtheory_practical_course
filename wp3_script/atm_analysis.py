@@ -7,6 +7,30 @@ import endpoint_bfs
 import matplotlib.pyplot as plt
 import numpy as np
 
+class PlotData:
+    def __init__(self) -> None:
+        pass
+
+class HistPlotData(PlotData):
+    def __init__(self, values: list, bins: int, label: str) -> None:
+        self.values = values
+        self.bins = bins
+        self.label = label
+
+class BarPlotData(PlotData):
+    def __init__(
+        self, 
+        data: list, 
+        labels: list[str], 
+        title: str, 
+        outputfile: str) -> None:
+
+        self.data = data
+        self.labels = labels
+        self.title = title
+        self.outputfile = outputfile
+
+
 def main():
     data_full = write_output(
         "data/atn_graphs",
@@ -29,29 +53,40 @@ def main():
         lambda filepath: filter_graph(filepath, essential_compounds))
     default_width = 0.5
     for i, full in enumerate(data_full):
-        cleaned = data_cleaned[i]
-        _, ax = plt.subplots(figsize=(10,6))
-        _ = ax.bar(
-            np.arange(len(full[0]))*2,
-            full[1],
-            default_width,
-            label="Full")
-        _ = ax.bar(
-            np.arange(len(cleaned[0]))*2+default_width,
-            cleaned[1],
-            default_width,
-            label="No essential compounds"
-        )
-        
-        ax.set_xlabel("Species")
-        ax.set_title(full[2])
-        ax.set_xticks(np.arange(len(full[0]))*2 + default_width/2)
-        ax.set_xticklabels(full[0])
-        ax.legend()
-        
-        plt.savefig("data/atn_analysis/"+full[3])
-        plt.close()
-        
+        if isinstance(full, BarPlotData):
+            full_bar: BarPlotData = full
+            cleaned: BarPlotData = data_cleaned[i]
+            _, ax = plt.subplots(figsize=(10,6))
+            _ = ax.bar(
+                np.arange(len(full_bar.labels))*2,
+                full_bar.data,
+                default_width,
+                label="Full")
+            _ = ax.bar(
+                np.arange(len(cleaned.labels))*2+default_width,
+                cleaned.data,
+                default_width,
+                label="No essential compounds"
+            )
+            
+            ax.set_xlabel("Species")
+            ax.set_title(full_bar.title)
+            ax.set_xticks(np.arange(len(full_bar.labels))*2 + default_width/2)
+            ax.set_xticklabels(full_bar.labels)
+            ax.legend()
+            
+            plt.savefig("data/atn_analysis/plots/"+full_bar.outputfile)
+            plt.close()
+        elif isinstance(full, HistPlotData):
+            full_hist: HistPlotData = full
+            cleaned: HistPlotData = data_cleaned[i]
+            plt.yscale("log")
+            plt.hist([full_hist.values, cleaned.values], bins=full_hist.bins)
+            plt.legend(["Full", "No essential compounds"])
+            plt.title(f"Connected Component Sizes: {full_hist.label}")
+            plt.savefig("data/atn_analysis/plots/"+full_hist.label+".png")
+            plt.close()
+
 def write_output(
         input_dir: str,
         output_dir: str,
@@ -60,43 +95,45 @@ def write_output(
         molecule_end_compound: str,
         endpoint_start_compound: str,
         endpoint_start_element: str,
-        graph_generation: Callable[[str], nx.Graph]) -> list[tuple[list[str], list, str, str]]:
+        graph_generation: Callable[[str], nx.Graph]) -> list[PlotData]:
+
     endpoint_analysis: list[tuple[str, int]] = []
     molecule_paths: list[tuple[str, tuple[int, str]]] = []
     density_analysis: list[tuple[str, float]] = []
     component_numbers: list[tuple[str, int]] = []
-    print("Starting Graph Reading")
+    plots: list[PlotData] = []
+    print("\n---- Starting Graph Reading ----")
     for entry in os.scandir(input_dir):
         if entry.is_file() and entry.name.endswith(".gml"):
             graph = graph_generation(input_dir+"/"+entry.name)
             output_file = output_dir+"/"+entry.name.split("/")[-1].split(".")[0]
             species_name = entry.name.split(".")[0]
-            
-            print(f"Generating analysis values for species {species_name}")
+            print(f"\nSpecies: {species_name}")
+            print(f"0% Analysis values")
             component_number = get_number_of_compounds(graph)
             component_numbers.append((species_name, component_number))
             dens = density(graph)
             density_analysis.append((species_name, dens))
-            print(f"Calculating Molecule Paths for species {species_name}")
+            print(f"25% Molecule Paths")
             molecule_path = find_paths(graph, molecule_start_compound, molecule_start_atom, molecule_end_compound)
             molecule_paths.append((species_name, (len(molecule_path[0].nodes), graph.nodes[molecule_path[1]]['element'])))
-            print(f"Calculating Endpoints for species {species_name}")
+            print(f"50% Endpoints")
             endpoints = endpoint_bfs.bfs_endpoint(graph, endpoint_start_compound, endpoint_start_element)
-            #endpoint_str = "\n".join([f"{key}: {len(data)}" for [key, data] in endpoints.items()])
+            endpoint_str = "\n".join([f"{key}: {len(data)}" for [key, data] in endpoints.items()])
             endpoint_analysis.append((species_name, len(endpoints)))
-            print(f"Calculating Cycles for species {species_name}")
+            print(f"75% Cycles")
             cycle_data = get_cycle_lengths(graph)
             
             with open(output_file+".txt", "w", encoding="UTF-8") as writer:
                 writer.write(species_name+"\n")    
-                writer.write(f"Component Number: {component_number}\n")
+                writer.write(f"Connected Component Number: {component_number}\n")
                 writer.write(f"Density {dens}\n")
                 writer.write(f"Molecule Paths:\n{molecule_start_compound}_{molecule_start_atom}_{graph.nodes[molecule_path[1]]['element']} -> {molecule_end_compound} = {len(molecule_path[0].nodes)}\n\n")
-                writer.write(f"Endpoint analysis: {len(endpoints)}\n\n")#\n{endpoint_str}\n\n")
+                writer.write(f"Endpoint analysis: {len(endpoints)}\n{endpoint_str}\n\n")
                 for key_value in cycle_data.items():
                     writer.write(f"Compound: {key_value[1]['compound']}\n")
                     writer.write(f"Element: {key_value[1]['element']}\n")
-                    writer.write(f"Compound Size: {key_value[1]['len']}\n")
+                    writer.write(f"Connected Component Size: {key_value[1]['len']}\n")
                     writer.write(f"Cycle-Basis: {key_value[1]['basis']}\n")
                     if key_value[1]['cycles_found'] > -1:
                         writer.write(f"Possible Cycles: {key_value[1]['possible']}\n")
@@ -105,41 +142,39 @@ def write_output(
                         writer.write(f"Average Cycle Length: {key_value[1]['cycles']}\n")
                         writer.write(f"Min Cycle Length: {key_value[1]['min_cycle']}\n")
                     writer.write("\n")
-            compound_sizes = [cycle[1]['len'] for cycle in cycle_data.items()]
-            plt.yscale('log')
-            plt.hist(
-                compound_sizes, 
-                bins=(max(compound_sizes)-min(compound_sizes))//int(math.sqrt(len(compound_sizes))),
-                label="Cycle Analysis: "+species_name)
-            plt.savefig(output_file+".png")
-            plt.close()
+            conn_comp_sizes = [cycle[1]['len'] for cycle in cycle_data.items()]
+
+            plots.append(HistPlotData(
+                conn_comp_sizes,
+                (max(conn_comp_sizes)-min(conn_comp_sizes))//int(math.sqrt(len(conn_comp_sizes))),
+                species_name
+            ))
     
-    #plt.xticks(rotation=90)
-    return [
-        (
-            [data[0] for data in endpoint_analysis], 
-            [data[1] for data in endpoint_analysis], 
-            f"Endpoint Analysis: {endpoint_start_compound}_{endpoint_start_element}",
-            "01_endpoint_analysis.png"
-        ),
-        (
-            [data[0] for data in molecule_paths],
-            [data[1][0] for data in molecule_paths],
-            f"Molecule Paths: {molecule_start_compound}_{molecule_start_atom}_{molecule_paths[0][1][1]} -> {molecule_end_compound}",
-            "02_molecule_paths.png"
-        ),
-        (
-            [data[0] for data in density_analysis],
-            [data[1] for data in density_analysis],
-            "Density Analysis",
-            "03_density_analysis.png"
-        ),
-        (
-            [data[0] for data in component_numbers],
-            [data[1] for data in component_numbers],
-            "Component Numbers",
-            "04_component_numbers.png"
-        )]
+    plots.append(BarPlotData(
+        [data[1] for data in endpoint_analysis], 
+        [data[0] for data in endpoint_analysis],
+        f"Endpoint Analysis: {endpoint_start_compound}_{endpoint_start_element}",
+        "01_endpoint_analysis.png"))
+    plots.append(BarPlotData(
+        [data[1][0] for data in molecule_paths],
+        [data[0] for data in molecule_paths],
+        f"Molecule Paths: {molecule_start_compound}_{molecule_start_atom}_{molecule_paths[0][1][1]} -> {molecule_end_compound}",
+        "02_molecule_paths.png"
+    ))
+    plots.append(BarPlotData(
+        [data[1] for data in density_analysis],
+        [data[0] for data in density_analysis],
+        "Density Analysis",
+        "03_density_analysis.png"
+    ))
+    plots.append(BarPlotData(
+        [data[1] for data in component_numbers],
+        [data[0] for data in component_numbers],
+        "Connected Component Numbers",
+        "04_component_numbers.png"
+    ))
+    return plots
+
 def read_file(file: str) -> list[str]:
     """reads in file, splits by new line, trims output."""
     with open(file, "r", encoding="UTF-8") as reader:

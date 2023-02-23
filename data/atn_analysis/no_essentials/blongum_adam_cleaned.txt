@@ -1,24 +1,149 @@
 blongum_adam_cleaned
-Component Number: 158
+Connected Component Number: 158
 Density 2.0760340632603405
 Molecule Paths:
 D-glucose_0_O -> L-leucine = 529
 
 Endpoint analysis: 125
+D-glucose 6-phosphate: 1
+beta-D-fructose: 5
+beta-D-fructose 6-phosphate: 2
+6-phospho-D-glucono-1,5-lactone: 8
+D-erythrose 4-phosphate: 2
+beta-D-fructose 1,6-bisphosphate: 3
+D-sedoheptulose 7-phosphate: 9
+6-phospho-D-gluconate: 6
+7-phospho-2-dehydro-3-deoxy-D-arabino-heptonate: 7
+glyceraldehyde 3-phosphate: 3
+D-xylulose 5-phosphate: 7
+alpha-D-ribose 5-phosphate: 6
+D-ribulose 5-phosphate: 7
+3-dehydroquinate: 3
+dihydroxyacetone phosphate: 4
+(2R)-3-phospho-glyceroyl phosphate: 4
+(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate: 5
+5-phospho-alpha-D-ribose 1-diphosphate: 6
+3-dehydroshikimate: 6
+dihydroxyacetone: 3
+methylglyoxal: 3
+(2R)-3-phosphoglycerate: 5
+1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate: 5
+acetyl phosphate: 3
+N-(5-phospho-beta-D-ribosyl)anthranilate: 7
+1-(5-Phosphoribosyl)-ATP: 11
+shikimate: 6
+phosphoenolpyruvate: 4
+hydroxyacetone: 3
+(2R)-2-phosphoglycerate: 5
+3-phosphooxypyruvate: 6
+L-tryptophan: 5
+indole: 5
+acetyl-CoA: 2
+1-(5-Phosphoribosyl)-AMP: 18
+3-phosphoshikimate: 6
+(S)-propane-1,2-diol: 3
+2-oxoglutarate: 5
+O-phospho-L-serine: 5
+N-acetyl-L-glutamate: 5
+citrate: 3
+(2S)-2-isopropylmalate: 4
+pyruvate: 3
+O-acetyl-L-serine: 4
+diphosphate: 4
+1-(5-phospho-beta-D-ribosyl)-5-[(5-phospho-beta-D-ribosylamino)methylideneamino]imidazole-4-carboxamide: 18
+oxaloacetate: 4
+5-O-(1-carboxyvinyl)-3-phosphoshikimate: 8
+(S)-lactaldehyde: 3
+4-methyl-2-oxopentanoate: 3
+L-glutamate: 5
+isocitrate(3-): 7
+(S)-3-methyl-2-oxopentanoate: 3
+L-glutamate 5-semialdehyde: 3
+3-phenylpyruvate: 4
+(S)-2-succinylamino-6-oxoheptanedioate: 7
+3-(4-hydroxyphenyl)pyruvate: 5
+3-methyl-2-oxobutanoate: 3
+L-serine: 3
+N-acetyl-L-glutamyl 5-phosphate: 6
+N(2)-acetyl-L-ornithine: 5
+2-isopropylmaleate: 3
+chorismate: 7
+(S)-2,3-dihydrodipicolinate: 3
+(S)-lactate: 3
+acetate: 2
+L-citrulline: 5
+L-aspartate: 4
+anthranilate: 2
+5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide: 18
+(S)-2-ethyl-2-hydroxy-3-oxobutanoate: 2
+L-alanine: 3
+prephenate: 6
+succinyl-CoA: 3
+3-(imidazol-4-yl)-2-oxopropyl phosphate: 3
+succinate semialdehyde: 4
+(2S)-2-acetolactate: 2
+formate: 2
+(2S)-2-isopropyl-3-oxosuccinate: 5
+L-leucine: 3
+L-glutamine: 4
+L-glutamyl 5-phosphate: 5
+L-isoleucine: 3
+L-ornithine: 4
+L-phenylalanine: 4
+N-succinyl-(2S,6S)-2,6-diaminoheptanedioate: 8
+L-tyrosine: 5
+L-valine: 3
+(2R,3R)-2,3-dihydroxy-3-methylpentanoate: 3
+(S)-1-pyrroline-5-carboxylate: 4
+(S)-2,3,4,5-tetrahydrodipicolinate: 6
+(2R)-2,3-dihydroxy-3-methylbutanoate: 5
+L,L-cystathionine: 4
+N-acetyl-L-glutamate 5-semialdehyde: 5
+(2R,3S)-3-isopropylmalate: 3
+N-(L-Arginino)succinate: 8
+N-carbamoyl-L-aspartate: 5
+D-erythro-1-(imidazol-4-yl)glycerol 3-phosphate: 7
+L-histidinol phosphate: 3
+O-succinyl-L-homoserine: 7
+succinate: 4
+4-phospho-L-aspartate: 4
+L-asparagine: 4
+L-arogenate: 6
+(2S,6S)-2,6-diaminoheptanedioate: 3
+L-proline: 4
+L-cysteine: 3
+L-aspartate 4-semialdehyde: 3
+fumarate: 3
+(S)-dihydroorotate: 5
+2-oxobutanoate: 2
+L-histidinol: 3
+meso-2,6-diaminoheptanedioate: 3
+L-homocysteine: 4
+L-homoserine: 4
+L-arginine: 6
+orotate: 6
+L-threonine: 4
+L-histidine: 5
+L-lysine: 5
+hydrogen sulfide: 1
+O-phospho-L-homoserine: 4
+5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide: 11
+glycine: 3
+acetaldehyde: 2
 
 Compound: L-leucine
 Element: C
-Compound Size: 682
+Connected Component Size: 682
 Cycle-Basis: 164
 
 Compound: L-leucine
 Element: O
-Compound Size: 531
+Connected Component Size: 531
 Cycle-Basis: 159
 
 Compound: L-tyrosine
 Element: N
-Compound Size: 62
+Connected Component Size: 62
 Cycle-Basis: 9
 Possible Cycles: 256
 Cycles found: 13
@@ -28,7 +153,7 @@ Min Cycle Length: 3
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: P
-Compound Size: 31
+Connected Component Size: 31
 Cycle-Basis: 6
 Possible Cycles: 32
 Cycles found: 27
@@ -38,7 +163,7 @@ Min Cycle Length: 4
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: O
-Compound Size: 31
+Connected Component Size: 31
 Cycle-Basis: 6
 Possible Cycles: 32
 Cycles found: 27
@@ -48,7 +173,7 @@ Min Cycle Length: 4
 
 Compound: (1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate
 Element: N
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -58,7 +183,7 @@ Min Cycle Length: 3
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: O
-Compound Size: 10
+Connected Component Size: 10
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -68,117 +193,117 @@ Min Cycle Length: 4
 
 Compound: L-histidinol phosphate
 Element: C
-Compound Size: 9
+Connected Component Size: 9
 Cycle-Basis: 0
 
 Compound: L-histidinol phosphate
 Element: N
-Compound Size: 9
+Connected Component Size: 9
 Cycle-Basis: 0
 
 Compound: diphosphate
 Element: O
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-AMP
 Element: N
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-AMP
 Element: C
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-AMP
 Element: C
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-AMP
 Element: N
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: C
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: N
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-ATP
 Element: C
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-ATP
 Element: O
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-ATP
 Element: C
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: C
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: O
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: P
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: O
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: C
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: O
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: C
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: O
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: C
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: N
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 0
 
 Compound: 3-phosphoshikimate
 Element: O
-Compound Size: 4
+Connected Component Size: 4
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -188,7 +313,7 @@ Min Cycle Length: 4
 
 Compound: L-homocysteine
 Element: S
-Compound Size: 4
+Connected Component Size: 4
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -198,636 +323,636 @@ Min Cycle Length: 4
 
 Compound: 1-(5-Phosphoribosyl)-ATP
 Element: P
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: diphosphate
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: diphosphate
 Element: P
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: diphosphate
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: N-(L-Arginino)succinate
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: N-(L-Arginino)succinate
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: orotate
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: orotate
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: (S)-dihydroorotate
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 5-phospho-alpha-D-ribose 1-diphosphate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 4-phospho-L-aspartate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 5-O-(1-carboxyvinyl)-3-phosphoshikimate
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: 5-O-(1-carboxyvinyl)-3-phosphoshikimate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: L-glutamyl 5-phosphate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: O-phospho-L-homoserine
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: acetyl phosphate
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: N-acetyl-L-glutamyl 5-phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: N-acetyl-L-glutamyl 5-phosphate
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: N-acetyl-L-glutamyl 5-phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: S
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: S
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: 4-phospho-L-aspartate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: 4-phospho-L-aspartate
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: 4-phospho-L-aspartate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: L-glutamyl 5-phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: L-glutamyl 5-phosphate
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: L-glutamyl 5-phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: (2R)-3-phospho-glyceroyl phosphate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: 6-phospho-D-gluconate
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: L-histidine
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: O-phospho-L-homoserine
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: O-phospho-L-homoserine
 Element: O
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: acetyl phosphate
 Element: P
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
 Compound: L-asparagine
 Element: N
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
