@@ -171,12 +171,14 @@ def add_constraints(
 
 
 def run(
-    datadir: str = "data/amino_reaction_cycle/", resultsdir: str = "data/flux_results/"
+    datadir: str = "data/amino_reaction_cycle/", 
+    resultsdir: str = "data/flux_results/", 
+    proteinfile: str = "data/proteins/proteom_ecoli_uniprot.fasta"
 ):
     # used for reading in graphs
     # used for outputing Dictionaries with Variable solutions
     # proteom to be generated from acids
-    proteom = amino_acid_ratios.read_fasta("data/proteins/proteom_ecoli_uniprot.fasta")
+    proteom = amino_acid_ratios.read_fasta(proteinfile)
     # all available acids
     amino_acids = read_file("wp1_script/amino_acids.txt")
     # every essential compound that can be used as an input

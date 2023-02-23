@@ -31,26 +31,34 @@ class BarPlotData(PlotData):
         self.outputfile = outputfile
 
 
-def main():
+def run(
+    input_dir: str = "data/atn_graphs/", 
+    output_dir: str = "data/atn_analysis/", 
+    molecule_start_compound: str = "D-glucose", 
+    molecule_start_atom: int = 0, 
+    molecule_end_compound: str = "L-leucine", 
+    endpoint_start_compound: str = "D-glucose", 
+    endpoint_start_element: str = "C"):
     data_full = write_output(
-        "data/atn_graphs",
-        "data/atn_analysis",
-        "D-glucose",
-        0,
-        "L-leucine",
-        "D-glucose",
-        "C",
+        input_dir,
+        output_dir,
+        molecule_start_compound,
+        molecule_start_atom,
+        molecule_end_compound,
+        endpoint_start_compound,
+        endpoint_start_element,
         lambda filepath: nx.read_gml(filepath, label=None))
     essential_compounds = read_file("wp1_script/essential_compounds.txt")
     data_cleaned = write_output(
-        "data/atn_graphs",
-        "data/atn_analysis/no_essentials",
-        "D-glucose",
-        0,
-        "L-leucine",
-        "D-glucose",
-        "C",
+        input_dir,
+        output_dir,
+        molecule_start_compound,
+        molecule_start_atom,
+        molecule_end_compound,
+        endpoint_start_compound,
+        endpoint_start_element,
         lambda filepath: filter_graph(filepath, essential_compounds))
+
     default_width = 0.5
     for i, full in enumerate(data_full):
         if isinstance(full, BarPlotData):
@@ -75,7 +83,7 @@ def main():
             ax.set_xticklabels(full_bar.labels)
             ax.legend()
             
-            plt.savefig("data/atn_analysis/plots/"+full_bar.outputfile)
+            plt.savefig(output_dir+"plots/"+full_bar.outputfile)
             plt.close()
         elif isinstance(full, HistPlotData):
             full_hist: HistPlotData = full
@@ -84,7 +92,7 @@ def main():
             plt.hist([full_hist.values, cleaned.values], bins=full_hist.bins)
             plt.legend(["Full", "No essential compounds"])
             plt.title(f"Connected Component Sizes: {full_hist.label}")
-            plt.savefig("data/atn_analysis/plots/"+full_hist.label+".png")
+            plt.savefig(output_dir+"plots/"+full_hist.label+".png")
             plt.close()
 
 def write_output(
@@ -105,8 +113,8 @@ def write_output(
     print("\n---- Starting Graph Reading ----")
     for entry in os.scandir(input_dir):
         if entry.is_file() and entry.name.endswith(".gml"):
-            graph = graph_generation(input_dir+"/"+entry.name)
-            output_file = output_dir+"/"+entry.name.split("/")[-1].split(".")[0]
+            graph = graph_generation(input_dir+entry.name)
+            output_file = output_dir+entry.name.split("/")[-1].split(".")[0]
             species_name = entry.name.split(".")[0]
             print(f"\nSpecies: {species_name}")
             print(f"0% Analysis values")
