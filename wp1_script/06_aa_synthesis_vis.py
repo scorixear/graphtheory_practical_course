@@ -58,12 +58,12 @@ def run_original_data():
     dict_adam = get_aa_dict("data/amino_reaction_cycle/", "adam")
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(16, 9))
 
-    mat = visualize_dict(dict_adam, axes[0])
+    visualize_dict(dict_adam, axes[0])
     axes[0].set_title("Adam")
     dict_cim = get_aa_dict("data/amino_reaction_cycle/", "cimIV")
     axes[1].set_title("cimIV")
 
-    mat = visualize_dict(dict_cim, axes[1])
+    visualize_dict(dict_cim, axes[1])
     plt.tight_layout()
     plt.show()
 
@@ -72,7 +72,7 @@ def run_clean_data():
     dict_adam = get_aa_dict("data_clean/02_amino_reaction_cycle_clean", "adam")
     fig, axes = plt.subplots(figsize=(8, 9))
 
-    mat = visualize_dict(dict_adam, axes)
+    visualize_dict(dict_adam, axes)
     axes.set_title("Adam")
     plt.tight_layout()
     plt.show()
