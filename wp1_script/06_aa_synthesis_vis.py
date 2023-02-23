@@ -36,7 +36,9 @@ def get_aa_dict(
     return results
 
 
-def visualize_dict(aa_annotation: dict, ax: plt.Axes):
+def visualize_dict(
+    aa_annotation: dict, ax: plt.Axes, title: str = "Amino Acid Heatmap"
+):
     amino_acids = get_aa_list()
     matrix = np.zeros((len(aa_annotation.keys()), len(amino_acids)))
     species: list[str] = []
@@ -49,31 +51,42 @@ def visualize_dict(aa_annotation: dict, ax: plt.Axes):
         yticklabels=species,
         linewidths=0.5,
         ax=ax,
-        cbar=False,
         square=True,
+        cbar=False,
+        vmin=0,
+        vmax=1.0,
     )
+    ax.set_title(title)
 
 
 def run_original_data():
-    dict_adam = get_aa_dict("data/amino_reaction_cycle/", "adam")
-    fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(16, 9))
+    fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(16, 9))
 
-    visualize_dict(dict_adam, axes[0])
-    axes[0].set_title("Adam")
+    dict_adam_orig = get_aa_dict("data/crn/", "adam")
+    visualize_dict(dict_adam_orig, axes.flat[0], "Adam - Original Data")
+
+    dict_cim_orig = get_aa_dict("data/crn/", "cimIV")
+    visualize_dict(dict_cim_orig, axes.flat[1], "cimIV - Original Data")
+
+    dict_adam_orig = get_aa_dict("data/amino_reaction_cycle/", "adam")
+    visualize_dict(dict_adam_orig, axes.flat[2], "Adam - Amino Acid Synthesis Pathway")
+
     dict_cim = get_aa_dict("data/amino_reaction_cycle/", "cimIV")
-    axes[1].set_title("cimIV")
+    visualize_dict(dict_cim, axes.flat[3], "cimIV - Amino Acid Synthesis Pathway")
 
-    visualize_dict(dict_cim, axes[1])
     plt.tight_layout()
     plt.show()
 
 
 def run_clean_data():
-    dict_adam = get_aa_dict("data_clean/02_amino_reaction_cycle_clean", "adam")
-    fig, axes = plt.subplots(figsize=(8, 9))
+    fig, axes = plt.subplots(figsize=(8, 9), nrows=2, ncols=1)
 
-    visualize_dict(dict_adam, axes)
-    axes.set_title("Adam")
+    dict_adam_orig = get_aa_dict("data_clean/01_crn_clean/", "adam")
+    visualize_dict(dict_adam_orig, axes.flat[0], "Adam - Original Data (clean)")
+
+    dict_adam = get_aa_dict("data_clean/02_amino_reaction_cycle_clean/", "adam")
+    visualize_dict(dict_adam, axes.flat[1], "Adam - Amino Acid Synthesis Pathway")
+
     plt.tight_layout()
     plt.show()
 
