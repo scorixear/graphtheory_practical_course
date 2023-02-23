@@ -71,7 +71,7 @@ def main():
     # ------------------------------------------------------------------------------
     # visualize flux model
     flux_visualization = __import__("02_flux_visualization")
-    graphics_save_directory: str = data_directory+"07_flux_visulation"
+    graphics_save_directory: str = data_directory+"07_flux_visulation/"
     mkdir(graphics_save_directory)
     flux_visualization.run(resultsdir_psolve, rdir_transformation, graphics_save_directory)
     # ------------------------------------------------------------------------------
@@ -80,9 +80,9 @@ def main():
     graph_dir: str = data_directory+"08_atn_graphs/"
     analysis_dir: str = data_directory+"09_atn_analysis/"
     mkdir(graph_dir)
-    mkdir(graph_dir+"no_essentials")
-    mkdir(graph_dir+"plots")
     mkdir(analysis_dir)
+    mkdir(analysis_dir+"no_essentials")
+    mkdir(analysis_dir+"plots")
     atm_analysis.run(graph_dir, analysis_dir)
 
 
