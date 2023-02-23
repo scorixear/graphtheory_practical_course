@@ -1,20 +1,159 @@
-blongum_adam_cleaned.gml
-Component Number: 219
+blongum_adam_cleaned
+Connected Component Number: 219
 Density 2.1320845341018253
+Molecule Paths:
+D-glucose_0_O -> L-leucine = 634
+
+Endpoint analysis: 135
+D-glucose 6-phosphate: 1
+beta-D-fructose: 5
+beta-D-fructose 6-phosphate: 2
+6-phospho-D-glucono-1,5-lactone: 8
+D-erythrose 4-phosphate: 2
+beta-D-fructose 1,6-bisphosphate: 4
+D-sedoheptulose 7-phosphate: 9
+6-phospho-D-gluconate: 6
+7-phospho-2-dehydro-3-deoxy-D-arabino-heptonate: 7
+glyceraldehyde 3-phosphate: 3
+D-xylulose 5-phosphate: 7
+alpha-D-ribose 5-phosphate: 6
+ATP: 1
+D-ribulose 5-phosphate: 7
+3-dehydroquinate: 3
+dihydroxyacetone phosphate: 4
+(2R)-3-phospho-glyceroyl phosphate: 6
+(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate: 5
+5-phospho-alpha-D-ribose 1-diphosphate: 10
+N-acetyl-L-glutamyl 5-phosphate: 6
+diphosphate: 5
+4-phospho-L-aspartate: 3
+1-(5-Phosphoribosyl)-ATP: 16
+phosphate: 2
+L-glutamyl 5-phosphate: 5
+O-phospho-L-homoserine: 3
+phosphoenolpyruvate: 4
+3-phosphoshikimate: 5
+3-dehydroshikimate: 6
+dihydroxyacetone: 3
+methylglyoxal: 3
+(2R)-3-phosphoglycerate: 5
+1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate: 7
+acetyl phosphate: 4
+N-(5-phospho-beta-D-ribosyl)anthranilate: 9
+carbamoyl phosphate: 3
+5-O-(1-carboxyvinyl)-3-phosphoshikimate: 9
+L-histidinol phosphate: 2
+O-phospho-L-serine: 4
+(2R)-2-phosphoglycerate: 5
+CO2: 1
+H2O: 1
+shikimate: 6
+hydroxyacetone: 3
+3-phosphooxypyruvate: 6
+L-tryptophan: 5
+indole: 5
+acetyl-CoA: 3
+1-(5-Phosphoribosyl)-AMP: 14
+ADP: 13
+L-glutamate: 4
+L-aspartate: 3
+N-acetyl-L-glutamate: 4
+succinate: 1
+3-(imidazol-4-yl)-2-oxopropyl phosphate: 5
+L-homoserine: 1
+L-threonine: 2
+pyruvate: 2
+oxaloacetate: 4
+2-oxoglutarate: 3
+L-arogenate: 4
+meso-2,6-diaminoheptanedioate: 2
+isocitrate(3-): 6
+(2S)-2-isopropyl-3-oxosuccinate: 4
+prephenate: 5
+CoA: 9
+2-oxobutanoate: 2
+acetate: 2
+L-serine: 2
+(2R)-2,3-dihydroxy-3-methylbutanoate: 3
+(2R,3R)-2,3-dihydroxy-3-methylpentanoate: 3
+L-aspartate 4-semialdehyde: 2
+N-carbamoyl-L-aspartate: 4
+L-glutamate 5-semialdehyde: 3
+L-histidine: 1
+D-erythro-1-(imidazol-4-yl)glycerol 3-phosphate: 4
+(2R,3S)-3-isopropylmalate: 3
+NADH: 1
+1-(5-phospho-beta-D-ribosyl)-5-[(5-phospho-beta-D-ribosylamino)methylideneamino]imidazole-4-carboxamide: 11
+(S)-2-succinylamino-6-oxoheptanedioate: 8
+(S)-propane-1,2-diol: 3
+(2S)-2-isopropylmalate: 3
+citrate: 5
+O-acetyl-L-serine: 4
+N-acetyl-L-glutamate 5-semialdehyde: 6
+chorismate: 6
+5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide: 10
+N-(L-Arginino)succinate: 6
+L-histidinol: 1
+acetaldehyde: 2
+(S)-lactate: 3
+3-methyl-2-oxobutanoate: 3
+4-methyl-2-oxopentanoate: 3
+(S)-3-methyl-2-oxopentanoate: 5
+3-phenylpyruvate: 6
+3-(4-hydroxyphenyl)pyruvate: 6
+(S)-2,3-dihydrodipicolinate: 4
+(2S)-2-acetolactate: 3
+(S)-2-ethyl-2-hydroxy-3-oxobutanoate: 4
+formate: 2
+(2S,6S)-2,6-diaminoheptanedioate: 7
+succinyl-CoA: 27
+succinate semialdehyde: 4
+2-isopropylmaleate: 4
+NAD(+): 1
+N-succinyl-(2S,6S)-2,6-diaminoheptanedioate: 9
+L-citrulline: 4
+(S)-lactaldehyde: 3
+N(2)-acetyl-L-ornithine: 6
+anthranilate: 4
+AMP: 11
+L-asparagine: 4
+L-glutamine: 5
+(S)-1-pyrroline-5-carboxylate: 4
+(S)-dihydroorotate: 6
+O-succinyl-L-homoserine: 5
+L-alanine: 3
+L-leucine: 3
+L-isoleucine: 5
+L-ornithine: 5
+L-phenylalanine: 6
+L-tyrosine: 6
+L-valine: 3
+(S)-2,3,4,5-tetrahydrodipicolinate: 6
+L,L-cystathionine: 5
+L-lysine: 5
+5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide: 11
+L-proline: 4
+orotate: 6
+L-homocysteine: 3
+glycine: 3
+L-cysteine: 3
+L-arginine: 6
+NH4(+): 1
+hydrogen sulfide: 1
 
 Compound: L-leucine
 Element: C
-Compound Size: 683
+Connected Component Size: 683
 Cycle-Basis: 174
 
 Compound: L-leucine
 Element: O
-Compound Size: 636
+Connected Component Size: 636
 Cycle-Basis: 310
 
 Compound: (1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate
 Element: N
-Compound Size: 76
+Connected Component Size: 76
 Cycle-Basis: 13
 Possible Cycles: 4096
 Cycles found: 35
@@ -24,12 +163,12 @@ Min Cycle Length: 3
 
 Compound: 3-phosphoshikimate
 Element: P
-Compound Size: 45
+Connected Component Size: 45
 Cycle-Basis: 22
 
 Compound: ATP
 Element: O
-Compound Size: 16
+Connected Component Size: 16
 Cycle-Basis: 5
 Possible Cycles: 16
 Cycles found: 18
@@ -39,122 +178,122 @@ Min Cycle Length: 3
 
 Compound: L-histidinol phosphate
 Element: N
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 0
 
 Compound: L-histidinol phosphate
 Element: C
-Compound Size: 12
+Connected Component Size: 12
 Cycle-Basis: 0
 
 Compound: ADP
 Element: N
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: ADP
 Element: C
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: ADP
 Element: N
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: ADP
 Element: C
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-AMP
 Element: C
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-AMP
 Element: N
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: 5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: C
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: 5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: N
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: 1-(5-Phosphoribosyl)-ATP
 Element: C
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: AMP
 Element: O
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: AMP
 Element: C
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: ATP
 Element: C
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: ATP
 Element: O
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: ATP
 Element: P
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: ATP
 Element: O
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: C
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: O
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: C
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: 5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide
 Element: O
-Compound Size: 8
+Connected Component Size: 8
 Cycle-Basis: 0
 
 Compound: N-carbamoyl-L-aspartate
 Element: N
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 0
 
 Compound: N-carbamoyl-L-aspartate
 Element: C
-Compound Size: 7
+Connected Component Size: 7
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 6
+Connected Component Size: 6
 Cycle-Basis: 4
 Possible Cycles: 8
 Cycles found: 12
@@ -164,7 +303,7 @@ Min Cycle Length: 3
 
 Compound: ATP
 Element: P
-Compound Size: 5
+Connected Component Size: 5
 Cycle-Basis: 2
 Possible Cycles: 2
 Cycles found: 3
@@ -174,7 +313,7 @@ Min Cycle Length: 3
 
 Compound: NADPH
 Element: O
-Compound Size: 4
+Connected Component Size: 4
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -184,7 +323,7 @@ Min Cycle Length: 4
 
 Compound: L-homocysteine
 Element: S
-Compound Size: 4
+Connected Component Size: 4
 Cycle-Basis: 1
 Possible Cycles: 1
 Cycles found: 1
@@ -194,936 +333,936 @@ Min Cycle Length: 4
 
 Compound: CoA
 Element: S
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: P
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: P
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: N
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: acetyl-CoA
 Element: C
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: succinyl-CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: P
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: CoA
 Element: O
-Compound Size: 3
+Connected Component Size: 3
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADPH
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADPH
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADP(+)
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADP(+)
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADP(+)
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADP(+)
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADP(+)
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADPH
-Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: N
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADPH
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADP(+)
+Element: C
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADPH
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADP(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADH
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADH
-Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NAD(+)
 Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NADH
-Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: O
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: O
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: NAD(+)
-Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: NADH
 Element: C
-Compound Size: 2
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: O
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NAD(+)
+Element: O
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: NADH
+Element: C
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: P
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FAD
-Element: O
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FAD
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FAD
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: N
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: C
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: O
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FADH2
-Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: O
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
-Compound: FAD
+Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: O
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FAD
-Element: N
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: C
-Compound Size: 2
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: O
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: N
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FADH2
 Element: O
-Compound Size: 2
-Cycle-Basis: 0
-
-Compound: FAD
-Element: C
-Compound Size: 2
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: FAD
 Element: N
-Compound Size: 2
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FADH2
+Element: O
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: C
+Connected Component Size: 2
+Cycle-Basis: 0
+
+Compound: FAD
+Element: N
+Connected Component Size: 2
 Cycle-Basis: 0
 
 Compound: H(+)
 Element: H
-Compound Size: 1
+Connected Component Size: 1
 Cycle-Basis: 0
 
