@@ -1,5 +1,9 @@
-import networkx as nx
+import sys
 import pickle
+import networkx as nx
+
+sys.path.append("./input")
+file_handler = __import__("file_handler")
 
 
 def read_file(file: str) -> list[str]:
@@ -72,52 +76,45 @@ def enumerate_simple_paths_deletion(
     return paths
 
 
-def run(infile: str = "data/enumeration/acacae_adam_CRN_glycine.pi"):
+def run(
+    infile: str = "data/enumeration/acacae_adam_CRN_glycine.pi",
+    output_folder: str = "data/paths/"):
     source = "D-glucose"
-    G = pickle.load(open(infile, "rb"))
-    amino_acids = read_file("wp1_script/amino_acids.txt")
-    common_compounds = read_file("wp1_script/essential_compounds.txt")
-    acids_present = [aa for aa in amino_acids if G.has_node(aa)]
+    with open(infile, "rb") as reader:
+        graph = pickle.load(reader)
+    
+    amino_acids = file_handler.read_json("input/amino_acids.json")
+    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    
+    acids_present = [aa for aa in amino_acids if graph.has_node(aa)]
 
-    reactionGraph = build_reaction_graph(G, source, acids_present, common_compounds)
-    # TODO filter subgraphs for each aa
+    reactionGraph = build_reaction_graph(graph, source, acids_present, essential_compounds)
 
     aaSimplePaths = {}
     pathThreshold = 1000
+    results = {}
     for aa in acids_present:
-        print("enumerating ", aa)
         paths = enumerate_simple_paths(reactionGraph, source, aa, pathThreshold)
         aaSimplePaths[aa] = paths
-        # try:
-        #     print("shortest graph: ", nx.shortest_path(reactionGraph, source, aa))
-        # except nx.NetworkXNoPath:
-        #     print("no shortest path found for: ", aa)
-        #     pass
+        
+    for [acid_key, paths] in aaSimplePaths.items():
 
-    for aa in aaSimplePaths:
-        print(f"path number for {aa}: {len(aaSimplePaths[aa])}")
-
-        pathLenghts = [len(path) for path in aaSimplePaths[aa]]
-        # plt.hist(pathLenghts)
-        # plt.show()
+        results[acid_key] = {}
+        pathLenghts = [len(path) for path in paths]
 
         # extract all paths of equal size
         pathSizes = set(pathLenghts)
-        paths_equal_length = dict()
+        paths_equal_length = {}
         for pathSize in pathSizes:
             paths_equal_length[pathSize] = []
-        for path in aaSimplePaths[aa]:
+        for path in paths:
             paths_equal_length[len(path)].append(path)
 
-        for pathLength in paths_equal_length:
-            pathSet = [set(path) for path in paths_equal_length[pathLength]]
+        for [length, equal_paths] in paths_equal_length.items():
+            pathSet = [set(path) for path in equal_paths]
             sharedPath = set.intersection(*pathSet)
-            print(
-                f"für AS {aa} haben die Pfade der Länge {pathLength} {len(sharedPath)} gemeinsame Reaktionen"
-            )
-            print(f"gemeinsam sind die folgenden Reaktionen: {sharedPath}")
-            print()
-
+            results[acid_key][length] = sharedPath
+    file_handler.write_json(results, output_folder+"acid_paths.json")
 
 if __name__ == "__main__":
     run()

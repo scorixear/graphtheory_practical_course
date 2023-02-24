@@ -1,7 +1,7 @@
 import os
+import sys
 import pickle
 import networkx as nx
-import sys
 
 sys.path.append("./input")
 file_handler = __import__("file_handler")
@@ -33,7 +33,7 @@ def run(datadir: str = "data/crn/", resultdir: str = "data/amino_reaction_cycle/
             amino_acids = file_handler.read_json("input/amino_acids.json")
             acids_present = [aa for aa in amino_acids if amino_acid_graph.has_node(aa)]
             acids_not_present = [
-                aa for aa in amino_acids if amino_acid_graph.has_node(aa) == False
+                aa for aa in amino_acids if amino_acid_graph.has_node(aa) is False
             ]
             print(f"Acids present: {len(acids_present)}")
             delimiter = " "

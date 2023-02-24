@@ -1,6 +1,6 @@
+import sys
 import networkx as nx
 import matplotlib.pyplot as plt
-import sys
 
 sys.path.append("./input")
 file_handler = __import__("file_handler")

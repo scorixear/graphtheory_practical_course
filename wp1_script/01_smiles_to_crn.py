@@ -1,7 +1,7 @@
-import networkx as nx
+import os
 from collections import Counter
 import pickle
-import os
+import networkx as nx
 
 
 def parseLines(lines):

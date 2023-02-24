@@ -1,10 +1,10 @@
-import networkx as nx
 import os
+import sys
 import pickle
+import networkx as nx
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-import sys
 
 sys.path.append("./input")
 file_handler = __import__("file_handler")

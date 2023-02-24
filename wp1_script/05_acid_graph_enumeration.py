@@ -1,7 +1,7 @@
-import networkx as nx
 import os
-import pickle
 import sys
+import pickle
+import networkx as nx
 
 sys.path.append("./input")
 file_handler = __import__("file_handler")
@@ -11,7 +11,7 @@ metabolite_subgraph = __import__("02_metabolite_subgraph")
 def run(datadir: str = "data/crn/", resultdir: str = "data/enumeration/"):
     for entry in os.scandir(datadir):
         if entry.is_file() and entry.name.endswith(".pi"):
-            print(entry.path)
+            #print(entry.path)
             graph: nx.DiGraph = pickle.load(open(entry.path, "rb"))
             essential_compounds = file_handler.read_json(
                 "input/essential_compounds.json"
@@ -33,12 +33,13 @@ def run(datadir: str = "data/crn/", resultdir: str = "data/enumeration/"):
                     )
                     output_graph = nx.DiGraph()
                     output_graph = nx.compose(reversed_graph, output_graph)
-                    print(f"{acid}: {len(reversed_graph.nodes())}")
+                    # print(f"{acid}: {len(reversed_graph.nodes())}")
                     file_path = f"{resultdir}/{entry.name.split('.')[0]}_{acid}.pi"
                     with open(file_path, "wb") as writer:
                         pickle.dump(output_graph, writer)
                 except nx.NetworkXError:
-                    print(f"Acid missing: {acid}")
+                    pass
+                    # print(f"Acid missing: {acid}")
 
 
 if __name__ == "__main__":

@@ -1,7 +1,7 @@
+import sys
+import os.path as path
 import networkx as nx
 import pickle
-import os.path as path
-import sys
 
 sys.path.append("./input")
 file_handler = __import__("file_handler")
@@ -13,7 +13,7 @@ def graph_intersection_data(G: nx.DiGraph, H: nx.DiGraph) -> nx.DiGraph:
     return R
 
 
-def graph_information(graph: nx.DiGraph, identifier: str):
+def graph_information(graph: nx.DiGraph):
     nt_ann = list(nx.get_node_attributes(graph, "nodeType").values())
     return {
         "nodes": len(nt_ann),
@@ -23,9 +23,9 @@ def graph_information(graph: nx.DiGraph, identifier: str):
 
 def compare_graphs(a_graph: nx.DiGraph, c_graph: nx.DiGraph):
     result_data = {}
-    result_data["adam"] = graph_information(a_graph, "adam")
-    result_data["cimIV"] = graph_information(c_graph, "cimIV")
-    result_data["intersection"] = graph_information(graph_intersection_data(a_graph, c_graph), "intersection")
+    result_data["adam"] = graph_information(a_graph)
+    result_data["cimIV"] = graph_information(c_graph)
+    result_data["intersection"] = graph_information(graph_intersection_data(a_graph, c_graph))
 
     nt_ann_1 = nx.get_node_attributes(a_graph, "nodeType")
     nt_ann_2 = nx.get_node_attributes(c_graph, "nodeType")

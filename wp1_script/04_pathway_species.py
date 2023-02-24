@@ -1,7 +1,7 @@
 import os
+import sys
 import pickle
 import networkx as nx
-import sys
 
 sys.path.append("./input")
 file_handler = __import__("file_handler")
