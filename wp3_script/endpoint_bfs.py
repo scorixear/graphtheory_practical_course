@@ -1,6 +1,12 @@
 import networkx as nx
 
 def bfs_endpoint(graph: nx.Graph, compound: str, element: str) -> dict[str, set]:
+    # remove every node that is not the element (if data is not clean, we might have wrong symmetry or direction edges here)
+    cleaned_graph = graph.copy()
+    for key, data in graph.nodes(data=True):
+        if data["element"] != element:
+            cleaned_graph.remove(key)
+        
     starting_nodes = []
     # holds subgraphs for every compound, only SYMMETRY edges are present
     compound_dict: dict[str, nx.Graph] = {}
@@ -8,7 +14,7 @@ def bfs_endpoint(graph: nx.Graph, compound: str, element: str) -> dict[str, set]
     compound_node_dict: dict[str, set[any]] = {}
     
     # for every node in the given graph
-    for [key, data] in graph.nodes(data=True):
+    for [key, data] in cleaned_graph.nodes(data=True):
         # if the current compound is already present, add the node to the compound list
         if data['compound_name'] in compound_node_dict:
             compound_node_dict[data['compound_name']].add(key)
@@ -17,15 +23,15 @@ def bfs_endpoint(graph: nx.Graph, compound: str, element: str) -> dict[str, set]
             compound_node_dict[data['compound_name']] = set([key])
         # if the current compound is the starting compound and current element is the starting element
         # add them to the list of starting nodes
-        if data['compound_name'] == compound and data['element'] == element:
+        if data['compound_name'] == compound:
             starting_nodes.append(key)
     
     # for every set of nodes of each compound
     for [key, nodes] in compound_node_dict.items():
         # create subgraph only containing nodes of this compound
-        compound_graph: nx.Graph = graph.subgraph(nodes)
+        compound_graph: nx.Graph = cleaned_graph.subgraph(nodes)
         # create symmetry graph, that only contains edges labed as "SYMMETRY"
-        symmetry_graph: nx.Graph = graph.copy()
+        symmetry_graph: nx.Graph = cleaned_graph.copy()
         # remove other edges
         for u,v,edge_type in compound_graph.edges(data="transition"):
             if edge_type != "TransitionType.SYMMETRY":
@@ -48,14 +54,14 @@ def bfs_endpoint(graph: nx.Graph, compound: str, element: str) -> dict[str, set]
             if next_node in visited:
                 continue
             visited.add(next_node)
-            for neighbor in graph.neighbors(next_node):
+            for neighbor in cleaned_graph.neighbors(next_node):
                 if neighbor not in visited and neighbor not in queue:
                     queue.append(neighbor)
                     
                     # the source atom is always already in the current_endpoints list
                     # except for the starting compound. We assume the starting compound is not an endpoint
-                    compound_target = graph.nodes[neighbor]['compound_name']
-                    compound_source = graph.nodes[next_node]['compound_name']
+                    compound_target = cleaned_graph.nodes[neighbor]['compound_name']
+                    compound_source = cleaned_graph.nodes[next_node]['compound_name']
                     # if we traversed to a new compound
                     if compound_source != compound_target:
                         # if the new compound is in our current endpoints

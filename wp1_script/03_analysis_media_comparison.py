@@ -76,7 +76,6 @@ def run(datadir: str = "data/amino_reaction_cycle/", result_dir: str = "data/med
         "lplantarum",
     ]
     for organism in organisms:
-        # print(f"-------------- {organism} --------------")
         a_fpath = datadir + organism + "_adam_aa_cycle.pi"
         c_fpath = datadir + organism + "_cimIV_aa_cycle.pi"
         if path.exists(a_fpath) and path.exists(c_fpath):
