@@ -1,23 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Feb  6 10:06:01 2023
-
-@author: franz
-
-Converts the smiles list into the König representation of a hypergraph
-Reaction nodes have nodeType 1 and compounds nodeType 0
-edges have a multiplicity attribute that includes the stochiometric coefficient
-output is a pickle file
-"""
-
-import networkx as nx
+import os
 from collections import Counter
 import pickle
-import os
+import networkx as nx
 
 
 def parseLines(lines):
-    reactionData = dict()
+    reactionData = {}
 
     linesTmp = [line.replace("\n", "") for line in lines]
     lines = linesTmp
@@ -72,7 +60,7 @@ def parseLines(lines):
 
 def build_graph_from_file(fname: str) -> nx.DiGraph:
     G = nx.DiGraph()
-    with open(fname, "r") as inData:
+    with open(fname, "r", encoding="UTF-8") as inData:
         for line in inData:
             if line.startswith("Bigg ID"):
                 lines = []
@@ -138,8 +126,8 @@ def build_graph_from_file(fname: str) -> nx.DiGraph:
 
 
 def run(
-    smiles_list_directory: str = "data/smiles_list_clean/",
-    crn_save_directory: str = "data/crn_clean/",
+    smiles_list_directory: str = "input/01_smiles_list/",
+    crn_save_directory: str = "data/02_crn_clean/",
 ):
 
     for entry in os.scandir(smiles_list_directory):

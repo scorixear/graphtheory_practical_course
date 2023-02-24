@@ -1,0 +1,78 @@
+{
+  "blongum": {
+    "adam": {
+      "original": {
+        "node_number": 284,
+        "reaction_nodes": 142,
+        "compound_nodes": 142
+      },
+      "glucose": {
+        "node_number": 271,
+        "reaction_nodes": 136,
+        "compound_nodes": 135
+      },
+      "amino_acid": {
+        "node_number": 266,
+        "reaction_nodes": 136,
+        "compound_nodes": 130
+      }
+    }
+  },
+  "btheta": {
+    "adam": {
+      "original": {
+        "node_number": 241,
+        "reaction_nodes": 130,
+        "compound_nodes": 111
+      },
+      "glucose": {
+        "node_number": 236,
+        "reaction_nodes": 129,
+        "compound_nodes": 107
+      },
+      "amino_acid": {
+        "node_number": 228,
+        "reaction_nodes": 129,
+        "compound_nodes": 99
+      }
+    }
+  },
+  "ecoli": {
+    "adam": {
+      "original": {
+        "node_number": 518,
+        "reaction_nodes": 269,
+        "compound_nodes": 249
+      },
+      "glucose": {
+        "node_number": 504,
+        "reaction_nodes": 263,
+        "compound_nodes": 241
+      },
+      "amino_acid": {
+        "node_number": 486,
+        "reaction_nodes": 263,
+        "compound_nodes": 223
+      }
+    }
+  },
+  "eramosum": {
+    "adam": {
+      "original": {
+        "node_number": 524,
+        "reaction_nodes": 286,
+        "compound_nodes": 238
+      },
+      "glucose": {
+        "node_number": 482,
+        "reaction_nodes": 263,
+        "compound_nodes": 219
+      },
+      "amino_acid": {
+        "node_number": 475,
+        "reaction_nodes": 263,
+        "compound_nodes": 212
+      }
+    }
+  }
+}

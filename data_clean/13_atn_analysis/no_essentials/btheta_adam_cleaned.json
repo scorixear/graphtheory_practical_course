@@ -1,0 +1,1545 @@
+{
+  "conn_comp_number": 167,
+  "density": 0.0027085885395399484,
+  "molecule_path": {
+    "start_compound": "D-glucose",
+    "start_atom_number": 0,
+    "start_atom_element": "O",
+    "end_compound": "L-leucine",
+    "graph_size": 0
+  },
+  "endpoints": {
+    "amount": 63,
+    "data": {
+      "D-glucose 6-phosphate": [
+        1308
+      ],
+      "beta-D-glucose": [
+        1336
+      ],
+      "alpha-D-glucose": [
+        1513,
+        1508,
+        1517
+      ],
+      "beta-D-fructose": [
+        1577,
+        1574,
+        1583
+      ],
+      "beta-D-fructose 6-phosphate": [
+        497
+      ],
+      "beta-D-glucose 6-phosphate": [
+        1276
+      ],
+      "6-phospho-D-glucono-1,5-lactone": [
+        1291
+      ],
+      "D-glucopyranose 1-phosphate": [
+        1369,
+        1373,
+        1367
+      ],
+      "alpha,alpha-trehalose 6-phosphate": [
+        1930,
+        1932,
+        1934,
+        1936,
+        1916,
+        1919
+      ],
+      "alpha-D-glucose 6-phosphate": [
+        1529,
+        1524,
+        1533
+      ],
+      "beta-D-fructose 1,6-bisphosphate": [
+        538,
+        541,
+        551
+      ],
+      "sucrose 6(F)-phosphate": [
+        1864,
+        1873,
+        1874,
+        1876,
+        1878,
+        1880
+      ],
+      "D-sedoheptulose 7-phosphate": [
+        1704,
+        1700,
+        1695
+      ],
+      "D-erythrose 4-phosphate": [
+        978
+      ],
+      "6-phospho-D-gluconate": [
+        1553,
+        1547
+      ],
+      "UDP-alpha-D-glucose": [
+        1411,
+        1425,
+        1427,
+        1431,
+        1433,
+        1435
+      ],
+      "D-xylulose 5-phosphate": [
+        1841,
+        1835,
+        1837
+      ],
+      "glyceraldehyde 3-phosphate": [
+        1226,
+        1229
+      ],
+      "sedoheptulose 1,7-bisphosphate": [
+        1257,
+        1251,
+        1261,
+        1263
+      ],
+      "alpha-D-ribose 5-phosphate": [
+        1729,
+        1733,
+        1735
+      ],
+      "7-phospho-2-dehydro-3-deoxy-D-arabino-heptonate": [
+        1000,
+        997,
+        1006
+      ],
+      "D-ribulose 5-phosphate": [
+        1563,
+        1565,
+        1567
+      ],
+      "alpha-D-galactose 1-phosphate": [
+        1331,
+        1324,
+        1326
+      ],
+      "UDP-alpha-D-galactose": [
+        1985,
+        1989,
+        1991,
+        1993,
+        1969,
+        1983
+      ],
+      "D-tagatofuranose 1,6-bisphosphate": [
+        720,
+        707,
+        710
+      ],
+      "1-deoxy-D-xylulose 5-phosphate": [
+        1106,
+        1110
+      ],
+      "(2R)-3-phospho-glyceroyl phosphate": [
+        1441,
+        1449
+      ],
+      "(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate": [
+        1634,
+        1631
+      ],
+      "5-phospho-alpha-D-ribose 1-diphosphate": [
+        321,
+        307,
+        319
+      ],
+      "D-ribose": [
+        770,
+        772,
+        766
+      ],
+      "3-dehydroquinate": [
+        1065,
+        1057
+      ],
+      "alpha-D-galactose": [
+        33,
+        37,
+        39
+      ],
+      "2-C-methyl-D-erythritol 4-phosphate": [
+        1165,
+        1167
+      ],
+      "(2R)-3-phosphoglycerate": [
+        1713,
+        1717
+      ],
+      "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate": [
+        1616,
+        1620,
+        1606
+      ],
+      "N-(5-phospho-beta-D-ribosyl)anthranilate": [
+        344,
+        353,
+        351
+      ],
+      "cytidine": [
+        729,
+        732,
+        734
+      ],
+      "uridine": [
+        746,
+        749,
+        751
+      ],
+      "3-dehydroshikimate": [
+        1072,
+        1074,
+        1068,
+        1078
+      ],
+      "alpha-D-galactose 6-phosphate": [
+        80,
+        76,
+        78
+      ],
+      "dihydroxyacetone phosphate": [
+        272,
+        274
+      ],
+      "pyruvate": [
+        214
+      ],
+      "4-CDP-2-C-methyl-D-erythritol": [
+        582,
+        584,
+        554,
+        556,
+        571
+      ],
+      "(2R)-2-phosphoglycerate": [
+        1242,
+        1239
+      ],
+      "3-phosphooxypyruvate": [
+        1586,
+        1590
+      ],
+      "indole": [
+        1960,
+        1961,
+        1953,
+        1959
+      ],
+      "CMP": [
+        658,
+        651,
+        660
+      ],
+      "UMP": [
+        672,
+        681,
+        679
+      ],
+      "shikimate": [
+        1848,
+        1858,
+        1852,
+        1854
+      ],
+      "phosphoenolpyruvate": [
+        984,
+        991
+      ],
+      "L-alanine": [
+        220,
+        222
+      ],
+      "chorismate": [
+        356,
+        360,
+        361,
+        365,
+        368
+      ],
+      "L-tryptophan": [
+        1939,
+        1940,
+        1942,
+        1944,
+        1945,
+        1946
+      ],
+      "4-CDP-2-C-methyl-D-erythritol 2-phosphate": [
+        587,
+        588,
+        621,
+        595,
+        607
+      ],
+      "(R)-glycerate": [
+        1536,
+        1540
+      ],
+      "3-hydroxypyruvate": [
+        1601,
+        1597
+      ],
+      "CDP": [
+        528,
+        515,
+        526
+      ],
+      "UDP": [
+        1904,
+        1906,
+        1893
+      ],
+      "3-phosphoshikimate": [
+        1752,
+        1738,
+        1748,
+        1742
+      ],
+      "dihydroxyacetone": [
+        281
+      ],
+      "5-O-(1-carboxyvinyl)-3-phosphoshikimate": [
+        641,
+        623,
+        626,
+        628,
+        632
+      ],
+      "2-C-methyl-D-erythritol 2,4-cyclic diphosphate": [
+        1658,
+        1646,
+        1647
+      ],
+      "anthranilate": [
+        297
+      ]
+    }
+  },
+  "connected_components": [
+    {
+      "compound": "alpha-D-galactose",
+      "element": "O",
+      "component_size": 454,
+      "cycle_basis": 170
+    },
+    {
+      "compound": "alpha-D-galactose",
+      "element": "C",
+      "component_size": 408,
+      "cycle_basis": 93
+    },
+    {
+      "compound": "dGMP",
+      "element": "O",
+      "component_size": 67,
+      "cycle_basis": 14,
+      "possible_cycles": 8192,
+      "cycles_found": 152,
+      "max_cycle_length": 20,
+      "average_cycle_length": 11.927631578947368,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dGMP",
+      "element": "P",
+      "component_size": 67,
+      "cycle_basis": 14,
+      "possible_cycles": 8192,
+      "cycles_found": 152,
+      "max_cycle_length": 20,
+      "average_cycle_length": 11.927631578947368,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "(R)-glycerate",
+      "element": "O",
+      "component_size": 21,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 2,
+      "max_cycle_length": 5,
+      "average_cycle_length": 4.5,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "4-CDP-2-C-methyl-D-erythritol",
+      "element": "C",
+      "component_size": 12,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "UDP",
+      "element": "C",
+      "component_size": 12,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "UDP",
+      "element": "C",
+      "component_size": 12,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "CDP",
+      "element": "N",
+      "component_size": 12,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "cytidine",
+      "element": "C",
+      "component_size": 12,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "cytidine",
+      "element": "O",
+      "component_size": 12,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "cytidine",
+      "element": "N",
+      "component_size": 12,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "dADP",
+      "element": "C",
+      "component_size": 10,
+      "cycle_basis": 3,
+      "possible_cycles": 4,
+      "cycles_found": 4,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.25,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dADP",
+      "element": "C",
+      "component_size": 10,
+      "cycle_basis": 3,
+      "possible_cycles": 4,
+      "cycles_found": 4,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.25,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dATP",
+      "element": "C",
+      "component_size": 10,
+      "cycle_basis": 3,
+      "possible_cycles": 4,
+      "cycles_found": 4,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.25,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dADP",
+      "element": "O",
+      "component_size": 10,
+      "cycle_basis": 3,
+      "possible_cycles": 4,
+      "cycles_found": 4,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.25,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dATP",
+      "element": "C",
+      "component_size": 10,
+      "cycle_basis": 3,
+      "possible_cycles": 4,
+      "cycles_found": 4,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.25,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dATP",
+      "element": "C",
+      "component_size": 10,
+      "cycle_basis": 3,
+      "possible_cycles": 4,
+      "cycles_found": 4,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.25,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dATP",
+      "element": "O",
+      "component_size": 10,
+      "cycle_basis": 3,
+      "possible_cycles": 4,
+      "cycles_found": 4,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.25,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dGTP",
+      "element": "O",
+      "component_size": 10,
+      "cycle_basis": 3,
+      "possible_cycles": 4,
+      "cycles_found": 4,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.25,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dGDP",
+      "element": "N",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dGDP",
+      "element": "C",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dGDP",
+      "element": "N",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "guanosine",
+      "element": "C",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "guanine",
+      "element": "C",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "guanosine",
+      "element": "N",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "guanosine",
+      "element": "C",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "guanosine",
+      "element": "N",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "guanine",
+      "element": "C",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "guanine",
+      "element": "O",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "guanine",
+      "element": "N",
+      "component_size": 7,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "anthranilate",
+      "element": "N",
+      "component_size": 6,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "hypoxanthine",
+      "element": "C",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "hypoxanthine",
+      "element": "N",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "hypoxanthine",
+      "element": "C",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "hypoxanthine",
+      "element": "N",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dATP",
+      "element": "C",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dADP",
+      "element": "C",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dADP",
+      "element": "N",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dADP",
+      "element": "C",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dADP",
+      "element": "N",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dATP",
+      "element": "O",
+      "component_size": 6,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "4-CDP-2-C-methyl-D-erythritol",
+      "element": "N",
+      "component_size": 6,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "uridine",
+      "element": "O",
+      "component_size": 6,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUTP",
+      "element": "O",
+      "component_size": 6,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "O",
+      "component_size": 4,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "2'-deoxyadenosine",
+      "element": "N",
+      "component_size": 4,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "3-phosphoshikimate",
+      "element": "O",
+      "component_size": 4,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "dATP",
+      "element": "P",
+      "component_size": 3,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "dADP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "4-CDP-2-C-methyl-D-erythritol 2-phosphate",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUDP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUDP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUDP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dCTP",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dCTP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dCTP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dCTP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUTP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUDP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUDP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUDP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dCTP",
+      "element": "P",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dCTP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dCTP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dCTP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUTP",
+      "element": "P",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUDP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUTP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUTP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUTP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUTP",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "UDP-alpha-D-glucose",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "UDP-alpha-D-galactose",
+      "element": "P",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "UDP-alpha-D-galactose",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "alpha-D-ribose 1-phosphate",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "GMP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "GMP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "guanosine",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "guanosine",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "GMP",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "GMP",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "alpha-D-ribose 1-phosphate",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "alpha-D-ribose 1-phosphate",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ITP",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ITP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ITP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "IDP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ITP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ITP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ITP",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ITP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CDP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "2-C-methyl-D-erythritol 2,4-cyclic diphosphate",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "4-CDP-2-C-methyl-D-erythritol 2-phosphate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "3-phosphoshikimate",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "3-phosphoshikimate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "2'-deoxyinosine",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dUTP",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "alpha-D-ribose 1-phosphate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "2-deoxy-alpha-D-ribose 1-phosphate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-alanine",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FMNH2",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CDP",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CDP",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CDP",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "dCTP",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "GMP",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "GMP",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "6-phospho-D-gluconate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "alpha-D-ribose 1-phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "alpha-D-ribose 1-phosphate",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "alpha-D-ribose 1-phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "2-deoxy-alpha-D-ribose 1-phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "2-deoxy-alpha-D-ribose 1-phosphate",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "2-deoxy-alpha-D-ribose 1-phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-tryptophan",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    }
+  ]
+}

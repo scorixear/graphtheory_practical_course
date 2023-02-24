@@ -1,0 +1,9 @@
+#Clavulanic acid biosynthesis
+R05357
+R05465
+R05466
+R05467
+R05468
+R05469
+R05470
+R05471

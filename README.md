@@ -1,68 +1,17 @@
 # Example Graph Visualization
 http://graphonline.ru/de/?graph=EUICePMzRNTHBNRJ
 
-# WP1
-## How many/can all amino acids be synthesized?
-acacae_adam_CRN
-Acids present: 19
-Acids not present: L-leucine
+# Folder Structure
+`data`: old data sets used during development
+`data_clean`: final outputs of all scripts
+`input`: input files provided (or generated) before executing the main script
+`library`: common functions used in many scripts
+`presentation`: latex presentation of results
+`wp1_script`: scripts executing wp1
+`wp2_script`: scripts executing wp2
+`wp3_script`: scripts executing wp3
 
-acacae_cimIV_CRN
-Acids present: 19
-Acids not present: L-leucine
-
-blongum_adam_CRN
-Acids present: 19
-Acids not present: L-leucine
-
-blongum_cimIV_CRN
-Acids present: 19
-Acids not present: L-leucine
-
-bproducta_adam_CRN
-Acids present: 18
-Acids not present: L-histidine L-leucine
-
-bproducta_cimIV_CRN
-Acids present: 18
-Acids not present: L-histidine L-leucine
-
-btheta_adam_CRN
-Acids present: 19
-Acids not present: L-leucine
-
-btheta_cimIV_CRN
-Acids present: 19
-Acids not present: L-leucine
-
-cbuty_adam_CRN
-Acids present: 19
-Acids not present: L-leucine
-
-cbuty_cimIV_CRN
-Acids present: 19
-Acids not present: L-arginine L-valine L-methionine L-glutamate L-glutamine L-tyrosine L-tryptophan L-proline L-cysteine L-histidine L-asparagine L-aspartate L-phenylalanine L-threonine L-lysine L-serine L-isoleucine glycine L-alanine L-leucine
-
-lplantarum_cimIV_CRN
-Acids present: 0
-Acids not present: L-arginine L-valine L-methionine L-glutamate L-glutamine L-tyrosine L-tryptophan L-proline L-cysteine L-histidine L-asparagine L-aspartate L-phenylalanine L-threonine L-lysine L-serine L-isoleucine glycine L-alanine L-leucine
-
-
-## For the same organism, are there differences in the reconstruction based on the cultivation media?
-
-Vergleich cimIV vs adam
-Vergleich Innerhalb cimIV/adam
-
-Methoden:
-- Intersection subgraphs
-- Reaction(node) list Vergleich
-- Similarities between Graphs (networkx doku)
-
-## For the same medium, are there notable differences in the reconstructed pathways between species?
-Vergleich Innerhalb cimIV/adam
-double difference
-
-Anzahl an unique Reactions nodes
-Optional: Interpreation mit Database (Enzyme) Kegg
-
-## Are there/How many alternative reaction paths exist to synthesize each amino acid?
+`.gitignore`: excluding common debug files of python
+`Example_Graph.png`: Example graph used for testing wp1 scripts
+`main.py`: Main script, executing every script in order
+`requirements.txt`: needed pip packages for all scripts

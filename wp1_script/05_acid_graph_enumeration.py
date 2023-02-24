@@ -1,17 +1,22 @@
-import networkx as nx
 import os
+import sys
 import pickle
+import networkx as nx
+import metabolite_subgraph
 
-metabolite_subgraph = __import__("02_metabolite_subgraph")
+sys.path.append("./library")
+file_handler = __import__("file_handler")
 
-
-def run(datadir: str = "data/crn/", resultdir: str = "data/enumeration/"):
+def run(
+    datadir: str = "data/crn/", 
+    resultdir: str = "data/enumeration/",
+    inputdir: str = "input/"):
     for entry in os.scandir(datadir):
         if entry.is_file() and entry.name.endswith(".pi"):
-            print(entry.path)
+            #print(entry.path)
             graph: nx.DiGraph = pickle.load(open(entry.path, "rb"))
-            essential_compounds = metabolite_subgraph.read_file(
-                "wp1_script/essential_compounds.txt"
+            essential_compounds = file_handler.read_json(
+                inputdir+"essential_compounds.json"
             )
             ec_clean = [ec for ec in essential_compounds if graph.has_node(ec)]
             essential_compounds = ec_clean
@@ -22,7 +27,7 @@ def run(datadir: str = "data/crn/", resultdir: str = "data/enumeration/"):
             enumeration_graph = glucose_graph.copy()
             enumeration_graph.remove_nodes_from(n for n in essential_compounds)
 
-            amino_acids = metabolite_subgraph.read_file("wp1_script/amino_acids.txt")
+            amino_acids = file_handler.read_json(inputdir+"amino_acids.json")
             for acid in amino_acids:
                 try:
                     reversed_graph = metabolite_subgraph.reverse_bf_search(
@@ -30,16 +35,14 @@ def run(datadir: str = "data/crn/", resultdir: str = "data/enumeration/"):
                     )
                     output_graph = nx.DiGraph()
                     output_graph = nx.compose(reversed_graph, output_graph)
-                    print(f"{acid}: {len(reversed_graph.nodes())}")
-                    # try:
-                    #    print(nx.shortest_path(output_graph, "D-glucose", acid))
-                    # except:
-                    #    print(f"No path found between D-glucose to {acid}")
-                    file_path = f"{resultdir}/{entry.name.split('.')[0]}_{acid}.pi"
+                    # print(f"{acid}: {len(reversed_graph.nodes())}")
+                    species, medium = entry.name.split("/")[-1].split("_")[0:2]
+                    file_path = f"{resultdir}/{species}_{medium}_{acid}.pi"
                     with open(file_path, "wb") as writer:
                         pickle.dump(output_graph, writer)
                 except nx.NetworkXError:
-                    print(f"Acid missing: {acid}")
+                    pass
+                    # print(f"Acid missing: {acid}")
 
 
 if __name__ == "__main__":

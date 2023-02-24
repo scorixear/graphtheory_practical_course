@@ -1,0 +1,6 @@
+#Arabinogalactan biosynthesis - Mycobacterium
+R12075
+R12077
+R12078
+R12079
+R12080

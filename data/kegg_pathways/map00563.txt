@@ -1,0 +1,12 @@
+#Glycosylphosphatidylinositol (GPI)-anchor biosynthesis
+R05916
+R05917
+R05918
+R05919
+R05922
+R06623
+R07129
+R08107
+R12350
+R12351
+R12702

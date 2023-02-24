@@ -1,7 +1,0 @@
-
-blongum_adam_cleaned_aa_cycle.pi vs btheta_adam_cleaned_aa_cycle.pi: 103/136 - 96/129 || 199/265
-blongum_adam_cleaned_aa_cycle.pi vs ecoli_adam_cleaned_aa_cycle.pi: 26/136 - 153/263 || 179/399
-blongum_adam_cleaned_aa_cycle.pi vs eramosum_adam_cleaned_aa_cycle.pi: 33/136 - 160/263 || 193/399
-btheta_adam_cleaned_aa_cycle.pi vs ecoli_adam_cleaned_aa_cycle.pi: 72/129 - 206/263 || 278/392
-btheta_adam_cleaned_aa_cycle.pi vs eramosum_adam_cleaned_aa_cycle.pi: 53/129 - 187/263 || 240/392
-ecoli_adam_cleaned_aa_cycle.pi vs eramosum_adam_cleaned_aa_cycle.pi: 128/263 - 128/263 || 256/526

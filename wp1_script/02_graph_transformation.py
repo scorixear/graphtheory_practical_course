@@ -1,10 +1,11 @@
-# main script
 import os
+import sys
 import pickle
 import networkx as nx
+import metabolite_subgraph
 
-metabolite_subgraph = __import__("02_metabolite_subgraph")
-
+sys.path.append("./library")
+file_handler = __import__("file_handler")
 
 def export_example_graph():
     resultdir = "data/example/"
@@ -17,24 +18,18 @@ def export_example_graph():
     metabolite_subgraph.show_graph(amino_acid_graph)
 
 
-def run(datadir: str = "data/crn/", resultdir: str = "data/amino_reaction_cycle/"):
+def run(
+    datadir: str = "data/crn/", 
+    resultdir: str = "data/amino_reaction_cycle/",
+    inputdir: str = "input/"):
 
     for entry in os.scandir(datadir):
         if entry.is_file() and entry.name.endswith(".pi"):
-            print(entry.path)
             graph: nx.DiGraph = pickle.load(open(entry.path, "rb"))
-            amino_acid_graph = metabolite_subgraph.build_aminoacid_graph(graph)
-            outfile = resultdir + entry.name.split("/")[-1].replace("CRN", "aa_cycle")
-            pickle.dump(amino_acid_graph, open(outfile, "wb"))
-
-            amino_acids = metabolite_subgraph.read_file("wp1_script/amino_acids.txt")
-            acids_present = [aa for aa in amino_acids if amino_acid_graph.has_node(aa)]
-            acids_not_present = [
-                aa for aa in amino_acids if amino_acid_graph.has_node(aa) == False
-            ]
-            print(f"Acids present: {len(acids_present)}")
-            delimiter = " "
-            print(f"Acids not present: {delimiter.join(acids_not_present)}")
+            amino_acid_graph = metabolite_subgraph.build_aminoacid_graph(graph, inputdir)
+            species, medium = entry.name.split("/")[-1].split("_")[0:2]
+            with open(f"{resultdir}{species}_{medium}_aa_cycle.pi", "wb") as writer:
+                pickle.dump(amino_acid_graph, writer)
 
 
 if __name__ == "__main__":

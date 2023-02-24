@@ -1,11 +1,16 @@
-import pulp
 import os
-import networkx as nx
+import sys
 import pickle
+import pulp
+import networkx as nx
+import amino_acid_ratios
 
-amino_acid_ratios = __import__("01_amino_acid_ratios")
+sys.path.append("./library")
+
+file_handler = __import__("file_handler")
 
 INFINITY = 1000
+DEFAULT_CONSTRAINT = -1
 
 
 def add_acid_export_reactions(graph: nx.DiGraph, acid_ratios: dict):
@@ -22,25 +27,13 @@ def add_acid_export_reactions(graph: nx.DiGraph, acid_ratios: dict):
     for acid in acid_ratios:
         if acid in graph.nodes():
             graph.add_edge(
-                acid, "R_output_BIOMASS", multiplicity=acid_ratios[acid], direction=1
-            )
+                acid, 
+                "R_output_BIOMASS",
+                multiplicity=acid_ratios[acid], 
+                direction=1)
         else:
             print(f"Acid missing {acid}. Stopping LP")
             raise ValueError()
-
-
-def read_file(file: str) -> list[str]:
-    """Reads in file, splits by line, removes line breaks.
-
-    Args:
-        file (str): the full file path
-
-    Returns:
-        list[str]: the list of lines
-    """
-    with open(file, "r", encoding="UTF-8") as file_data:
-        lines = file_data.readlines()
-    return [line.strip() for line in lines]
 
 
 def add_exchange_reactions(graph: nx.DiGraph, to_be_added: list[str]):
@@ -57,20 +50,13 @@ def add_exchange_reactions(graph: nx.DiGraph, to_be_added: list[str]):
     for node in graph.nodes(data=True):
         # for every node that is a compound
         if node[1]["nodeType"] == 0:
-            # collect all predecessors, if no predecessor is present, add input node
-            # predecessors = list(graph.predecessors(node[0]))
-            # new_predecessors = [p for p in predecessors if graph.get_edge_data(p, node[0])['direction']==1]
-            # if len(new_predecessors) == 0:
-            #   nodes_to_be_added.append(f"R_input_{node[0]}")
-
             # collect all successors
             successors = list(graph.successors(node[0]))
             # filter successors to only be connected via an edge with direction = 1 label
-            new_successors = [
-                s
-                for s in successors
-                if graph.get_edge_data(node[0], s)["direction"] == 1
-            ]
+            new_successors = [s 
+                              for s in successors
+                                if graph.get_edge_data(node[0], s)['direction'] == 1
+                            ]
             # if no successor is given, add an output reaction node
             if len(new_successors) == 0:
                 nodes_to_be_added.append(f"R_output_{node[0]}")
@@ -90,12 +76,12 @@ def add_exchange_reactions(graph: nx.DiGraph, to_be_added: list[str]):
             compound = node.split("_output_")[1]
             graph.add_edge(compound, node, multiplicity=1, direction=1)
 
-
-def generate_variables(graph: nx.DiGraph) -> dict[str, pulp.LpVariable]:
+def generate_variables(graph: nx.DiGraph, constrains: dict[str, int]) -> dict[str, pulp.LpVariable]:
     """generates pulp.LpVariables for every reaction node
 
     Args:
         graph (nx.DiGraph): the graph containing the reaction nodes
+        constrains (dict[str, int]): additional constrains for the essential compounds (and glucose)
 
     Returns:
         dict[str, pulp.LpVariable]: the dictionary containing reaction node names and their corresponding pulp variables
@@ -107,13 +93,18 @@ def generate_variables(graph: nx.DiGraph) -> dict[str, pulp.LpVariable]:
         if node[1]["nodeType"] == 1:
             # figure out lower_bound
             lower_bound = 0
-            # if input variable, set to -infinity -> infinity
+            # if input variable, set to -infinity -> infinity or to the specified constraint
             # except glucose, set to -10 -> infinity
             if node[0].startswith("R_input_"):
-                if graph.has_predecessor(node[0], "D-glucose"):
+                compound = node[0].split("_input_")[1]
+                
+                if compound in constrains:
+                    lower_bound = constrains[compound]
+                elif graph.has_predecessor(node[0], "D-glucose"):
                     lower_bound = -10
                 else:
                     lower_bound = -INFINITY
+                
             # if output variable, set to 0 -> infinity
             elif node[0].startswith("R_output_"):
                 lower_bound = 0
@@ -145,10 +136,10 @@ def add_constraints(
             constraint = []
             # for every predecessor reaction node with direction=1 label
             for predeccessor in graph.predecessors(node[0]):
-                node_direction = graph.get_edge_data(predeccessor, node[0])["direction"]
+                node_direction = graph.get_edge_data(predeccessor, node[0])['direction']
                 if node_direction == 2:
                     continue
-                coefficient = graph.get_edge_data(predeccessor, node[0])["multiplicity"]
+                coefficient = graph.get_edge_data(predeccessor, node[0])['multiplicity']
                 # ignore variables with 0 coefficient
                 if coefficient == 0:
                     continue
@@ -171,29 +162,39 @@ def add_constraints(
 
 
 def run(
-    datadir: str = "data/amino_reaction_cycle/", 
-    resultsdir: str = "data/flux_results/", 
-    proteinfile: str = "data/proteins/proteom_ecoli_uniprot.fasta"
+    datadir: str = "data/amino_reaction_cycle/",
+    resultsdir: str = "data/flux_results/",
+    proteomdir: str = "data/proteoms/",
+    inputdir: str = "input/"
 ):
-    # used for reading in graphs
-    # used for outputing Dictionaries with Variable solutions
     # proteom to be generated from acids
-    proteom = amino_acid_ratios.read_fasta(proteinfile)
+    # proteom = amino_acid_ratios.read_fasta(proteindir + proteinfile)
     # all available acids
-    amino_acids = read_file("wp1_script/amino_acids.txt")
+    amino_acids = file_handler.read_json(inputdir+"amino_acids.json")
     # every essential compound that can be used as an input
-    essential_compounds = read_file("wp1_script/essential_compounds.txt")
+    essential_compounds = file_handler.read_json(inputdir+"essential_compounds.json")
+
+    # dictionary for the limitations of essential compounds (if compound listed in directory their lower of the import reaction is set to the value in the dic)
+    essential_compounds_constrains = {es : DEFAULT_CONSTRAINT for es in essential_compounds}
+    # set no limit for compounds that are definitly in the cell (and do not contain carbon)
+    relevant_compounds = ["H2O", "phosphate", "H(+)"]
+    for relevant_compound in relevant_compounds:
+        essential_compounds_constrains[relevant_compound] = -INFINITY
+
+
     for entry in os.scandir(datadir):
         if entry.is_file() and entry.name.endswith(".pi"):
-            print(entry.path)
+
+            # load proteom of species
+            organism_name = entry.name.split("_")[0]
+            proteom = amino_acid_ratios.read_fasta(f"{proteomdir}{organism_name}.faa")
+
             with open(entry.path, "rb") as reader:
                 graph: nx.DiGraph = pickle.load(reader)
             model = pulp.LpProblem("Maximising_Problem", pulp.LpMaximize)
 
             # find all missing acids in the graph
             missing_acids = [aa for aa in amino_acids if graph.has_node(aa) is False]
-            print("Missing Acids:")
-            print(missing_acids)
 
             # calculate acid ratios used for the proteom
             acid_ratios = amino_acid_ratios.calculate_ratios(proteom, missing_acids)
@@ -202,7 +203,7 @@ def run(
             add_acid_export_reactions(graph, acid_ratios)
             add_exchange_reactions(graph, essential_compounds + ["D-glucose"])
 
-            variables: dict[str, pulp.LpVariable] = generate_variables(graph)
+            variables: dict[str, pulp.LpVariable] = generate_variables(graph, essential_compounds_constrains)
 
             # objective function
             model += variables["R_output_BIOMASS"], "Profit"
@@ -210,6 +211,7 @@ def run(
             add_constraints(model, graph, variables)
 
             model.solve()
+
             relevant_counter = 0
             results: dict[str, any | int | None] = {}
 
@@ -218,17 +220,8 @@ def run(
                 results[name] = variable.varValue
                 if variable.varValue != 0:
                     relevant_counter += 1
-
-            print(f"Relevant Reaction: {relevant_counter}")
-            print(f"Biomass Output: {pulp.value(model.objective)}")
-            print("\n---------------------------------------------------")
-            print("---------------------------------------------------\n")
-
             # write out results
-            with open(
-                resultsdir + entry.name.replace("_aa_cycle", "_flux"), "wb"
-            ) as writer:
-                pickle.dump(results, writer)
+            file_handler.write_json(results, resultsdir + entry.name.replace("_aa_cycle", "_flux").replace(".pi",".json"))
 
 
 if __name__ == "__main__":
