@@ -1,5 +1,5 @@
 def read_fasta(filepath: str) -> str:
-    with open(filepath, "r") as fastaFile:
+    with open(filepath, "r", encoding="UTF-8") as fastaFile:
         proteomString = ""
         for line in fastaFile:
             if not line.startswith(">"):
@@ -10,7 +10,7 @@ def read_fasta(filepath: str) -> str:
 def calculate_ratios(proteomString: str, exceptions: list[str] = []) -> dict:
     """calculate the ratios for all aa that are not in the excetpion list"""
 
-    translation_dir = d = {
+    translation_dir = {
         "L-cysteine": "C",
         "L-aspartate": "D",
         "L-serine": "S",
@@ -37,15 +37,16 @@ def calculate_ratios(proteomString: str, exceptions: list[str] = []) -> dict:
     for aa in exceptions:
         proteomString = proteomString.replace(translation_dir[aa], "")
 
-    ratioDir = dict()
-    for aa in translation_dir:
-        ratio = proteomString.count(translation_dir[aa]) / len(proteomString)
+    ratioDir = {}
+    for [key, aa] in translation_dir.items():
+        ratio = proteomString.count(aa) / len(proteomString)
         if ratio != 0:
-            ratioDir[aa] = ratio
+            ratioDir[key] = ratio
     return ratioDir
 
 
-def run(datadir: str = "data/proteins/"):
+def main():
+    datadir: str = "data/proteins/"
     filepath = datadir + "proteom_ecoli_uniprot.fasta"
     proteomString = read_fasta(filepath)
     ratioDir = calculate_ratios(proteomString, ["L-cysteine"])
@@ -53,4 +54,4 @@ def run(datadir: str = "data/proteins/"):
 
 
 if __name__ == "__main__":
-    run()
+    main()

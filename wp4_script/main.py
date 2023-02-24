@@ -66,7 +66,7 @@ def main():
     proteindir: str = data_directory+"06_proteins/"
     mkdir(resultsdir_psolve)
     mkdir(proteindir)
-    pulp_solve.run(rdir_transformation, resultsdir_psolve, proteindir+"proteom_ecoli_uniprot.fasta")
+    pulp_solve.run(rdir_transformation, resultsdir_psolve, proteindir)
 
     # ------------------------------------------------------------------------------
     # visualize flux model

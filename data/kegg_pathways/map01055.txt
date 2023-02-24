@@ -1,0 +1,14 @@
+#Biosynthesis of vancomycin group antibiotics
+R05518
+R06513
+R06624
+R06625
+R06626
+R06627
+R06628
+R06629
+R06630
+R06631
+R06632
+R06633
+R06634

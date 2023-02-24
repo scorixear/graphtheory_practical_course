@@ -32,7 +32,7 @@ def find_all_cycles(G, source=None):
         
         stack = [(start,iter(G[start]))]
         while stack:
-            parent,children = stack[-1]
+            _,children = stack[-1]
             try:
                 child = next(children)
                 
@@ -41,8 +41,8 @@ def find_all_cycles(G, source=None):
                     stack.append((child,iter(G[child])))
                 else:
                     i = cycle_stack.index(child)
-                    if i < len(cycle_stack) - 2: 
-                      output_cycles.add(get_hashable_cycle(cycle_stack[i:]))
+                    if i < len(cycle_stack) - 2:
+                        output_cycles.add(get_hashable_cycle(cycle_stack[i:]))
                 
             except StopIteration:
                 stack.pop()

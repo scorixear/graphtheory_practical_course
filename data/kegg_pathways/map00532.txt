@@ -1,0 +1,9 @@
+#Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate
+R04104
+R05925
+R05926
+R05927
+R05928
+R05929
+R05931
+R05932

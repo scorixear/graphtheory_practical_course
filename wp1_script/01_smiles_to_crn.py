@@ -60,7 +60,7 @@ def parseLines(lines):
 
 def build_graph_from_file(fname: str) -> nx.DiGraph:
     G = nx.DiGraph()
-    with open(fname, "r") as inData:
+    with open(fname, "r", encoding="UTF-8") as inData:
         for line in inData:
             if line.startswith("Bigg ID"):
                 lines = []
