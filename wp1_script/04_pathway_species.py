@@ -1,7 +1,10 @@
 import os
 import pickle
 import networkx as nx
+import sys
 
+sys.path.append("./input")
+file_handler = __import__("file_handler")
 
 def run(
     datadir: str = "data/amino_reaction_cycle/",
@@ -15,34 +18,31 @@ def run(
         if entry.is_file() and entry.name.endswith(".pi"):
             # read in graph and sort them in both mediums
             with open(entry.path, "rb") as reader:
-                graph_object = {"graph": pickle.load(reader), "name": entry.name}
+                graph_object = {"graph": pickle.load(reader), "name": entry.name.split(".")[0]}
                 if "adam" in entry.name:
                     adam_species.append(graph_object)
                 else:
                     cimIV_species.append(graph_object)
-    result_str = ""
+    results = []
     # for each medium
     # compare species to every other species
     for index in range(len(adam_species)):
         for other_index in range(index + 1, len(adam_species)):
-            result_str = (
-                result_str
-                + "\n"
-                + compare(
-                    adam_species[index], adam_species[other_index], "adam", resultdir
-                )
-            )
+            results.append(compare(
+                    adam_species[index], 
+                    adam_species[other_index], 
+                    "adam", 
+                    resultdir
+                ))
     for index in range(len(cimIV_species)):
         for other_index in range(index + 1, len(cimIV_species)):
-            result_str = (
-                result_str
-                + "\n"
-                + compare(
-                    cimIV_species[index], cimIV_species[other_index], "cimIV", resultdir
-                )
-            )
-    with open(resultdir + "results.txt", "w", encoding="UTF-8") as writer:
-        writer.write(result_str)
+            results.append(compare(
+                    cimIV_species[index], 
+                    cimIV_species[other_index], 
+                    "cimIV", 
+                    resultdir
+                ))
+    file_handler.write_json(results, resultdir+"results.json")
 
 
 def difference(graph: nx.DiGraph, other: nx.DiGraph):
@@ -74,23 +74,26 @@ def compare(graph, other, medium, resultdir):
         if "nodeType" in node[1] and node[1]["nodeType"] == 1:
             final_other_nodes.append(node[0] + ": " + node[1]["meta"])
     # define output file path
-    outfile = resultdir + medium + "/" + graph["name"] + "_vs_" + other["name"]
-    # write metanames to file
-    outstring = (
-        graph["name"]
-        + ":\n"
-        + "\n".join(final_graph_nodes)
-        + "\n\n"
-        + other["name"]
-        + ":\n"
-        + "\n".join(final_other_nodes)
-    )
-    with open(outfile, "w", encoding="UTF-8") as writer:
-        writer.write(outstring)
+
+    outfile = resultdir + medium + "/" + graph["name"] + "_vs_" + other["name"]+ ".json"
+    node_results = {
+        graph["name"]: final_graph_nodes,
+        other["name"]: final_other_nodes
+    }
+
+    file_handler.write_json(node_results, outfile)
     # count unique reaction nodes
-    return_str = f"{graph['name']} vs {other['name']}: {len(final_graph_nodes)}/{graph_reaction_nodes} - {len(final_other_nodes)}/{other_reaction_nodes} || {len(final_graph_nodes)+len(final_other_nodes)}/{graph_reaction_nodes+other_reaction_nodes}"
-    print(return_str)
-    return return_str
+    results = {
+        graph["name"]: {
+            "reaction_nodes": graph_reaction_nodes,
+            "final_reaction_nodes": final_graph_nodes
+        },
+        other["name"]: {
+            "reaction_nodes": other_reaction_nodes,
+            "final_reaction_nodes": final_other_nodes
+        }
+    }
+    return results
 
 
 if __name__ == "__main__":

@@ -1,96 +1,90 @@
-# -*- coding: utf-8 -*-
-
 import networkx as nx
 import os
 import pickle
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+import sys
+
+sys.path.append("./input")
+file_handler = __import__("file_handler")
+metabolite_subgraph = __import__("02_metabolite_subgraph.py")
 
 
-def get_aa_list() -> list[str]:
-    amino_acids: list[str] = []
-    with open("wp1_script/amino_acids.txt", "r") as file:
-        for line in file.readlines():
-            amino_acids.append(line.replace("\n", ""))
-    return amino_acids
+def get_aa_dict(graph_dir: str, medium: str, amino_acids: list[str]) -> dict:
+    results: dict = {}
 
-
-def get_aa_dict(
-    amino_reaction_cycle_dir: str = "data/amino_reaction_cycle/", medium: str = "adam"
-) -> dict:
-
-    amino_acids = get_aa_list()
-    results: dict = dict()
-
-    for entry in os.scandir(amino_reaction_cycle_dir):
+    for entry in os.scandir(graph_dir):
         if entry.is_file() and entry.name.endswith(".pi") and (medium in entry.name):
             fname: str = entry.name
-            species, file_medium = fname.split("_")[0:2]
+            species, _ = fname.split("_")[0:2]
             with open(entry.path, "rb") as pickled_graph:
                 current_aa_graph: nx.DiGraph = pickle.load(pickled_graph)
             aa_can_synth = np.array(
                 [current_aa_graph.has_node(aa) for aa in amino_acids]
             )
-            results[(species, medium)] = aa_can_synth
+            results[species] = aa_can_synth
     return results
 
+def get_glucose_aa_dict(graph_dir: str, medium: str, amino_acids: list[str], essential_compounds: list[str]) -> dict:
+    results: dict = {}
+    for entry in os.scandir(graph_dir):
+        if entry.is_file() and entry.name.endswith(".pi") and (medium in entry.name):
+            fname: str = entry.name
+            species, _ = fname.split("_")[0:2]
+            with open(entry.path, "rb") as reader:
+                graph: nx.DiGraph = pickle.load(reader)
+            glucose_graph: nx.DiGraph = metabolite_subgraph.bf_search(graph, "D-glucose", essential_compounds)
+            aa_can_synth = np.array(
+                [glucose_graph.has_node(aa) for aa in amino_acids]
+            )
+            results[species] = aa_can_synth
+    return results
 
 def visualize_dict(
-    aa_annotation: dict, ax: plt.Axes, title: str = "Amino Acid Heatmap"
+    aa_annotation: dict, title: str, output_file: str
 ):
-    amino_acids = get_aa_list()
+    amino_acids = file_handler.read_json("input/amino_acids.json")
     matrix = np.zeros((len(aa_annotation.keys()), len(amino_acids)))
     species: list[str] = []
     for row_idx, key in enumerate(aa_annotation.keys()):
         matrix[row_idx, :] = aa_annotation[key]
         species.append(key[0])
-    sns.heatmap(
+    axes = sns.heatmap(
         matrix,
         xticklabels=amino_acids,
         yticklabels=species,
         linewidths=0.5,
-        ax=ax,
         square=True,
         cbar=False,
         vmin=0,
         vmax=1.0,
     )
-    ax.set_title(title)
+    axes.set_title(title)
+    plt.savefig(output_file)
+    plt.close()
 
 
-def run_original_data():
-    fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(16, 9))
+def run(crn_input: str = "data/crn/", amino_input: str = "data/amino_reaction_cycle/", output_folder: str = "data/aa_synthesis/"):
+    amino_acids = file_handler.read_json("input/amino_acids.json")
+    dict_adam_orig = get_aa_dict(crn_input, "adam", amino_acids)
+    visualize_dict(dict_adam_orig, "Adam - Original Data", output_folder+ "adam_original.png")
 
-    dict_adam_orig = get_aa_dict("data/crn/", "adam")
-    visualize_dict(dict_adam_orig, axes.flat[0], "Adam - Original Data")
+    dict_cim_orig = get_aa_dict(crn_input, "cimIV", amino_acids)
+    visualize_dict(dict_cim_orig, "cimIV - Original Data", output_folder+"cimIV_original.png")
 
-    dict_cim_orig = get_aa_dict("data/crn/", "cimIV")
-    visualize_dict(dict_cim_orig, axes.flat[1], "cimIV - Original Data")
+    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    dict_adam_glucose = get_glucose_aa_dict(crn_input, "adam", amino_acids, essential_compounds)
+    visualize_dict(dict_adam_glucose, "Adam - Glucose Graph", output_folder+"adam_glucose.png")
 
-    dict_adam_orig = get_aa_dict("data/amino_reaction_cycle/", "adam")
-    visualize_dict(dict_adam_orig, axes.flat[2], "Adam - Amino Acid Synthesis Pathway")
+    dict_cim_glucose = get_glucose_aa_dict(crn_input, "cimIV", amino_acids, essential_compounds)
+    visualize_dict(dict_cim_glucose, "cimIV - Glucose Graph", output_folder+"cimIV_glucose.png")
 
-    dict_cim = get_aa_dict("data/amino_reaction_cycle/", "cimIV")
-    visualize_dict(dict_cim, axes.flat[3], "cimIV - Amino Acid Synthesis Pathway")
+    dict_adam_orig = get_aa_dict(amino_input, "adam", amino_acids)
+    visualize_dict(dict_adam_orig, "Adam - Amino Acid Synthesis Pathway", output_folder+"adam_amino_acid.png")
 
-    plt.tight_layout()
-    plt.show()
-
-
-def run_clean_data():
-    fig, axes = plt.subplots(figsize=(8, 9), nrows=2, ncols=1)
-
-    dict_adam_orig = get_aa_dict("data_clean/01_crn_clean/", "adam")
-    visualize_dict(dict_adam_orig, axes.flat[0], "Adam - Original Data (clean)")
-
-    dict_adam = get_aa_dict("data_clean/02_amino_reaction_cycle_clean/", "adam")
-    visualize_dict(dict_adam, axes.flat[1], "Adam - Amino Acid Synthesis Pathway")
-
-    plt.tight_layout()
-    plt.show()
-
+    dict_cim = get_aa_dict(amino_input, "cimIV", amino_acids)
+    visualize_dict(dict_cim, "cimIV - Amino Acid Synthesis Pathway", output_folder+"cimIV_amino_acid.png")
 
 if __name__ == "__main__":
-    run_original_data()
-    run_clean_data()
+    run()

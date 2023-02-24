@@ -1,6 +1,9 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-import pickle
+import sys
+
+sys.path.append("./input")
+file_handler = __import__("file_handler")
 
 
 def generate_test_graph():
@@ -216,9 +219,9 @@ def build_example_aminoacid(graph: nx.DiGraph) -> nx.DiGraph:
 
 def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
     # read in essential compounds
-    essential_compounds = read_file("wp1_script/essential_compounds.txt")
+    essential_compounds = file_handler.read_json("input/essential_compounds.json")
     # read in target amino acid
-    amino_acids = read_file("wp1_script/amino_acids.txt")
+    amino_acids = file_handler.read_json("input/amino_acids.json")
 
     #filter essential compounds that are not in the graph
     ec_clean = [ec for ec in essential_compounds if graph.has_node(ec)]

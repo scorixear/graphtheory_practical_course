@@ -2,6 +2,10 @@
 import os
 import pickle
 import networkx as nx
+import sys
+
+sys.path.append("./input")
+file_handler = __import__("file_handler")
 
 metabolite_subgraph = __import__("02_metabolite_subgraph")
 
@@ -27,7 +31,7 @@ def run(datadir: str = "data/crn/", resultdir: str = "data/amino_reaction_cycle/
             outfile = resultdir + entry.name.split("/")[-1].replace("CRN", "aa_cycle")
             pickle.dump(amino_acid_graph, open(outfile, "wb"))
 
-            amino_acids = metabolite_subgraph.read_file("wp1_script/amino_acids.txt")
+            amino_acids = file_handler.read_json("input/amino_acids.json")
             acids_present = [aa for aa in amino_acids if amino_acid_graph.has_node(aa)]
             acids_not_present = [
                 aa for aa in amino_acids if amino_acid_graph.has_node(aa) == False
