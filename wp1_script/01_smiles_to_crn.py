@@ -5,7 +5,7 @@ import networkx as nx
 
 
 def parseLines(lines):
-    reactionData = dict()
+    reactionData = {}
 
     linesTmp = [line.replace("\n", "") for line in lines]
     lines = linesTmp

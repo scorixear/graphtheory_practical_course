@@ -5,11 +5,10 @@ import networkx as nx
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+import metabolite_subgraph
 
 sys.path.append("./library")
 file_handler = __import__("file_handler")
-metabolite_subgraph = __import__("02_metabolite_subgraph.py")
-
 
 def get_aa_dict(graph_dir: str, medium: str, amino_acids: list[str]) -> dict:
     results: dict = {}
@@ -42,9 +41,8 @@ def get_glucose_aa_dict(graph_dir: str, medium: str, amino_acids: list[str], ess
     return results
 
 def visualize_dict(
-    aa_annotation: dict, title: str, output_file: str
+    aa_annotation: dict, title: str, output_file: str, amino_acids: str
 ):
-    amino_acids = file_handler.read_json("input/amino_acids.json")
     matrix = np.zeros((len(aa_annotation.keys()), len(amino_acids)))
     species: list[str] = []
     for row_idx, key in enumerate(aa_annotation.keys()):
@@ -65,26 +63,54 @@ def visualize_dict(
     plt.close()
 
 
-def run(crn_input: str = "data/crn/", amino_input: str = "data/amino_reaction_cycle/", output_folder: str = "data/aa_synthesis/"):
-    amino_acids = file_handler.read_json("input/amino_acids.json")
+def run(
+    crn_input: str = "data/crn/", 
+    amino_input: str = "data/amino_reaction_cycle/", 
+    output_folder: str = "data/aa_synthesis/",
+    intput_dir: str = "input/"):
+    amino_acids = file_handler.read_json(intput_dir+"amino_acids.json")
     dict_adam_orig = get_aa_dict(crn_input, "adam", amino_acids)
-    visualize_dict(dict_adam_orig, "Adam - Original Data", output_folder+ "adam_original.png")
+    visualize_dict(
+        dict_adam_orig, 
+        "Adam - Original Data", 
+        output_folder+ "adam_original.png",
+        amino_acids)
 
     dict_cim_orig = get_aa_dict(crn_input, "cimIV", amino_acids)
-    visualize_dict(dict_cim_orig, "cimIV - Original Data", output_folder+"cimIV_original.png")
+    visualize_dict(
+        dict_cim_orig, 
+        "cimIV - Original Data", 
+        output_folder+"cimIV_original.png",
+        amino_acids)
 
-    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    essential_compounds = file_handler.read_json(intput_dir+"essential_compounds.json")
     dict_adam_glucose = get_glucose_aa_dict(crn_input, "adam", amino_acids, essential_compounds)
-    visualize_dict(dict_adam_glucose, "Adam - Glucose Graph", output_folder+"adam_glucose.png")
+    visualize_dict(
+        dict_adam_glucose, 
+        "Adam - Glucose Graph", 
+        output_folder+"adam_glucose.png",
+        amino_acids)
 
     dict_cim_glucose = get_glucose_aa_dict(crn_input, "cimIV", amino_acids, essential_compounds)
-    visualize_dict(dict_cim_glucose, "cimIV - Glucose Graph", output_folder+"cimIV_glucose.png")
+    visualize_dict(
+        dict_cim_glucose, 
+        "cimIV - Glucose Graph", 
+        output_folder+"cimIV_glucose.png",
+        amino_acids)
 
     dict_adam_orig = get_aa_dict(amino_input, "adam", amino_acids)
-    visualize_dict(dict_adam_orig, "Adam - Amino Acid Synthesis Pathway", output_folder+"adam_amino_acid.png")
+    visualize_dict(
+        dict_adam_orig, 
+        "Adam - Amino Acid Synthesis Pathway", 
+        output_folder+"adam_amino_acid.png",
+        amino_acids)
 
     dict_cim = get_aa_dict(amino_input, "cimIV", amino_acids)
-    visualize_dict(dict_cim, "cimIV - Amino Acid Synthesis Pathway", output_folder+"cimIV_amino_acid.png")
+    visualize_dict(
+        dict_cim, 
+        "cimIV - Amino Acid Synthesis Pathway", 
+        output_folder+"cimIV_amino_acid.png",
+        amino_acids)
 
 if __name__ == "__main__":
     run()

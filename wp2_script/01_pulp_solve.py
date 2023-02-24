@@ -3,11 +3,11 @@ import sys
 import pickle
 import pulp
 import networkx as nx
+import amino_acid_ratios
 
 sys.path.append("./library")
 
 file_handler = __import__("file_handler")
-amino_acid_ratios = __import__("01_amino_acid_ratios")
 
 INFINITY = 1000
 DEFAULT_CONSTRAINT = -1
@@ -164,14 +164,15 @@ def add_constraints(
 def run(
     datadir: str = "data/amino_reaction_cycle/",
     resultsdir: str = "data/flux_results/",
-    proteomdir: str = "data/proteoms/"
+    proteomdir: str = "data/proteoms/",
+    inputdir: str = "input/"
 ):
     # proteom to be generated from acids
     # proteom = amino_acid_ratios.read_fasta(proteindir + proteinfile)
     # all available acids
-    amino_acids = file_handler.read_json("input/amino_acids.json")
+    amino_acids = file_handler.read_json(inputdir+"amino_acids.json")
     # every essential compound that can be used as an input
-    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    essential_compounds = file_handler.read_json(inputdir+"essential_compounds.json")
 
     # dictionary for the limitations of essential compounds (if compound listed in directory their lower of the import reaction is set to the value in the dic)
     essential_compounds_constrains = {es : DEFAULT_CONSTRAINT for es in essential_compounds}

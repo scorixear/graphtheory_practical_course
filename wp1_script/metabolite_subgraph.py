@@ -217,11 +217,11 @@ def build_example_aminoacid(graph: nx.DiGraph) -> nx.DiGraph:
     return final
 
 
-def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
+def build_aminoacid_graph(graph: nx.DiGraph, inputdir: str) -> nx.DiGraph:
     # read in essential compounds
-    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    essential_compounds = file_handler.read_json(inputdir+"essential_compounds.json")
     # read in target amino acid
-    amino_acids = file_handler.read_json("input/amino_acids.json")
+    amino_acids = file_handler.read_json(inputdir+"amino_acids.json")
 
     #filter essential compounds that are not in the graph
     ec_clean = [ec for ec in essential_compounds if graph.has_node(ec)]

@@ -9,12 +9,12 @@ import pickle
 import pulp
 import networkx as nx
 import matplotlib.pyplot as plt
+import amino_acid_ratios
 
 sys.path.append("./library")
 file_handler = __import__("file_handler")
 
 pulp_solve = __import__('01_pulp_solve')
-amino_acid_ratios = __import__('01_amino_acid_ratios')
 
 INFINITY = 1000
 # define a list of constrains that should be analysed
@@ -44,14 +44,15 @@ def create_compound_constrains(essential_compounds: list[str], constraint: int) 
 def run(
     datadir: str = "data/amino_reaction_cycle_clean/",
     proteomdir: str = "data/proteoms/",
-    outputdir: str = "data/flux_variation/"):
+    outputdir: str = "data/flux_variation/",
+    inputdir: str = "input/"):
 
     # proteom to be generated from acids
     # proteom = amino_acid_ratios.read_fasta("data/proteins/proteom_ecoli_uniprot.fasta")
     # all available acids
-    amino_acids = file_handler.read_json("input/amino_acids.json")
+    amino_acids = file_handler.read_json(inputdir+"amino_acids.json")
     # every essential compound that can be used as an input
-    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    essential_compounds = file_handler.read_json(inputdir+"essential_compounds.json")
 
     results = {"constrain": [], "biomass": {},
                "activated_reactions": {}, "activation_level": {}}

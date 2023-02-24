@@ -13,7 +13,7 @@ ORGANISM = "ecoli_adam" #limit the enrichment analysis to ecoli
 ALPHA_NIVEAU = 0.05 # alpha niveau
 
 
-def get_foreground_background(organism: str, flux_results: str) -> tuple[list[str], list[str]]:
+def get_foreground_background(organism: str, flux_results: str, inputdir: str) -> tuple[list[str], list[str]]:
     """Reads out the foreground (reactions with flux) and the background (all reactions)
     and returns a list of the keggIDs. Reactions that can not be mapped are discarded.
 
@@ -26,7 +26,7 @@ def get_foreground_background(organism: str, flux_results: str) -> tuple[list[st
     # create a translation dict from bigg to kegg id
     bigg_to_kegg = dict()
 
-    bigg_data = pd.read_csv("input/bigg_models_reactions.txt", sep="\t")
+    bigg_data = pd.read_csv(inputdir+"bigg_models_reactions.txt", sep="\t")
     bigg_data = bigg_data[bigg_data["database_links"].notna()]
 
     for _, row in bigg_data.iterrows():
@@ -54,10 +54,11 @@ def get_foreground_background(organism: str, flux_results: str) -> tuple[list[st
 def run(
     flux_resultdir: str = "data/flux_results/",
     kegg_file: str = "data/kegg_pathways/pathways.json",
-    outputdir: str = "data/enrichment/"
+    outputdir: str = "data/enrichment/",
+    inputdir: str = "input/"
 ):
 
-    foreground, background = get_foreground_background(ORGANISM, flux_resultdir)
+    foreground, background = get_foreground_background(ORGANISM, flux_resultdir, inputdir)
     results = []
     pathways = file_handler.read_json(kegg_file)
     for pathway_name, pathway_reactions in pathways.items():

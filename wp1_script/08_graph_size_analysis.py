@@ -2,10 +2,10 @@ import os
 import sys
 import pickle
 import networkx as nx
+import metabolite_subgraph
 
 sys.path.append("./library")
 file_handler = __import__("file_handler")
-metabolite_subgraph = __import__("02_metabolite_subgraph")
 
 def get_graph_information(graph: nx.DiGraph) -> None:
     nodeTypes = list(dict(graph.nodes(data="nodeType")).values())
@@ -18,12 +18,13 @@ def get_graph_information(graph: nx.DiGraph) -> None:
 def run(
     orig_graph_dir: str = "data/crn/",
     pathway_graph_dir: str = "data/amino_reaction_cycle/",
-    output_dir: str = "data/graph_sizes/"
+    output_dir: str = "data/graph_sizes/",
+    inputdir: str = "input/"
 ):
     
     summary = {}
     # iterate over species
-    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    essential_compounds = file_handler.read_json(inputdir+"essential_compounds.json")
     for entry in os.scandir(orig_graph_dir):
         if entry.is_file() and entry.name.endswith(".pi"):
             species, medium = entry.name.split("_")[0:2]

@@ -7,34 +7,34 @@ import pickle
 import pulp
 import networkx as nx
 import matplotlib.pyplot as plt
+import amino_acid_ratios
 
 sys.path.append("./library")
 file_handler = __import__("file_handler")
 
 
 pulp_solve = __import__('01_pulp_solve')
-amino_acid_ratios = __import__('01_amino_acid_ratios')
-flux_variation = __import__('03_flux_variation')
+flux_variation = __import__('02_flux_variation')
 
 INFINITY = 1000
-ESSENTIAL_COMPPOUND_THRESHOLD = -100 #-200 is a good mixture where all compounds are present but not to abundant to get an infinite biomass function
+ESSENTIAL_COMPOUND_THRESHOLD = -100 # -200 is a good mixture where all compounds are present but not to abundant to get an infinite biomass function
 GLUCOSE_THRESHOLDS = [-1, -2, -5, -10, -20, -50, -100, -200, -400, -600, -800, -1000]
 
 def run(
     datadir: str = "data/amino_reaction_cycle_clean/",
     proteomdir: str = "data/proteoms/",
-    outputdir: str = "data/flux_glucose_variations/"
-    ):
+    outputdir: str = "data/flux_glucose_variations/",
+    inputdir: str = "input/"):
 
     # all available acids
-    amino_acids = file_handler.read_json("input/amino_acids.json")
+    amino_acids = file_handler.read_json(inputdir+"amino_acids.json")
     # every essential compound that can be used as an input
-    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    essential_compounds = file_handler.read_json(inputdir+"essential_compounds.json")
 
     results = {"constrain": [], "biomass": {}, "activated_reactions": {}, "activation_level": {}}
 
     essential_compounds_constrains = flux_variation.create_compound_constrains(
-            essential_compounds, ESSENTIAL_COMPPOUND_THRESHOLD)
+            essential_compounds, ESSENTIAL_COMPOUND_THRESHOLD)
     
 
     for glucose_threshold in GLUCOSE_THRESHOLDS:

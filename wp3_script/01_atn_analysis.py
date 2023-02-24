@@ -242,15 +242,16 @@ def get_cycle_lengths(graph: nx.DiGraph) -> dict[int, dict[str, any]]:
     return cycles
 
 def run(
-    input_dir: str = "data/atn_graphs/",
+    graphdir: str = "data/atn_graphs/",
     output_dir: str = "data/atn_analysis/",
     molecule_start_compound: str = "D-glucose",
     molecule_start_atom: int = 0,
     molecule_end_compound: str = "L-leucine",
     endpoint_start_compound: str = "D-glucose",
-    endpoint_start_element: str = "C"):
+    endpoint_start_element: str = "C",
+    inputdir: str = "input/"):
     data_full = write_output(
-        input_dir,
+        graphdir,
         output_dir,
         molecule_start_compound,
         molecule_start_atom,
@@ -258,9 +259,9 @@ def run(
         endpoint_start_compound,
         endpoint_start_element,
         lambda filepath: nx.read_gml(filepath, label=None))
-    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    essential_compounds = file_handler.read_json(inputdir+"essential_compounds.json")
     data_cleaned = write_output(
-        input_dir,
+        graphdir,
         output_dir,
         molecule_start_compound,
         molecule_start_atom,

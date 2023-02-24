@@ -1,7 +1,7 @@
 import sys
 import os.path as path
-import networkx as nx
 import pickle
+import networkx as nx
 
 sys.path.append("./library")
 file_handler = __import__("file_handler")
@@ -64,7 +64,9 @@ def compare_graphs(a_graph: nx.DiGraph, c_graph: nx.DiGraph):
     return result_data
 
 
-def run(datadir: str = "data/amino_reaction_cycle/", result_dir: str = "data/media_comparison/"):
+def run(
+    datadir: str = "data/amino_reaction_cycle/", 
+    result_dir: str = "data/media_comparison/"):
     organisms = [
         "acacae",
         "blongum",

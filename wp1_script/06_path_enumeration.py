@@ -78,13 +78,14 @@ def enumerate_simple_paths_deletion(
 
 def run(
     infile: str = "data/enumeration/acacae_adam_CRN_glycine.pi",
-    output_folder: str = "data/paths/"):
+    output_folder: str = "data/paths/",
+    inputdir: str = "input/"):
     source = "D-glucose"
     with open(infile, "rb") as reader:
         graph = pickle.load(reader)
     
-    amino_acids = file_handler.read_json("input/amino_acids.json")
-    essential_compounds = file_handler.read_json("input/essential_compounds.json")
+    amino_acids = file_handler.read_json(inputdir+"amino_acids.json")
+    essential_compounds = file_handler.read_json(inputdir+"essential_compounds.json")
     
     acids_present = [aa for aa in amino_acids if graph.has_node(aa)]
 
