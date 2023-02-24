@@ -1,7 +1,11 @@
-import networkx as nx
-import pickle
 import os
+import sys
+import pickle
+import networkx as nx
 import matplotlib.pyplot as plt
+
+sys.path.append("./library")
+file_handler = __import__("file_handler")
 
 
 def build_reaction_graph(G: nx.DiGraph) -> nx.DiGraph:
@@ -26,14 +30,15 @@ def build_reaction_graph(G: nx.DiGraph) -> nx.DiGraph:
 
 def read_file(
     file: str,
-    fluxDir: str = "data/flux_results/",
-    aaCycleDir: str = "data/amino_reaction_cycle/",
-) -> tuple([dict(), nx.DiGraph()]):
+    fluxDir: str,
+    aaCycleDir: str,
+) -> tuple[dict, nx.DiGraph]:
 
-    flux = pickle.load(open(fluxDir + file, "rb"))
+    flux = file_handler.read_json(fluxDir + file)
 
-    name = file.replace("flux", "aa_cycle")
-    graph = pickle.load(open(aaCycleDir + name, "rb"))
+    name = file.replace("flux", "aa_cycle").replace(".json",".pi")
+    with open(aaCycleDir+name, "rb") as reader:
+        graph = pickle.load(reader)
 
     return flux, graph
 
@@ -41,16 +46,16 @@ def read_file(
 def run(
     fluxDir: str = "data/flux_results/",
     aaCycleDir: str = "data/amino_reaction_cycle/",
-    outdir: str = "./",
+    outdir: str = "data/flux_visualization",
 ):
     for file in os.listdir(fluxDir):
         flux, graph = read_file(file, fluxDir, aaCycleDir)
 
         # select a subgraph from all reactions that are not 0
         subgraphNodes = set()
-        for node in flux:
+        for [node, activation_value] in flux.items():
             # filter out irrelevant reactions and export import nodes
-            if flux[node] == 0 or not graph.has_node(node):
+            if activation_value == 0 or not graph.has_node(node):
                 continue
 
             subgraphNodes.add(node)
@@ -69,15 +74,6 @@ def run(
             else:
                 colours.append(0)
 
-        reactionNodes = [
-            node
-            for node in aaSynthesisSubgraph
-            if aaSynthesisSubgraph.nodes(data=True)[node]["nodeType"] == 1
-        ]
-        # nx.draw(aaSynthesisSubgraph, pos=nx.bipartite_layout(aaSynthesisSubgraph, reactionNodes),
-        #        with_labels=True, node_size=20, font_size=4, width=0.3, arrowsize=5, node_color=colours, cmap=plt.cm.viridis)
-        # plt.show()
-
         # visualize only the reactions
         reactionSubgraph = build_reaction_graph(aaSynthesisSubgraph)
         nx.draw(
@@ -95,7 +91,7 @@ def run(
         del reactionSubgraph
         del graph
         del aaSynthesisSubgraph
-        outfile = outdir + file.replace("_flux.pi", "_aa_synthesis.png")
+        outfile = outdir + file.replace("_flux.json", "_aa_synthesis.png")
         plt.savefig(outfile, dpi=200)
         plt.close()
 

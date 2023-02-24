@@ -1,40 +1,19 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib
+import sys
 import pickle
-import networkx as nx
-import os
-from scipy.stats import hypergeom
+import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+import pandas as pd
+from scipy.stats import hypergeom
 
-bigg_dir = "data/bigg/"
-kegg_dir = "data/kegg_pathways/"
-organism = "ecoli_adam" #limit the enrichment analysis to ecoli
-a = 0.05 # alpha niveau
+sys.path.append("./library")
 
+file_handler = __import__("file_handler")
 
-def read_kegg(file:str) -> tuple([str, list[str]]):
-    """Reads the reactions for a pathway
-
-    Args:
-        file (str): pathway file from Kegg
-
-    Returns:
-        str: name of the pathway, list of Kegg reaction IDs of the pathway
-    """
-    pathway_reactions = []
-    pathway_name = ""
-    with open(file, "r") as infile:
-        for line in infile:
-            if line.startswith("#"):
-                pathway_name = line.replace("#", "").strip()
-            else:
-                pathway_reactions.append(line.strip())
-    
-    return pathway_name, pathway_reactions
+ORGANISM = "ecoli_adam" #limit the enrichment analysis to ecoli
+ALPHA_NIVEAU = 0.05 # alpha niveau
 
 
-def get_foreground_background(organism: str) -> tuple([list[str], list[str]]):
+def get_foreground_background(organism: str, flux_results: str) -> tuple[list[str], list[str]]:
     """Reads out the foreground (reactions with flux) and the background (all reactions)
     and returns a list of the keggIDs. Reactions that can not be mapped are discarded.
 
@@ -47,10 +26,10 @@ def get_foreground_background(organism: str) -> tuple([list[str], list[str]]):
     # create a translation dict from bigg to kegg id
     bigg_to_kegg = dict()
 
-    bigg_data = pd.read_csv(f"{bigg_dir}bigg_models_reactions.txt", sep="\t")
+    bigg_data = pd.read_csv("input/bigg_models_reactions.txt", sep="\t")
     bigg_data = bigg_data[bigg_data["database_links"].notna()]
 
-    for index, row in bigg_data.iterrows():
+    for _, row in bigg_data.iterrows():
         bigg_id = row["bigg_id"]
         db_ids = row["database_links"]
 
@@ -60,8 +39,8 @@ def get_foreground_background(organism: str) -> tuple([list[str], list[str]]):
             bigg_to_kegg[bigg_id] = kegg_id
     
     # load the reactions that have flux as foreground
-    data = pickle.load(
-        open(f"data/flux_results_clean/{organism}_cleaned_flux.pi", "rb"))
+    with open(f"{flux_results}{organism}_flux.pi", "rb") as reader:
+        data = pickle.load(reader)
     foreground_kegg_ids = []
     background_kegg_ids = []
     for reaction in data:
@@ -72,14 +51,16 @@ def get_foreground_background(organism: str) -> tuple([list[str], list[str]]):
             background_kegg_ids.append(bigg_to_kegg[reaction_id])
     return foreground_kegg_ids, background_kegg_ids
 
-def main():
+def run(
+    flux_resultdir: str = "data/flux_results/",
+    kegg_file: str = "data/kegg_pathways/pathways.json",
+    outputdir: str = "data/enrichment/"
+):
 
-    foreground, background = get_foreground_background(organism)
+    foreground, background = get_foreground_background(ORGANISM, flux_resultdir)
     results = []
-
-    for pathway_file in os.listdir(kegg_dir):
-        pathway_name, pathway_reactions = read_kegg(kegg_dir + pathway_file)
-        
+    pathways = file_handler.read_json(kegg_file)
+    for pathway_name, pathway_reactions in pathways.items():
         #do not test to short pathways
         if len(pathway_reactions) < 30:
             continue
@@ -96,15 +77,12 @@ def main():
 
         p_value = hypergeom.sf(k-1,M,n,N)
         
-        # if p_value < 0.05:
-        #     print(f"found significant pathway: {pathway_name}, p-value: {p_value}, proportion of associated reactions in background: {round(n/M, 3)}, proportion of associated reactions in foreground: {round(k/N, 3)}")
-        
         result = [pathway_name, p_value, k, N, n, M]
         results.append(result)
 
     #correct for multiple testing
     number_test = len(results)
-    a_adj = a/number_test
+    a_adj = ALPHA_NIVEAU/number_test
     results = [result for result in results if result[1] < a_adj]
     
     #calculate fold enrichment
@@ -115,8 +93,6 @@ def main():
         M = result[5]
         fold_enrichment = (k/N - n/M)/(n/M)
         result.append(fold_enrichment)
-
-    # results = [tuple(result) for result in results]
     
     #sort after p-value
     results = sorted(results, key=lambda result: result[6], reverse=True)
@@ -127,21 +103,16 @@ def main():
     reaction_number = [result[2] for result in results]
     fold_enrichment = [result[6] for result in results]
     y = range(len(pathway))
-    
-    # plt.style.use('_mpl-gallery')
+
     plt.rcParams["figure.figsize"] = (15,5)
-    # matplotlib.rcParams['figure.subplot.left'] = 0
-    # matplotlib.rcParams['figure.subplot.bottom'] = 0
-    # matplotlib.rcParams['figure.subplot.right'] = 1
-    # matplotlib.rcParams['figure.subplot.top'] = 1
     scatter = plt.scatter(x=fold_enrichment, y=y, s=reaction_number, c=p_value, cmap=cm.copper)
     plt.yticks(ticks= y,labels= pathway,  fontsize= 8)
     plt.ylabel("pathway")
     plt.xlabel("Fold Enrichment")
     plt.legend(*scatter.legend_elements(), title = "p-value")
-    plt.savefig("graphics/fold_enrichment.png")
+    plt.savefig(f"{outputdir}fold_enrichment.png")
     plt.close()
 
 
 if __name__ == "__main__":
-    main()
+    run()

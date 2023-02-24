@@ -6,7 +6,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-sys.path.append("./input")
+sys.path.append("./library")
 file_handler = __import__("file_handler")
 metabolite_subgraph = __import__("02_metabolite_subgraph.py")
 

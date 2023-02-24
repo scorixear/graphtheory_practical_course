@@ -3,7 +3,7 @@ import sys
 import pickle
 import networkx as nx
 
-sys.path.append("./input")
+sys.path.append("./library")
 file_handler = __import__("file_handler")
 metabolite_subgraph = __import__("02_metabolite_subgraph")
 

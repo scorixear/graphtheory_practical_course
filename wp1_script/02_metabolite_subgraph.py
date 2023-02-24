@@ -2,7 +2,7 @@ import sys
 import networkx as nx
 import matplotlib.pyplot as plt
 
-sys.path.append("./input")
+sys.path.append("./library")
 file_handler = __import__("file_handler")
 
 
@@ -253,10 +253,8 @@ def build_aminoacid_graph(graph: nx.DiGraph) -> nx.DiGraph:
             #print(f"{amino_acid}: {len(reverse.nodes())}")
         except KeyError:
             print(amino_acid + " was not found in the Digraph")
-            pass
         except nx.NetworkXError:
             print(amino_acid + " was not found in the Digraph")
-            pass
 
     # intersection
     final = glucose_graph.copy()

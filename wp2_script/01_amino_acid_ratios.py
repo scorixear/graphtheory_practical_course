@@ -7,7 +7,7 @@ def read_fasta(filepath: str) -> str:
         return proteomString
 
 
-def calculate_ratios(proteomString: str, exceptions: list[str] = []) -> dict:
+def calculate_ratios(proteomString: str, exceptions: list[str]) -> dict:
     """calculate the ratios for all aa that are not in the excetpion list"""
 
     translation_dir = {
@@ -45,8 +45,8 @@ def calculate_ratios(proteomString: str, exceptions: list[str] = []) -> dict:
     return ratioDir
 
 
-def main():
-    datadir: str = "data/proteins/"
+def debug():
+    datadir: str = "data/proteoms/"
     filepath = datadir + "proteom_ecoli_uniprot.fasta"
     proteomString = read_fasta(filepath)
     ratioDir = calculate_ratios(proteomString, ["L-cysteine"])
@@ -54,4 +54,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    debug()

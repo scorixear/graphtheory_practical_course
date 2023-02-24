@@ -3,7 +3,7 @@ import os.path as path
 import networkx as nx
 import pickle
 
-sys.path.append("./input")
+sys.path.append("./library")
 file_handler = __import__("file_handler")
 
 def graph_intersection_data(G: nx.DiGraph, H: nx.DiGraph) -> nx.DiGraph:

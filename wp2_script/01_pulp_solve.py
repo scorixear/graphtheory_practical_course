@@ -1,12 +1,15 @@
-import pulp
 import os
-import networkx as nx
+import sys
 import pickle
+import pulp
+import networkx as nx
 
+sys.path.append("./library")
+
+file_handler = __import__("file_handler")
 amino_acid_ratios = __import__("01_amino_acid_ratios")
 
 INFINITY = 1000
-
 DEFAULT_CONSTRAINT = -1
 
 
@@ -33,20 +36,6 @@ def add_acid_export_reactions(graph: nx.DiGraph, acid_ratios: dict):
             raise ValueError()
 
 
-def read_file(file: str) -> list[str]:
-    """Reads in file, splits by line, removes line breaks.
-
-    Args:
-        file (str): the full file path
-
-    Returns:
-        list[str]: the list of lines
-    """
-    with open(file, "r", encoding="UTF-8") as file_data:
-        lines = file_data.readlines()
-    return [line.strip() for line in lines]
-
-
 def add_exchange_reactions(graph: nx.DiGraph, to_be_added: list[str]):
     """Adds R_output_[node] reaction nodes to the graph for every compound node that does not successors.
     Edges are specified as [node] -> R_output_[node]
@@ -61,12 +50,6 @@ def add_exchange_reactions(graph: nx.DiGraph, to_be_added: list[str]):
     for node in graph.nodes(data=True):
         # for every node that is a compound
         if node[1]["nodeType"] == 0:
-            # collect all predecessors, if no predecessor is present, add input node
-            # predecessors = list(graph.predecessors(node[0]))
-            # new_predecessors = [p for p in predecessors if graph.get_edge_data(p, node[0])['direction']==1]
-            # if len(new_predecessors) == 0:
-            # nodes_to_be_added.append(f"R_input_{node[0]}")
-
             # collect all successors
             successors = list(graph.successors(node[0]))
             # filter successors to only be connected via an edge with direction = 1 label
@@ -181,14 +164,14 @@ def add_constraints(
 def run(
     datadir: str = "data/amino_reaction_cycle/",
     resultsdir: str = "data/flux_results/",
-    proteindir: str = "data/proteins/"
+    proteomdir: str = "data/proteoms/"
 ):
     # proteom to be generated from acids
     # proteom = amino_acid_ratios.read_fasta(proteindir + proteinfile)
     # all available acids
-    amino_acids = read_file("wp1_script/amino_acids.txt")
+    amino_acids = file_handler.read_json("input/amino_acids.json")
     # every essential compound that can be used as an input
-    essential_compounds = read_file("wp1_script/essential_compounds.txt")
+    essential_compounds = file_handler.read_json("input/essential_compounds.json")
 
     # dictionary for the limitations of essential compounds (if compound listed in directory their lower of the import reaction is set to the value in the dic)
     essential_compounds_constrains = {es : DEFAULT_CONSTRAINT for es in essential_compounds}
@@ -200,11 +183,10 @@ def run(
 
     for entry in os.scandir(datadir):
         if entry.is_file() and entry.name.endswith(".pi"):
-            print(entry.path)
 
             # load proteom of species
             organism_name = entry.name.split("_")[0]
-            proteom = amino_acid_ratios.read_fasta(f"{proteindir}{organism_name}.faa")
+            proteom = amino_acid_ratios.read_fasta(f"{proteomdir}{organism_name}.faa")
 
             with open(entry.path, "rb") as reader:
                 graph: nx.DiGraph = pickle.load(reader)
@@ -212,8 +194,6 @@ def run(
 
             # find all missing acids in the graph
             missing_acids = [aa for aa in amino_acids if graph.has_node(aa) is False]
-            print("Missing Acids:")
-            print(missing_acids)
 
             # calculate acid ratios used for the proteom
             acid_ratios = amino_acid_ratios.calculate_ratios(proteom, missing_acids)
@@ -239,17 +219,8 @@ def run(
                 results[name] = variable.varValue
                 if variable.varValue != 0:
                     relevant_counter += 1
-
-            print(f"Relevant Reaction: {relevant_counter}")
-            print(f"Biomass Output: {pulp.value(model.objective)}")
-            print("\n---------------------------------------------------")
-            print("---------------------------------------------------\n")
-
             # write out results
-            with open(
-                resultsdir + entry.name.replace("_aa_cycle", "_flux"), "wb"
-            ) as writer:
-                pickle.dump(results, writer)
+            file_handler.write_json(results, resultsdir + entry.name.replace("_aa_cycle", "_flux").replace(".pi",".json"))
 
 
 if __name__ == "__main__":
