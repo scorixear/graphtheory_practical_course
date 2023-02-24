@@ -5,7 +5,7 @@ def bfs_endpoint(graph: nx.Graph, compound: str, element: str) -> dict[str, set]
     cleaned_graph = graph.copy()
     for key, data in graph.nodes(data=True):
         if data["element"] != element:
-            cleaned_graph.remove(key)
+            cleaned_graph.remove_node(key)
         
     starting_nodes = []
     # holds subgraphs for every compound, only SYMMETRY edges are present

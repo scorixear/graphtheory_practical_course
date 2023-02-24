@@ -1,5 +1,4 @@
 import sys
-import pickle
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import pandas as pd
@@ -39,8 +38,7 @@ def get_foreground_background(organism: str, flux_results: str, inputdir: str) -
             bigg_to_kegg[bigg_id] = kegg_id
     
     # load the reactions that have flux as foreground
-    with open(f"{flux_results}{organism}_flux.pi", "rb") as reader:
-        data = pickle.load(reader)
+    data = file_handler.read_json(f"{flux_results}{organism}_flux.json")
     foreground_kegg_ids = []
     background_kegg_ids = []
     for reaction in data:

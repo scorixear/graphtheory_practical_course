@@ -30,7 +30,8 @@ def run(
             species, medium = entry.name.split("_")[0:2]
             with open(entry.path,"rb",) as reader:
                 original_graph: nx.DiGraph = pickle.load(reader)
-                glucose_graph: nx.DiGraph = metabolite_subgraph.bf_search(original_graph, "D-glucose", essential_compounds)
+                ec_clean = [ec for ec in essential_compounds if original_graph.has_node(ec)]
+                glucose_graph: nx.DiGraph = metabolite_subgraph.bf_search(original_graph, "D-glucose", ec_clean)
                 data = get_graph_information(original_graph)
                 glucose_data = get_graph_information(glucose_graph)
                 if species in summary:
@@ -58,7 +59,7 @@ def run(
                             'amino_acid': data
                         }
                     }
-    file_handler.write_json(output_dir+"graph_information.json")
+    file_handler.write_json(summary, output_dir+"graph_information.json")
 
 if __name__ == "__main__":
     run()

@@ -1,0 +1,1906 @@
+{
+  "conn_comp_number": 219,
+  "density": 0.002049096140415017,
+  "molecule_path": {
+    "start_compound": "D-glucose",
+    "start_atom_number": 0,
+    "start_atom_element": "O",
+    "end_compound": "L-leucine",
+    "graph_size": 636
+  },
+  "endpoints": {
+    "amount": 122,
+    "data": {
+      "D-glucose 6-phosphate": [
+        1377
+      ],
+      "beta-D-fructose": [
+        1472,
+        1466,
+        1463
+      ],
+      "beta-D-fructose 6-phosphate": [
+        1224
+      ],
+      "6-phospho-D-glucono-1,5-lactone": [
+        1392,
+        1402,
+        1398
+      ],
+      "D-erythrose 4-phosphate": [
+        1029
+      ],
+      "beta-D-fructose 1,6-bisphosphate": [
+        1194
+      ],
+      "D-sedoheptulose 7-phosphate": [
+        2002,
+        1996,
+        2004,
+        1998
+      ],
+      "6-phospho-D-gluconate": [
+        1424,
+        1430
+      ],
+      "7-phospho-2-dehydro-3-deoxy-D-arabino-heptonate": [
+        1048,
+        1057,
+        1053
+      ],
+      "glyceraldehyde 3-phosphate": [
+        1210,
+        1211
+      ],
+      "D-xylulose 5-phosphate": [
+        1809,
+        1807
+      ],
+      "alpha-D-ribose 5-phosphate": [
+        1907,
+        1909,
+        1911
+      ],
+      "D-ribulose 5-phosphate": [
+        1442,
+        1444,
+        1438
+      ],
+      "3-dehydroquinate": [
+        1161,
+        1164
+      ],
+      "dihydroxyacetone phosphate": [
+        576,
+        577
+      ],
+      "(2R)-3-phospho-glyceroyl phosphate": [
+        1411,
+        1405
+      ],
+      "(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate": [
+        1661,
+        1663
+      ],
+      "5-phospho-alpha-D-ribose 1-diphosphate": [
+        624,
+        634,
+        622
+      ],
+      "3-dehydroshikimate": [
+        1170,
+        1171,
+        1173,
+        1167
+      ],
+      "dihydroxyacetone": [
+        586,
+        587
+      ],
+      "methylglyoxal": [
+        592,
+        591
+      ],
+      "(2R)-3-phosphoglycerate": [
+        1760,
+        1762
+      ],
+      "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate": [
+        1635,
+        1645,
+        1647
+      ],
+      "N-(5-phospho-beta-D-ribosyl)anthranilate": [
+        657,
+        650,
+        659,
+        668
+      ],
+      "1-(5-Phosphoribosyl)-ATP": [
+        889,
+        891,
+        900
+      ],
+      "CO2": [
+        250
+      ],
+      "shikimate": [
+        1986,
+        1987,
+        1989,
+        1983
+      ],
+      "hydroxyacetone": [
+        596,
+        597
+      ],
+      "(2R)-2-phosphoglycerate": [
+        1179,
+        1181
+      ],
+      "3-phosphooxypyruvate": [
+        1771,
+        1773
+      ],
+      "acetyl phosphate": [
+        1794
+      ],
+      "L-tryptophan": [
+        2039,
+        2037,
+        2038,
+        2031
+      ],
+      "indole": [
+        2049,
+        2050,
+        2051,
+        2043
+      ],
+      "1-(5-Phosphoribosyl)-AMP": [
+        1851,
+        1853,
+        1862
+      ],
+      "2-oxoglutarate": [
+        16
+      ],
+      "L-arogenate": [
+        784
+      ],
+      "meso-2,6-diaminoheptanedioate": [
+        994
+      ],
+      "isocitrate(3-)": [
+        305,
+        308
+      ],
+      "(2S)-2-isopropyl-3-oxosuccinate": [
+        1699
+      ],
+      "oxaloacetate": [
+        850,
+        853
+      ],
+      "prephenate": [
+        905,
+        909
+      ],
+      "phosphoenolpyruvate": [
+        1042,
+        1036
+      ],
+      "3-phosphoshikimate": [
+        1920,
+        1916,
+        1926,
+        1919
+      ],
+      "(S)-propane-1,2-diol": [
+        601,
+        602
+      ],
+      "acetyl-CoA": [
+        127
+      ],
+      "1-(5-phospho-beta-D-ribosyl)-5-[(5-phospho-beta-D-ribosylamino)methylideneamino]imidazole-4-carboxamide": [
+        1888,
+        1890,
+        1899
+      ],
+      "4-methyl-2-oxopentanoate": [
+        25,
+        22
+      ],
+      "L-glutamate": [
+        32,
+        35,
+        30
+      ],
+      "(S)-3-methyl-2-oxopentanoate": [
+        1096
+      ],
+      "L-glutamate 5-semialdehyde": [
+        1344,
+        1347
+      ],
+      "3-phenylpyruvate": [
+        1787,
+        1788,
+        1789,
+        1782
+      ],
+      "(S)-2-succinylamino-6-oxoheptanedioate": [
+        1976,
+        1970,
+        1966,
+        1967
+      ],
+      "3-(4-hydroxyphenyl)pyruvate": [
+        1816,
+        1826,
+        1827,
+        1821
+      ],
+      "3-methyl-2-oxobutanoate": [
+        1077
+      ],
+      "chorismate": [
+        680,
+        681,
+        676,
+        671
+      ],
+      "(S)-2,3-dihydrodipicolinate": [
+        1110,
+        1102
+      ],
+      "(S)-lactate": [
+        1736,
+        1735
+      ],
+      "(2S)-2-acetolactate": [
+        256,
+        258
+      ],
+      "(S)-2-ethyl-2-hydroxy-3-oxobutanoate": [
+        246
+      ],
+      "formate": [
+        1757
+      ],
+      "(2S,6S)-2,6-diaminoheptanedioate": [
+        1017,
+        1020,
+        1012,
+        1013
+      ],
+      "citrate": [
+        297,
+        290,
+        294
+      ],
+      "(2R,3S)-3-isopropylmalate": [
+        1687
+      ],
+      "L-aspartate": [
+        737,
+        739
+      ],
+      "O-phospho-L-serine": [
+        1933
+      ],
+      "5-O-(1-carboxyvinyl)-3-phosphoshikimate": [
+        928,
+        918,
+        919,
+        922,
+        924
+      ],
+      "(S)-lactaldehyde": [
+        1730,
+        1733
+      ],
+      "N-acetyl-L-glutamate": [
+        43,
+        45,
+        38,
+        39
+      ],
+      "(2S)-2-isopropylmalate": [
+        1721,
+        1724,
+        1718,
+        1719
+      ],
+      "O-acetyl-L-serine": [
+        940,
+        943
+      ],
+      "L-serine": [
+        982
+      ],
+      "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide": [
+        1587,
+        1582,
+        1583
+      ],
+      "succinyl-CoA": [
+        562,
+        566
+      ],
+      "3-(imidazol-4-yl)-2-oxopropyl phosphate": [
+        1545,
+        1554
+      ],
+      "succinate semialdehyde": [
+        1745,
+        1742
+      ],
+      "L-leucine": [
+        3,
+        5
+      ],
+      "L-alanine": [
+        570,
+        572
+      ],
+      "L-glutamine": [
+        690,
+        693,
+        687
+      ],
+      "L-glutamyl 5-phosphate": [
+        1361,
+        1369,
+        1362
+      ],
+      "L-isoleucine": [
+        1680
+      ],
+      "L-ornithine": [
+        284,
+        279
+      ],
+      "L-phenylalanine": [
+        800,
+        801,
+        802,
+        805,
+        797
+      ],
+      "N-succinyl-(2S,6S)-2,6-diaminoheptanedioate": [
+        1953,
+        1959,
+        1943,
+        1946,
+        1951
+      ],
+      "L-tyrosine": [
+        2060,
+        2061,
+        2062,
+        2055
+      ],
+      "L-valine": [
+        2065,
+        2066,
+        2070
+      ],
+      "(2R,3R)-2,3-dihydroxy-3-methylpentanoate": [
+        1081,
+        1083,
+        1087
+      ],
+      "(S)-1-pyrroline-5-carboxylate": [
+        1353,
+        1354,
+        1351
+      ],
+      "(S)-2,3,4,5-tetrahydrodipicolinate": [
+        1112,
+        1122,
+        1116,
+        1117
+      ],
+      "(2R)-2,3-dihydroxy-3-methylbutanoate": [
+        1067,
+        1069,
+        1063
+      ],
+      "L-lysine": [
+        1001,
+        1004,
+        1005
+      ],
+      "anthranilate": [
+        609,
+        610,
+        613
+      ],
+      "2-isopropylmaleate": [
+        1715,
+        1708,
+        1709,
+        1710
+      ],
+      "N-(L-Arginino)succinate": [
+        708,
+        702,
+        710,
+        701
+      ],
+      "N-carbamoyl-L-aspartate": [
+        842,
+        843
+      ],
+      "4-phospho-L-aspartate": [
+        818,
+        819
+      ],
+      "L-asparagine": [
+        2074,
+        2076
+      ],
+      "N-acetyl-L-glutamyl 5-phosphate": [
+        89,
+        82,
+        83,
+        87
+      ],
+      "N(2)-acetyl-L-ornithine": [
+        268,
+        261,
+        262
+      ],
+      "acetate": [
+        275
+      ],
+      "L,L-cystathionine": [
+        962,
+        958,
+        959
+      ],
+      "D-erythro-1-(imidazol-4-yl)glycerol 3-phosphate": [
+        1625,
+        1627,
+        1622
+      ],
+      "L-histidinol phosphate": [
+        1496,
+        1505
+      ],
+      "O-succinyl-L-homoserine": [
+        1536,
+        1538,
+        1531,
+        1534
+      ],
+      "succinate": [
+        1148,
+        1150
+      ],
+      "L-citrulline": [
+        754,
+        749,
+        750
+      ],
+      "L-proline": [
+        1752,
+        1749,
+        1751
+      ],
+      "2-oxobutanoate": [
+        228
+      ],
+      "fumarate": [
+        732,
+        733
+      ],
+      "(S)-dihydroorotate": [
+        1124,
+        1125
+      ],
+      "L-aspartate 4-semialdehyde": [
+        810,
+        811
+      ],
+      "N-acetyl-L-glutamate 5-semialdehyde": [
+        320,
+        313,
+        314,
+        319
+      ],
+      "L-cysteine": [
+        952,
+        954
+      ],
+      "L-histidinol": [
+        1480,
+        1475
+      ],
+      "L-threonine": [
+        2013,
+        2015
+      ],
+      "orotate": [
+        1138,
+        1139
+      ],
+      "L-homoserine": [
+        1512,
+        1510
+      ],
+      "L-histidine": [
+        1488,
+        1485,
+        1486
+      ],
+      "L-arginine": [
+        720,
+        721,
+        725
+      ],
+      "L-homocysteine": [
+        973,
+        974
+      ],
+      "O-phospho-L-homoserine": [
+        1526,
+        1518
+      ],
+      "glycine": [
+        2024
+      ],
+      "acetaldehyde": [
+        2021
+      ]
+    }
+  },
+  "connected_components": [
+    {
+      "compound": "L-leucine",
+      "element": "C",
+      "component_size": 683,
+      "cycle_basis": 174
+    },
+    {
+      "compound": "L-leucine",
+      "element": "O",
+      "component_size": 636,
+      "cycle_basis": 310
+    },
+    {
+      "compound": "(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate",
+      "element": "N",
+      "component_size": 76,
+      "cycle_basis": 13,
+      "possible_cycles": 4096,
+      "cycles_found": 35,
+      "max_cycle_length": 16,
+      "average_cycle_length": 8.6,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "3-phosphoshikimate",
+      "element": "P",
+      "component_size": 45,
+      "cycle_basis": 22
+    },
+    {
+      "compound": "ATP",
+      "element": "O",
+      "component_size": 16,
+      "cycle_basis": 5,
+      "possible_cycles": 16,
+      "cycles_found": 18,
+      "max_cycle_length": 14,
+      "average_cycle_length": 9.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "L-histidinol phosphate",
+      "element": "N",
+      "component_size": 12,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-histidinol phosphate",
+      "element": "C",
+      "component_size": 12,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ADP",
+      "element": "N",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ADP",
+      "element": "C",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ADP",
+      "element": "N",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ADP",
+      "element": "C",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-AMP",
+      "element": "C",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-AMP",
+      "element": "N",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "C",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "N",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-ATP",
+      "element": "C",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "AMP",
+      "element": "O",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "AMP",
+      "element": "C",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ATP",
+      "element": "C",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ATP",
+      "element": "O",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ATP",
+      "element": "P",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "ATP",
+      "element": "O",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "C",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "O",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "C",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "O",
+      "component_size": 8,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "N-carbamoyl-L-aspartate",
+      "element": "N",
+      "component_size": 7,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "N-carbamoyl-L-aspartate",
+      "element": "C",
+      "component_size": 7,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 6,
+      "cycle_basis": 4,
+      "possible_cycles": 8,
+      "cycles_found": 12,
+      "max_cycle_length": 6,
+      "average_cycle_length": 4.166666666666667,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "ATP",
+      "element": "P",
+      "component_size": 5,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 4,
+      "average_cycle_length": 3.3333333333333335,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "NADPH",
+      "element": "O",
+      "component_size": 4,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "L-homocysteine",
+      "element": "S",
+      "component_size": 4,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "CoA",
+      "element": "S",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "P",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "P",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "P",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "CoA",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADPH",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADP(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NAD(+)",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "NADH",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FADH2",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "FAD",
+      "element": "N",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "H(+)",
+      "element": "H",
+      "component_size": 1,
+      "cycle_basis": 0
+    }
+  ]
+}

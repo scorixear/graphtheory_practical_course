@@ -66,6 +66,9 @@ def write_output(
             endpoint_analysis.append((species_name, len(endpoints)))
             print("75% Cycles")
             cycle_data = get_cycle_lengths(graph)
+            endpoint_list = {}
+            for key, value in endpoints.items():
+                endpoint_list[key] = list(value)
             results = {
                 "conn_comp_number": component_number,
                 "density": dens,
@@ -78,7 +81,7 @@ def write_output(
                 },
                 "endpoints": {
                     "amount": len(endpoints),
-                    "data": endpoints
+                    "data": endpoint_list
                 },
                 "connected_components": []
             }
@@ -262,7 +265,7 @@ def run(
     essential_compounds = file_handler.read_json(inputdir+"essential_compounds.json")
     data_cleaned = write_output(
         graphdir,
-        output_dir,
+        output_dir+"no_essentials/",
         molecule_start_compound,
         molecule_start_atom,
         molecule_end_compound,

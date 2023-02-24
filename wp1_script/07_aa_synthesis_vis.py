@@ -33,7 +33,8 @@ def get_glucose_aa_dict(graph_dir: str, medium: str, amino_acids: list[str], ess
             species, _ = fname.split("_")[0:2]
             with open(entry.path, "rb") as reader:
                 graph: nx.DiGraph = pickle.load(reader)
-            glucose_graph: nx.DiGraph = metabolite_subgraph.bf_search(graph, "D-glucose", essential_compounds)
+            ec_clean = [ec for ec in essential_compounds if graph.has_node(ec)]
+            glucose_graph: nx.DiGraph = metabolite_subgraph.bf_search(graph, "D-glucose", ec_clean)
             aa_can_synth = np.array(
                 [glucose_graph.has_node(aa) for aa in amino_acids]
             )

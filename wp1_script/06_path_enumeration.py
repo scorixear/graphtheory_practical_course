@@ -114,7 +114,7 @@ def run(
         for [length, equal_paths] in paths_equal_length.items():
             pathSet = [set(path) for path in equal_paths]
             sharedPath = set.intersection(*pathSet)
-            results[acid_key][length] = sharedPath
+            results[acid_key][length] = list(sharedPath)
     file_handler.write_json(results, output_folder+"acid_paths.json")
 
 if __name__ == "__main__":

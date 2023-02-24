@@ -1,0 +1,1543 @@
+{
+  "conn_comp_number": 158,
+  "density": 0.0025271260660503234,
+  "molecule_path": {
+    "start_compound": "D-glucose",
+    "start_atom_number": 0,
+    "start_atom_element": "O",
+    "end_compound": "L-leucine",
+    "graph_size": 531
+  },
+  "endpoints": {
+    "amount": 122,
+    "data": {
+      "D-glucose 6-phosphate": [
+        1377
+      ],
+      "beta-D-fructose": [
+        1472,
+        1466,
+        1463
+      ],
+      "beta-D-fructose 6-phosphate": [
+        1224
+      ],
+      "6-phospho-D-glucono-1,5-lactone": [
+        1392,
+        1402,
+        1398
+      ],
+      "D-erythrose 4-phosphate": [
+        1029
+      ],
+      "beta-D-fructose 1,6-bisphosphate": [
+        1194
+      ],
+      "D-sedoheptulose 7-phosphate": [
+        2002,
+        1996,
+        2004,
+        1998
+      ],
+      "6-phospho-D-gluconate": [
+        1424,
+        1430
+      ],
+      "7-phospho-2-dehydro-3-deoxy-D-arabino-heptonate": [
+        1048,
+        1057,
+        1053
+      ],
+      "glyceraldehyde 3-phosphate": [
+        1210,
+        1211
+      ],
+      "D-xylulose 5-phosphate": [
+        1809,
+        1807
+      ],
+      "alpha-D-ribose 5-phosphate": [
+        1907,
+        1909,
+        1911
+      ],
+      "D-ribulose 5-phosphate": [
+        1442,
+        1444,
+        1438
+      ],
+      "3-dehydroquinate": [
+        1161,
+        1164
+      ],
+      "dihydroxyacetone phosphate": [
+        576,
+        577
+      ],
+      "(2R)-3-phospho-glyceroyl phosphate": [
+        1411,
+        1405
+      ],
+      "(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate": [
+        1661,
+        1663
+      ],
+      "5-phospho-alpha-D-ribose 1-diphosphate": [
+        624,
+        634,
+        622
+      ],
+      "3-dehydroshikimate": [
+        1170,
+        1171,
+        1173,
+        1167
+      ],
+      "dihydroxyacetone": [
+        586,
+        587
+      ],
+      "methylglyoxal": [
+        592,
+        591
+      ],
+      "(2R)-3-phosphoglycerate": [
+        1760,
+        1762
+      ],
+      "1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate": [
+        1645,
+        1647
+      ],
+      "N-(5-phospho-beta-D-ribosyl)anthranilate": [
+        657,
+        659,
+        668,
+        653
+      ],
+      "1-(5-Phosphoribosyl)-ATP": [
+        889,
+        891,
+        900
+      ],
+      "shikimate": [
+        1986,
+        1987,
+        1989,
+        1983
+      ],
+      "hydroxyacetone": [
+        596,
+        597
+      ],
+      "(2R)-2-phosphoglycerate": [
+        1179,
+        1181
+      ],
+      "3-phosphooxypyruvate": [
+        1771,
+        1773
+      ],
+      "acetyl phosphate": [
+        1794
+      ],
+      "L-tryptophan": [
+        2039,
+        2037,
+        2038,
+        2031
+      ],
+      "indole": [
+        2049,
+        2050,
+        2051,
+        2043
+      ],
+      "1-(5-Phosphoribosyl)-AMP": [
+        1851,
+        1853,
+        1862
+      ],
+      "phosphoenolpyruvate": [
+        1042,
+        1036
+      ],
+      "3-phosphoshikimate": [
+        1920,
+        1916,
+        1926,
+        1919
+      ],
+      "(S)-propane-1,2-diol": [
+        601,
+        602
+      ],
+      "2-oxoglutarate": [
+        16,
+        10
+      ],
+      "acetyl-CoA": [
+        127
+      ],
+      "1-(5-phospho-beta-D-ribosyl)-5-[(5-phospho-beta-D-ribosylamino)methylideneamino]imidazole-4-carboxamide": [
+        1888,
+        1890,
+        1899
+      ],
+      "O-phospho-L-serine": [
+        1933
+      ],
+      "pyruvate": [
+        234,
+        236
+      ],
+      "oxaloacetate": [
+        853,
+        855
+      ],
+      "5-O-(1-carboxyvinyl)-3-phosphoshikimate": [
+        918,
+        919,
+        921,
+        922,
+        923
+      ],
+      "(S)-lactaldehyde": [
+        1730,
+        1731
+      ],
+      "4-methyl-2-oxopentanoate": [
+        25
+      ],
+      "L-glutamate": [
+        32,
+        35,
+        30
+      ],
+      "isocitrate(3-)": [
+        301,
+        310,
+        303
+      ],
+      "(S)-3-methyl-2-oxopentanoate": [
+        1096
+      ],
+      "L-glutamate 5-semialdehyde": [
+        1344,
+        1347
+      ],
+      "3-phenylpyruvate": [
+        1790,
+        1789,
+        1782
+      ],
+      "(S)-2-succinylamino-6-oxoheptanedioate": [
+        1976,
+        1963,
+        1979,
+        1967
+      ],
+      "3-(4-hydroxyphenyl)pyruvate": [
+        1816,
+        1824,
+        1826
+      ],
+      "3-methyl-2-oxobutanoate": [
+        1077
+      ],
+      "N-acetyl-L-glutamate": [
+        48,
+        43,
+        45,
+        39
+      ],
+      "citrate": [
+        288,
+        297,
+        290
+      ],
+      "(2S)-2-isopropylmalate": [
+        1719,
+        1724,
+        1718,
+        1727
+      ],
+      "O-acetyl-L-serine": [
+        940,
+        943
+      ],
+      "L-serine": [
+        982
+      ],
+      "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide": [
+        1587,
+        1582,
+        1583
+      ],
+      "chorismate": [
+        673,
+        675,
+        679,
+        670,
+        671
+      ],
+      "(S)-2,3-dihydrodipicolinate": [
+        1100,
+        1102
+      ],
+      "(S)-lactate": [
+        1736,
+        1738
+      ],
+      "prephenate": [
+        905,
+        914,
+        916
+      ],
+      "succinyl-CoA": [
+        562,
+        566
+      ],
+      "3-(imidazol-4-yl)-2-oxopropyl phosphate": [
+        1545,
+        1554
+      ],
+      "succinate semialdehyde": [
+        1745,
+        1742
+      ],
+      "(S)-2-ethyl-2-hydroxy-3-oxobutanoate": [
+        244
+      ],
+      "L-alanine": [
+        569,
+        570
+      ],
+      "L-aspartate": [
+        737,
+        738
+      ],
+      "(2S)-2-acetolactate": [
+        258
+      ],
+      "formate": [
+        1757
+      ],
+      "(2S)-2-isopropyl-3-oxosuccinate": [
+        1704,
+        1698,
+        1695
+      ],
+      "L-leucine": [
+        3,
+        5
+      ],
+      "L-glutamine": [
+        690,
+        693,
+        687
+      ],
+      "L-glutamyl 5-phosphate": [
+        1361,
+        1369,
+        1362
+      ],
+      "L-isoleucine": [
+        1680
+      ],
+      "L-ornithine": [
+        284,
+        279
+      ],
+      "L-phenylalanine": [
+        801,
+        802,
+        805
+      ],
+      "N-succinyl-(2S,6S)-2,6-diaminoheptanedioate": [
+        1952,
+        1953,
+        1956,
+        1959
+      ],
+      "L-tyrosine": [
+        2058,
+        2060,
+        2062
+      ],
+      "L-valine": [
+        2065,
+        2066,
+        2070
+      ],
+      "(2R,3R)-2,3-dihydroxy-3-methylpentanoate": [
+        1083,
+        1087
+      ],
+      "(S)-1-pyrroline-5-carboxylate": [
+        1353,
+        1354,
+        1351
+      ],
+      "(S)-2,3,4,5-tetrahydrodipicolinate": [
+        1112,
+        1122,
+        1120,
+        1117
+      ],
+      "(2R)-2,3-dihydroxy-3-methylbutanoate": [
+        1067,
+        1069,
+        1063
+      ],
+      "N-acetyl-L-glutamyl 5-phosphate": [
+        96,
+        89,
+        83,
+        87
+      ],
+      "N(2)-acetyl-L-ornithine": [
+        268,
+        262,
+        270
+      ],
+      "2-isopropylmaleate": [
+        1712,
+        1715,
+        1708,
+        1709
+      ],
+      "acetate": [
+        275
+      ],
+      "anthranilate": [
+        610,
+        612
+      ],
+      "L,L-cystathionine": [
+        968,
+        962,
+        959
+      ],
+      "D-erythro-1-(imidazol-4-yl)glycerol 3-phosphate": [
+        1625,
+        1627,
+        1622
+      ],
+      "L-histidinol phosphate": [
+        1496,
+        1505
+      ],
+      "O-succinyl-L-homoserine": [
+        1538,
+        1532,
+        1541,
+        1534
+      ],
+      "succinate": [
+        1148,
+        1150
+      ],
+      "N-(L-Arginino)succinate": [
+        708,
+        709,
+        702,
+        701
+      ],
+      "N-carbamoyl-L-aspartate": [
+        841,
+        842
+      ],
+      "4-phospho-L-aspartate": [
+        817,
+        818
+      ],
+      "L-asparagine": [
+        2076,
+        2077
+      ],
+      "(2R,3S)-3-isopropylmalate": [
+        1684,
+        1683,
+        1692,
+        1687
+      ],
+      "L-arogenate": [
+        792,
+        793,
+        789,
+        791
+      ],
+      "L-citrulline": [
+        754,
+        749,
+        750
+      ],
+      "(2S,6S)-2,6-diaminoheptanedioate": [
+        1017
+      ],
+      "L-proline": [
+        1752,
+        1749,
+        1751
+      ],
+      "N-acetyl-L-glutamate 5-semialdehyde": [
+        320,
+        314,
+        322,
+        319
+      ],
+      "L-cysteine": [
+        952,
+        954
+      ],
+      "L-histidinol": [
+        1480,
+        1475
+      ],
+      "2-oxobutanoate": [
+        230
+      ],
+      "L-aspartate 4-semialdehyde": [
+        811,
+        813
+      ],
+      "fumarate": [
+        732
+      ],
+      "(S)-dihydroorotate": [
+        1125,
+        1126
+      ],
+      "meso-2,6-diaminoheptanedioate": [
+        997
+      ],
+      "L-histidine": [
+        1488,
+        1485,
+        1486
+      ],
+      "L-threonine": [
+        2017,
+        2013
+      ],
+      "L-homoserine": [
+        1512,
+        1514
+      ],
+      "orotate": [
+        1137,
+        1138
+      ],
+      "L-arginine": [
+        720,
+        721,
+        725
+      ],
+      "L-lysine": [
+        1003,
+        1004,
+        1007
+      ],
+      "L-homocysteine": [
+        977,
+        975
+      ],
+      "O-phospho-L-homoserine": [
+        1526,
+        1519
+      ],
+      "glycine": [
+        2025
+      ],
+      "acetaldehyde": [
+        2021
+      ]
+    }
+  },
+  "connected_components": [
+    {
+      "compound": "L-leucine",
+      "element": "C",
+      "component_size": 682,
+      "cycle_basis": 164
+    },
+    {
+      "compound": "L-leucine",
+      "element": "O",
+      "component_size": 531,
+      "cycle_basis": 159
+    },
+    {
+      "compound": "L-tyrosine",
+      "element": "N",
+      "component_size": 62,
+      "cycle_basis": 9,
+      "possible_cycles": 256,
+      "cycles_found": 13,
+      "max_cycle_length": 15,
+      "average_cycle_length": 6.846153846153846,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "P",
+      "component_size": 31,
+      "cycle_basis": 6,
+      "possible_cycles": 32,
+      "cycles_found": 27,
+      "max_cycle_length": 17,
+      "average_cycle_length": 9.62962962962963,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "O",
+      "component_size": 31,
+      "cycle_basis": 6,
+      "possible_cycles": 32,
+      "cycles_found": 27,
+      "max_cycle_length": 17,
+      "average_cycle_length": 9.62962962962963,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate",
+      "element": "N",
+      "component_size": 12,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 3,
+      "average_cycle_length": 3.0,
+      "min_cycle_length": 3
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "O",
+      "component_size": 10,
+      "cycle_basis": 2,
+      "possible_cycles": 2,
+      "cycles_found": 3,
+      "max_cycle_length": 6,
+      "average_cycle_length": 4.666666666666667,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "L-histidinol phosphate",
+      "element": "C",
+      "component_size": 9,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-histidinol phosphate",
+      "element": "N",
+      "component_size": 9,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "diphosphate",
+      "element": "O",
+      "component_size": 6,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-AMP",
+      "element": "N",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-AMP",
+      "element": "C",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-AMP",
+      "element": "C",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-AMP",
+      "element": "N",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "C",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "N",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-ATP",
+      "element": "C",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-ATP",
+      "element": "O",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-ATP",
+      "element": "C",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "C",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "O",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "P",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "O",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "C",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "O",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "C",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "O",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "C",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "N",
+      "component_size": 5,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "3-phosphoshikimate",
+      "element": "O",
+      "component_size": 4,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "L-homocysteine",
+      "element": "S",
+      "component_size": 4,
+      "cycle_basis": 1,
+      "possible_cycles": 1,
+      "cycles_found": 1,
+      "max_cycle_length": 4,
+      "average_cycle_length": 4.0,
+      "min_cycle_length": 4
+    },
+    {
+      "compound": "1-(5-Phosphoribosyl)-ATP",
+      "element": "P",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "diphosphate",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "diphosphate",
+      "element": "P",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "diphosphate",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "N-(L-Arginino)succinate",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "N-(L-Arginino)succinate",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "orotate",
+      "element": "N",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "orotate",
+      "element": "C",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "(S)-dihydroorotate",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamide",
+      "element": "O",
+      "component_size": 3,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-phospho-alpha-D-ribose 1-diphosphate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "4-phospho-L-aspartate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-O-(1-carboxyvinyl)-3-phosphoshikimate",
+      "element": "P",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "5-O-(1-carboxyvinyl)-3-phosphoshikimate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-glutamyl 5-phosphate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "O-phospho-L-homoserine",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl phosphate",
+      "element": "O",
+      "component_size": 2,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "N-acetyl-L-glutamyl 5-phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "N-acetyl-L-glutamyl 5-phosphate",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "N-acetyl-L-glutamyl 5-phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "S",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "C",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "succinyl-CoA",
+      "element": "S",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "4-phospho-L-aspartate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "4-phospho-L-aspartate",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "4-phospho-L-aspartate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-glutamyl 5-phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-glutamyl 5-phosphate",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-glutamyl 5-phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "(2R)-3-phospho-glyceroyl phosphate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "6-phospho-D-gluconate",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-histidine",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "O-phospho-L-homoserine",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "O-phospho-L-homoserine",
+      "element": "O",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "acetyl phosphate",
+      "element": "P",
+      "component_size": 1,
+      "cycle_basis": 0
+    },
+    {
+      "compound": "L-asparagine",
+      "element": "N",
+      "component_size": 1,
+      "cycle_basis": 0
+    }
+  ]
+}
